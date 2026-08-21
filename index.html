@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magyar Szövetség – Szenc | #SzívügyünkSzenc</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .lang-sk { display: none; }
+    body.lang-mode-sk .lang-hu { display: none !important; }
+    body.lang-mode-sk .lang-sk { display: block !important; }
+    body.lang-mode-sk span.lang-sk, body.lang-mode-sk a.lang-sk { display: inline-block !important; }
+    body.lang-mode-sk div.lang-sk { display: flex !important; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navigáció -->
+  <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-40 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="font-bold text-lg text-emerald-800 flex items-center gap-2">
+        <i class="fa-solid fa-heart text-emerald-600"></i>
+        <span>Magyar Szövetség</span>
+        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded-full">Szenc / Senec</span>
+      </div>
+
+      <div class="hidden xl:flex space-x-5 text-sm font-medium text-gray-700">
+        <a href="#eredmenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span></a>
+        <a href="#program" class="hover:text-emerald-700 transition"><span class="lang-hu">Közös Program</span><span class="lang-sk">Spoločný program</span></a>
+        <a href="#jeloltek" class="hover:text-emerald-700 transition"><span class="lang-hu">9 Jelöltünk</span><span class="lang-sk">9 Kandidátov</span></a>
+        <a href="#korzetek" class="hover:text-emerald-700 transition"><span class="lang-hu">Körzetek & Utcák</span><span class="lang-sk">Obvody a Ulice</span></a>
+        <a href="#esemenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Események</span><span class="lang-sk">Udalosti</span></a>
+        <a href="#gyik" class="hover:text-emerald-700 transition"><span class="lang-hu">GYIK & Szavazás</span><span class="lang-sk">FAQ & Voľby</span></a>
+        <a href="#kapcsolat" class="hover:text-emerald-700 transition"><span class="lang-hu">Kapcsolat</span><span class="lang-sk">Kontakt</span></a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- Nyelvváltó -->
+        <div class="bg-gray-100 p-1 rounded-lg flex gap-1 text-xs font-bold border border-gray-200">
+          <button id="btn-hu" onclick="setLanguage('hu')" class="px-2 py-1 rounded bg-emerald-700 text-white transition">HU</button>
+          <button id="btn-sk" onclick="setLanguage('sk')" class="px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition">SK</button>
+        </div>
+
+        <a href="#ujsag" class="hidden sm:inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2 rounded-lg transition">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span class="lang-hu">Újság (PDF)</span>
+          <span class="lang-sk">Noviny (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Fejléc szlogennel -->
+  <header class="pt-32 pb-20 bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900 text-white text-center px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="inline-block bg-emerald-800/80 border border-emerald-500/30 text-emerald-200 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-4">
+        <span class="lang-hu">Önkormányzati Választások</span>
+        <span class="lang-sk">Komunálne Voľby</span>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-3 leading-tight">
+        <span class="lang-hu">Magyar Szövetség Szenc</span>
+        <span class="lang-sk">Maďarská Aliancia Senec</span>
+      </h1>
+      <p class="text-xl font-bold text-emerald-400 mb-6">
+        #SzívügyünkSzenc &bull; #SrdcomPreSenec
+      </p>
+      <p class="text-base md:text-lg text-emerald-100 max-w-2xl mx-auto mb-8">
+        <span class="lang-hu">9 elhivatott jelölttel (az 1. körzetben 5, a 2. körzetben 3, a 3. körzetben 1 jelölttel) dolgozunk Szenc jövőjéért.</span>
+        <span class="lang-sk">S 9 odhodlanými kandidátmi (5 v obvode č. 1, 3 v obvode č. 2 a 1 v obvode č. 3) pracujeme pre budúcnosť Senca.</span>
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#jeloltek" class="bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-50 transition">
+          <span class="lang-hu">Ismerd meg a 9 jelöltet</span>
+          <span class="lang-sk">Spoznajte 9 kandidátov</span>
+        </a>
+        <a href="#korzetek" class="border border-white/40 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition">
+          <span class="lang-hu">Körzetem kiválasztása</span>
+          <span class="lang-sk">Ktorý je môj obvod?</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Eredményeink -->
+  <section id="eredmenyek" class="py-16 max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900">
+        <span class="lang-hu">Eredményeink</span>
+        <span class="lang-sk">Naše výsledky</span>
+      </h2>
+      <p class="text-gray-600 mt-2">
+        <span class="lang-hu">Amit az elmúlt időszakban Szencért elértünk</span>
+        <span class="lang-sk">Čo sme v uplynulom období pre Senec dosiahli</span>
+      </p>
+    </div>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-emerald-600">
+        <div class="text-3xl font-black text-emerald-700 mb-2">100%</div>
+        <h3 class="font-bold text-gray-900 mb-1"><span class="lang-hu">Iskoláink támogatása</span><span class="lang-sk">Podpora škôl</span></h3>
+        <p class="text-xs text-gray-600"><span class="lang-hu">A magyar oktatási intézmények költségvetési stabilitása.</span><span class="lang-sk">Rozpočtová stabilita vzdelávacích inštitúcií.</span></p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-emerald-600">
+        <div class="text-3xl font-black text-emerald-700 mb-2">15+</div>
+        <h3 class="font-bold text-gray-900 mb-1"><span class="lang-hu">Kulturális rendezvény</span><span class="lang-sk">Kultúrnych podujatí</span></h3>
+        <p class="text-xs text-gray-600"><span class="lang-hu">Közösségi és hagyományőrző programok szervezése.</span><span class="lang-sk">Organizovanie komunitných a kultúrnych podujatí.</span></p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-emerald-600">
+        <div class="text-3xl font-black text-emerald-700 mb-2">24/7</div>
+        <h3 class="font-bold text-gray-900 mb-1"><span class="lang-hu">Kétnyelvűség</span><span class="lang-sk">Dvojjazyčnosť</span></h3>
+        <p class="text-xs text-gray-600"><span class="lang-hu">A magyar nyelvű hivatali tájékoztatás erősítése.</span><span class="lang-sk">Posilnenie dvojjazyčnej informovanosti.</span></p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-t-4 border-t-emerald-600">
+        <div class="text-3xl font-black text-emerald-700 mb-2">10+</div>
+        <h3 class="font-bold text-gray-900 mb-1"><span class="lang-hu">Civil projekt</span><span class="lang-sk">Občianskych projektov</span></h3>
+        <p class="text-xs text-gray-600"><span class="lang-hu">Közvetlen támogatás a helyi egyesületeknek.</span><span class="lang-sk">Priama podpora pre miestne spolky.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Közös Program -->
+  <section id="program" class="py-16 bg-emerald-900/5 border-y border-emerald-900/10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900">
+          <span class="lang-hu">Közös Programunk</span>
+          <span class="lang-sk">Náš spoločný program</span>
+        </h2>
+        <p class="text-gray-600 mt-2">
+          <span class="lang-hu">A legfontosabb célkitűzéseink Szenc fejlődéséért</span>
+          <span class="lang-sk">Naše hlavné ciele pre rozvoj Senca</span>
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900"><span class="lang-hu">Oktatás & Kultúra</span><span class="lang-sk">Vzdelávanie a Kultúra</span></h3>
+          <p class="text-gray-600 text-sm"><span class="lang-hu">A magyar iskolák és óvodák infrastruktúrájának fejlesztése és kulturális közösségünk támogatása.</span><span class="lang-sk">Rozvoj infraštruktúry škôl a materských škôl a podpora kultúrnej komunity.</span></p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-tree"></i></div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900"><span class="lang-hu">Városfejlesztés & Zöldövezet</span><span class="lang-sk">Rozvoj mesta a Zeleň</span></h3>
+          <p class="text-gray-600 text-sm"><span class="lang-hu">Utak, járdák és gyalogosátkelők felújítása, parkolási megoldások és új zöldterületek kialakítása.</span><span class="lang-sk">Oprava ciest, chodníkov a priechodov, riešenie parkovania a nové zelené plochy.</span></p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-people-group"></i></div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900"><span class="lang-hu">Nyitott Városháza & Civilek</span><span class="lang-sk">Otvorená Radnica a Občania</span></h3>
+          <p class="text-gray-600 text-sm"><span class="lang-hu">Átlátható döntéshozatal, rendszeres lakossági párbeszéd és a helyi civil szervezetek pályázati támogatása.</span><span class="lang-sk">Transparentné rozhodovanie, pravidelný dialóg s občanmi a podpora občianskych spolkov.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. A 9 Jelöltünk (5 + 3 + 1 elosztásban) -->
+  <section id="jeloltek" class="py-16 max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900">
+        <span class="lang-hu">A 9 Jelöltünk Választási Körzetek Szerint</span>
+        <span class="lang-sk">Naši 9 Kandidáti Podľa Volebných Obvodov</span>
+      </h2>
+      <p class="text-gray-600 mt-2">
+        <span class="lang-hu">A Magyar Szövetség csapata Szencen (1. körzet: 5 jelölt | 2. körzet: 3 jelölt | 3. körzet: 1 jelölt)</span>
+        <span class="lang-sk">Tím Maďarskej Aliancie v Senci (Obvod 1: 5 kandidátov | Obvod 2: 3 kandidáti | Obvod 3: 1 kandidát)</span>
+      </p>
+    </div>
+
+    <!-- 1. VÁLASZTÁSI KÖRZET (5 Jelölt) -->
+    <div class="mb-16">
+      <div class="bg-emerald-800 text-white px-5 py-2.5 rounded-xl font-bold text-lg mb-8 inline-flex items-center gap-2 shadow">
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="lang-hu">1. sz. Választási Körzet (5 jelöltünk)</span>
+        <span class="lang-sk">Volebný Obvod č. 1 (5 kandidátov)</span>
+      </div>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+
+        <!-- Jelölt 1 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #1</span><span class="lang-sk">Krúžkujte: #1</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Minta János</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">1. körzet / 1. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Mérnök, civil aktivista</span><span class="lang-sk">Inžinier, občiansky aktivista</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Célom, hogy Szenc egy élő, virágzó kulturális és gazdasági központ legyen."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('1')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-instagram"></i></a>
+              <a href="mailto:janos@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jelölt 2 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #2</span><span class="lang-sk">Krúžkujte: #2</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Kovács Mária</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">1. körzet / 1. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Pedagógus</span><span class="lang-sk">Pedagogička</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"A magyar nyelvű oktatás és a fiatalok jövője a legfontosabb prioritásom."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('2')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:maria@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jelölt 3 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #3</span><span class="lang-sk">Krúžkujte: #3</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Nagy Péter</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">1. körzet / 1. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Vállalkozó</span><span class="lang-sk">Podnikateľ</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Fenntartható fejlesztések és átlátható városgazdálkodás."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('3')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:peter@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jelölt 4 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #4</span><span class="lang-sk">Krúžkujte: #4</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Szabó Zoltán</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">1. körzet / 1. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Közgazdász</span><span class="lang-sk">Ekonóm</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Kiszámítható költségvetés és felelős gazdálkodás Szencen."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('4')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:zoltan@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jelölt 5 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #5</span><span class="lang-sk">Krúžkujte: #5</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Varga Katalin</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">1. körzet / 1. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Orvos</span><span class="lang-sk">Lekárka</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Jobb egészségügyi ellátás és az idősek támogatása."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('5')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:katalin@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 2. VÁLASZTÁSI KÖRZET (3 Jelölt) -->
+    <div class="mb-16">
+      <div class="bg-emerald-800 text-white px-5 py-2.5 rounded-xl font-bold text-lg mb-8 inline-flex items-center gap-2 shadow">
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="lang-hu">2. sz. Választási Körzet (3 jelöltünk)</span>
+        <span class="lang-sk">Volebný Obvod č. 2 (3 kandidáti)</span>
+      </div>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+
+        <!-- Jelölt 6 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #6</span><span class="lang-sk">Krúžkujte: #6</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Horváth László</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">2. körzet / 2. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Informatikus</span><span class="lang-sk">Informatik</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Okos városi megoldások és átlátható digitális szolgáltatások."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('6')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:laszlo@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jelölt 7 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #7</span><span class="lang-sk">Krúžkujte: #7</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Molnár Ádám</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">2. körzet / 2. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Környezetvédelmi szakember</span><span class="lang-sk">Ekológ</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Tiszta zöldterületek és fenntartható fejlesztések."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('7')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:adam@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jelölt 8 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #8</span><span class="lang-sk">Krúžkujte: #8</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Tóth Éva</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">2. körzet / 2. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Kultúrszervező</span><span class="lang-sk">Kultúrna manažérka</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Élénk kulturális élet és hagyományaink ápolása Szencen."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('8')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:eva@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3. VÁLASZTÁSI KÖRZET (1 Jelölt) -->
+    <div>
+      <div class="bg-emerald-800 text-white px-5 py-2.5 rounded-xl font-bold text-lg mb-8 inline-flex items-center gap-2 shadow">
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="lang-hu">3. sz. Választási Körzet (1 jelöltünk)</span>
+        <span class="lang-sk">Volebný Obvod č. 3 (1 kandidát)</span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Jelölt 9 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between hover:shadow-md transition md:col-start-2">
+          <div>
+            <div class="bg-gray-200 h-60 flex items-center justify-center text-gray-400 relative">
+              <i class="fa-solid fa-user text-6xl"></i>
+              <span class="absolute top-3 right-3 bg-emerald-700 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">
+                <span class="lang-hu">Karikázd: #9</span><span class="lang-sk">Krúžkujte: #9</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900">Balogh István</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-2">3. körzet / 3. obvod</p>
+              <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Sportedző</span><span class="lang-sk">Športový tréner</span></p>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">"Ifjúsági sport, a tó környékének fejlesztése és közösségi terek."</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="openCandidateModal('9')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold py-2 px-4 rounded-lg text-sm transition mb-3">
+              <span class="lang-hu">Bővebb bemutatkozás <i class="fa-solid fa-arrow-right ml-1"></i></span>
+              <span class="lang-sk">Viac o kandidátovi <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </button>
+            <div class="flex gap-4 text-gray-500 border-t pt-3">
+              <a href="#" class="hover:text-emerald-700"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:istvan@szenc.sk" class="hover:text-emerald-700"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. KÖRZEETEK ÉS UTCÁK ÚTMUTATÓJA -->
+  <section id="korzetek" class="py-16 bg-slate-100 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-900">
+          <span class="lang-hu">Választási Körzetek & Utcák Jegyzéke</span>
+          <span class="lang-sk">Volebné Obvody a Zoznam Ulíc</span>
+        </h2>
+        <p class="text-gray-600 mt-2">
+          <span class="lang-hu">Keresd meg az utcádat a Szenc városi választókörzetek hivatalos jegyzékében!</span>
+          <span class="lang-sk">Nájdite svoju ulicu v oficiálnom zozname volebných obvodov mesta Senec!</span>
+        </p>
+      </div>
+
+      <!-- Keresőmező -->
+      <div class="max-w-md mx-auto mb-10">
+        <div class="relative">
+          <input type="text" id="street-search" onkeyup="filterStreets()" placeholder="Írd be az utcád nevét... / Napíšte názov ulice..." class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-emerald-600 shadow-sm text-sm">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-gray-400"></i>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- 1. Körzet Utcái -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+          <div class="flex items-center justify-between mb-4 border-b pb-3">
+            <h3 class="font-bold text-lg text-emerald-800">
+              <span class="lang-hu">1. sz. Körzet</span><span class="lang-sk">Obvod č. 1</span>
+            </h3>
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">5 Jelölt</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Idetartozó utcák (példák):</span><span class="lang-sk">Príslušné ulice:</span></p>
+          <ul id="streets-list-1" class="text-xs text-gray-700 space-y-1.5 max-h-60 overflow-y-auto pr-2">
+            <li>Boldocká cesta, Bratislavská (3-25 nepárne)</li>
+            <li>Dúhová, Farské námestie, Fraňa Kráľa</li>
+            <li>Fučíkova, Hečková, Hollého, Hurbanova</li>
+            <li>J. Jesenského, Jasná, Kollárova, Krátka</li>
+            <li>Kvetná, Mierové námestie, Mlynská</li>
+            <li>Moyzesova, Námestie 1. mája, Nitrianska</li>
+            <li>Pivničná, Pod vinicami, Robotnícka</li>
+            <li>Rosná, Rybárska, Sadová, Slnečná</li>
+            <li>SNP, Strmá, Svätého Urbana, Svätý Martin</li>
+            <li>Šafáriková, Šamorínska, Školská, Škorcová</li>
+            <li>Štefánikova, Štúrova, Tehelná, Tehelňa</li>
+            <li>Trnavská, Turecká, Vinohradnícka, Vodná</li>
+            <li>Vrbenského, Železničná</li>
+          </ul>
+        </div>
+
+        <!-- 2. Körzet Utcái -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+          <div class="flex items-center justify-between mb-4 border-b pb-3">
+            <h3 class="font-bold text-lg text-emerald-800">
+              <span class="lang-hu">2. sz. Körzet</span><span class="lang-sk">Obvod č. 2</span>
+            </h3>
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">3 Jelölt</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Idetartozó utcák (példák):</span><span class="lang-sk">Príslušné ulice:</span></p>
+          <ul id="streets-list-2" class="text-xs text-gray-700 space-y-1.5 max-h-60 overflow-y-auto pr-2">
+            <li>A. Sládkoviča, Baničova, Bélu Bartóka</li>
+            <li>Bernolákova, Bratislavská (2-30 párne; 27-75 nepárne)</li>
+            <li>Dobšinského, E. B. Lukáča, Fándlyho</li>
+            <li>Gagarinova, Hany Zelinovej, Hviezdoslavova</li>
+            <li>Chalupkova, Inovecká, J. G. Tajovského</li>
+            <li>Jána Smreka, Jánošíkova, Kalinčiakova</li>
+            <li>Karola Šišku, Košická, Kysucká, Letná</li>
+            <li>Lichnerova, Liptovská, Ľudovíta Fullu</li>
+            <li>M. Urbana, Mäsiarska, Novomeského</li>
+            <li>Oravská, Pezinská, Považská, Pribinova</li>
+            <li>Pri Striebornom Jazere, Priemyselná</li>
+            <li>Sokolská, Strieborné jazero, Svätoplukova</li>
+            <li>Športová, Vajanského, Záhradnícka</li>
+            <li>Zemplínska, Žarnovova, Žitavská</li>
+          </ul>
+        </div>
+
+        <!-- 3. Körzet Utcái -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+          <div class="flex items-center justify-between mb-4 border-b pb-3">
+            <h3 class="font-bold text-lg text-emerald-800">
+              <span class="lang-hu">3. sz. Körzet</span><span class="lang-sk">Obvod č. 3</span>
+            </h3>
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">1 Jelölt</span>
+          </div>
+          <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Idetartozó utcák (példák):</span><span class="lang-sk">Príslušné ulice:</span></p>
+          <ul id="streets-list-3" class="text-xs text-gray-700 space-y-1.5 max-h-60 overflow-y-auto pr-2">
+            <li>A. Dubčeka, A. Hlinku, Agátová, Bazová</li>
+            <li>Borievková, Borovicová, Brezová, Čerešňová</li>
+            <li>Diaľničná, Dlhá, Dolná, Drienková, Drozdia</li>
+            <li>Fialková, Gaštanová, Holubia, Horná, Horný dvor</li>
+            <li>J. Csermáka, J. Farkasa, J. Murgaša, Jarná</li>
+            <li>Jastrabia, Javorová, Jedľová, Jesenná, Kapria</li>
+            <li>Lesná, Lipová, Lučná, Malinová, Marhuľová</li>
+            <li>Morušová, Muškátová, Okružná, Ovocná</li>
+            <li>Partizánska, Poľná, Pri Búroši, Ružová</li>
+            <li>Sereďská, Slnečné jazerá (SEVER, JUH)</li>
+            <li>Šípková, Trnková, Tulipánová, Turnianska</li>
+            <li>Včelárska, Višňová, Zahrada, Zlatá</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+<!-- Szavazóhelyiség Kereső Szekció -->
+<section id="szavazokor-kereso" class="py-16 bg-white border-b border-gray-200">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-900">
+        <span class="lang-hu">Hol kell szavaznom? – Szavazóhelyiség Kereső</span>
+        <span class="lang-sk">Kde mám voliť? – Vyhľadávač volebnej miestnosti</span>
+      </h2>
+      <p class="text-gray-600 mt-2 text-sm">
+        <span class="lang-hu">Írd be az utcád nevét, és a rendszer megmutatja a kijelölt szavazókörödet és szavazóhelyiségedet.</span>
+        <span class="lang-sk">Zadajte názov vašej ulice a systém vám zobrazí príslušný volebný okrsok a miestnosť.</span>
+      </p>
+    </div>
+
+    <!-- Kereső Mező -->
+    <div class="relative max-w-lg mx-auto mb-6">
+      <input 
+  type="text" 
+  id="polling-search-input" 
+  oninput="searchPollingStation()" 
+  placeholder="Írd be az utcád nevét..." 
+  class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent shadow-sm text-sm"
+>
+      <i class="fa-solid fa-magnifying-glass absolute left-4 top-4 text-gray-400"></i>
+    </div>
+
+    <!-- Eredmények Vízszintes Kárruszel Konténere -->
+	<div 
+	  id="polling-results-container" 
+	  class="flex overflow-x-auto snap-x snap-mandatory gap-4 py-4 px-2 max-w-2xl mx-auto scrollbar-thin"
+	></div>
+
+    <!-- Nincs találat üzenet -->
+    <div id="polling-no-result" class="hidden text-center text-gray-500 text-sm mt-4">
+      <span class="lang-hu">Nincs találat erre az utcára. Kérjük, ellenőrizd a helyesírást!</span>
+      <span class="lang-sk">Pre túto ulicu nebol nájdený žiadny výsledok. Skontrolujte pravopis!</span>
+    </div>
+  </div>
+</section>
+
+  <!-- 5. Kampányesemények és Fórumok -->
+  <section id="esemenyek" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900">
+          <span class="lang-hu">Kampányesemények & Fórumok</span>
+          <span class="lang-sk">Kampaňové Podujatia a Fóra</span>
+        </h2>
+        <p class="text-gray-600 mt-2">
+          <span class="lang-hu">Találkozzunk személyesen Szencen!</span>
+          <span class="lang-sk">Stretnime sa osobne v Senci!</span>
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-l-emerald-600">
+          <span class="text-xs font-bold text-emerald-700 uppercase">Október 10. &bull; 17:00</span>
+          <h3 class="font-bold text-lg text-gray-900 mt-1 mb-2"><span class="lang-hu">Lakossági Fórum</span><span class="lang-sk">Občianske Fórum</span></h3>
+          <p class="text-sm text-gray-600 mb-3"><i class="fa-solid fa-location-dot text-gray-400 mr-1"></i> VMK Szenc / MSK Senec</p>
+          <p class="text-xs text-gray-500"><span class="lang-hu">Programismertető és kötetlen beszélgetés a 9 jelölttel.</span><span class="lang-sk">Prezentácia programu a diskusia s kandidátmi.</span></p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-l-emerald-600">
+          <span class="text-xs font-bold text-emerald-700 uppercase">Október 15. &bull; 16:00</span>
+          <h3 class="font-bold text-lg text-gray-900 mt-1 mb-2"><span class="lang-hu">Utcafórum & Kávé</span><span class="lang-sk">Uličné Fórum & Káva</span></h3>
+          <p class="text-sm text-gray-600 mb-3"><i class="fa-solid fa-location-dot text-gray-400 mr-1"></i> Főtér / Mierové námestie</p>
+          <p class="text-xs text-gray-500"><span class="lang-hu">Személyes találkozó és ötletelés a körzetekről.</span><span class="lang-sk">Osobné stretnutie a rozhovory o obvodoch.</span></p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-l-emerald-600">
+          <span class="text-xs font-bold text-emerald-700 uppercase">Október 20. &bull; 18:00</span>
+          <h3 class="font-bold text-lg text-gray-900 mt-1 mb-2"><span class="lang-hu">Záró Kampányest</span><span class="lang-sk">Záverečný Kampaňový Večer</span></h3>
+          <p class="text-sm text-gray-600 mb-3"><i class="fa-solid fa-location-dot text-gray-400 mr-1"></i> Szenci Csemadok Ház</p>
+          <p class="text-xs text-gray-500"><span class="lang-hu">Közösségi találkozó és a választási program összegzése.</span><span class="lang-sk">Komunitné stretnutie a zhrnutie programu.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Részletes kampányújság letöltése -->
+  <section id="ujsag" class="py-12 bg-gradient-to-r from-emerald-800 to-teal-800 text-white">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h2 class="text-2xl font-bold mb-2">
+          <span class="lang-hu">Olvasd el kampányújságunkat!</span>
+          <span class="lang-sk">Prečítajte si naše kampaňové noviny!</span>
+        </h2>
+        <p class="text-emerald-100 text-sm">
+          <span class="lang-hu">Töltsd le a nyomtatott kiadványunk PDF változatát, ahol részletesen olvashatsz mind a 9 jelöltről és a körzeti programokról.</span>
+          <span class="lang-sk">Stiahnite si PDF verziu našich novín s podrobnými informáciami o 9 kandidátoch a programe pre obvody.</span>
+        </p>
+      </div>
+      <a href="#" class="bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-emerald-50 transition whitespace-nowrap flex items-center gap-2">
+        <i class="fa-solid fa-file-pdf text-red-600"></i>
+        <span class="lang-hu">Újság Letöltése (PDF)</span>
+        <span class="lang-sk">Stiahnuť noviny (PDF)</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 7. GYIK & Szavazás -->
+  <section id="gyik" class="py-16 max-w-4xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900">
+        <span class="lang-hu">Gyakran Ismételt Kérdések & Szavazás</span>
+        <span class="lang-sk">Často Kladené Otázky a Voľby</span>
+      </h2>
+      <p class="text-gray-600 mt-2">
+        <span class="lang-hu">Minden praktikus tudnivaló a választás menetéről</span>
+        <span class="lang-sk">Praktické informácie o priebehu volieb</span>
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <div class="bg-white p-6 rounded-xl border border-gray-200">
+        <h3 class="font-bold text-gray-900 text-lg mb-2">
+          <i class="fa-solid fa-circle-question text-emerald-600 mr-2"></i>
+          <span class="lang-hu">Hogyan szavazhatok a Magyar Szövetség jelöltjeire?</span>
+          <span class="lang-sk">Ako môžem hlasovať za kandidátov Maďarskej Aliancie?</span>
+        </h3>
+        <p class="text-sm text-gray-600">
+          <span class="lang-hu">A képviselőjelöltek szavazólapján a Magyar Szövetség jelöltjeinek sorszámát kell bekarikáznod a saját választókörzetedben.</span>
+          <span class="lang-sk">Na hlasovacom lístku pre poslancov krúžkujete poradové čísla kandidátov Maďarskej Aliancie vo vašom volebnom obvode.</span>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-gray-200">
+        <h3 class="font-bold text-gray-900 text-lg mb-2">
+          <i class="fa-solid fa-circle-question text-emerald-600 mr-2"></i>
+          <span class="lang-hu">Hol található a szavazóhelyiségem és a választókörzetem?</span>
+          <span class="lang-sk">Kde sa nachádza moja volebná miestnosť a obvod?</span>
+        </h3>
+        <p class="text-sm text-gray-600">
+          <span class="lang-hu">Használd a fenti körzetkeresőt, vagy látogass el a városi hivatal hivatalos oldalára: <a href="https://www.senec.sk/samosprava/volby-a-referenda/" target="_blank" class="text-emerald-700 underline font-semibold">Mesto Senec - Voľby a referendá</a>.</span>
+          <span class="lang-sk">Použite vyhľadávač obvodov vyššie, alebo navštívte oficiálnu stránku: <a href="https://www.senec.sk/samosprava/volby-a-referenda/" target="_blank" class="text-emerald-700 underline font-semibold">Mesto Senec - Voľby a referendá</a>.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Vedd fel velünk a kapcsolatot! -->
+  <section id="kapcsolat" class="py-16 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">
+          <span class="lang-hu">Vedd fel velünk a kapcsolatot!</span>
+          <span class="lang-sk">Kontaktujte nás!</span>
+        </h2>
+        <p class="text-gray-400 mb-6">
+          <span class="lang-hu">Kérdésed vagy észrevételed van Szenc jövőjével kapcsolatban? Írj nekünk bizalommal!</span>
+          <span class="lang-sk">Máte otázky alebo podnety k budúcnosti Senca? Napíšte nám!</span>
+        </p>
+        <div class="space-y-4 text-gray-300">
+          <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-emerald-400"></i> szenc@szovetseg.sk</p>
+          <p class="flex items-center gap-3"><i class="fa-brands fa-facebook text-emerald-400"></i> facebook.com/szencimagyarszovetseg</p>
+          <p class="flex items-center gap-3"><i class="fa-brands fa-instagram text-emerald-400"></i> @szenci_magyarszovetseg</p>
+        </div>
+      </div>
+
+      <form class="bg-slate-800 p-6 rounded-xl space-y-4 shadow-lg border border-slate-700">
+        <input type="text" placeholder="Neved / Meno" class="w-full p-3 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-emerald-500 text-sm">
+        <input type="email" placeholder="Email" class="w-full p-3 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-emerald-500 text-sm">
+        <textarea placeholder="Üzeneted / Správa..." rows="4" class="w-full p-3 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
+        <button type="button" class="w-full bg-emerald-600 hover:bg-emerald-500 font-bold py-3 rounded transition text-sm">
+          <span class="lang-hu">Üzenet küldése</span>
+          <span class="lang-sk">Odoslať správu</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- MODAL / Részletes Jelölt Bemutató -->
+  <div id="candidate-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button onclick="closeCandidateModal()" class="absolute top-4 right-4 bg-gray-100 hover:bg-gray-200 text-gray-700 w-10 h-10 rounded-full flex items-center justify-center z-10">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="p-6 md:p-8">
+        <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start mb-6">
+          <div class="w-32 h-32 bg-gray-200 rounded-xl flex-shrink-0 flex items-center justify-center text-gray-400">
+            <i class="fa-solid fa-user text-5xl"></i>
+          </div>
+          <div class="text-center sm:text-left">
+            <span id="modal-district" class="text-xs font-bold text-emerald-700 uppercase tracking-wider"></span>
+            <h3 id="modal-name" class="text-2xl font-bold text-gray-900 mt-1"></h3>
+            <p id="modal-prof" class="text-sm font-medium text-gray-500 mb-3"></p>
+            <div id="modal-socials" class="flex justify-center sm:justify-start gap-3 text-gray-600"></div>
+          </div>
+        </div>
+        <hr class="my-4 border-gray-100">
+        <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+          <h4 class="font-bold text-gray-900 text-base"><span class="lang-hu">Bemutatkozás</span><span class="lang-sk">O mne</span></h4>
+          <p id="modal-bio"></p>
+          <h4 class="font-bold text-gray-900 text-base pt-2"><span class="lang-hu">Célok a körzetben</span><span class="lang-sk">Ciele v obvode</span></h4>
+          <ul id="modal-goals" class="list-disc pl-5 space-y-1 text-gray-600"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lábléc -->
+  <footer class="py-6 text-center text-xs text-gray-500 border-t border-slate-800 bg-slate-950">
+    <p class="font-bold text-emerald-500 mb-1">#SzívügyünkSzenc &bull; #SrdcomPreSenec</p>
+    <p>© Magyar Szövetség – Szenc / Maďarská Aliancia Senec.</p>
+    <p class="mt-1 text-gray-600">Objednávateľ: Maďarská aliancia | Dodávateľ: Magyar Szövetség Szenc</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const candidates = {
+      1: { distHU: "1. sz. körzet • Karikázd: #1", distSK: "Obvod č. 1 • Krúžkujte: #1", name: "Minta János", profHU: "Mérnök, civil aktivista", profSK: "Inžinier, občiansky aktivista", bioHU: "Okleveles mérnökként fontosnak tartom Szenc infrastrukturális modernizációját.", bioSK: "Ako inžinier považujem za dôležitú modernizáciu infraštruktúry Senca.", goalsHU: ["Gyalogosátkelők biztonságossá tétele", "Játszóterek felújítása"], goalsSK: ["Bezpečnejšie priechody pre chodcov", "Obnova detských ihrísk"], email: "janos@szenc.sk" },
+      2: { distHU: "1. sz. körzet • Karikázd: #2", distSK: "Obvod č. 1 • Krúžkujte: #2", name: "Kovács Mária", profHU: "Pedagógus", profSK: "Pedagogička", bioHU: "Pedagógusként célom a magyar nyelvű oktatás és az ifjúság támogatása.", bioSK: "Ako pedagogička sa zameriavam na podporu vzdelávania v maďarskom jazyku.", goalsHU: ["Magyar Materská školai férőhelyek bővítése"], goalsSK: ["Rozšírenie kapacít materských škôl"], email: "maria@szenc.sk" },
+      3: { distHU: "1. sz. körzet • Karikázd: #3", distSK: "Obvod č. 1 • Krúžkujte: #3", name: "Nagy Péter", profHU: "Vállalkozó", profSK: "Podnikateľ", bioHU: "A helyi vállalkozások és a fenntartható városfejlesztés támogatója.", bioSK: "Podporovateľ miestnych podnikateľov a rozvoja mesta.", goalsHU: ["Parkolási helyzet rendezése"], goalsSK: ["Riešenie parkovania"], email: "peter@szenc.sk" },
+      4: { distHU: "1. sz. körzet • Karikázd: #4", distSK: "Obvod č. 1 • Krúžkujte: #4", name: "Szabó Zoltán", profHU: "Közgazdász", profSK: "Ekonóm", bioHU: "Átlátható költségvetés és hatékony városi gazdálkodás.", bioSK: "Transparentný rozpočet a efektívne hospodárenie.", goalsHU: ["Pályázati források kihasználása"], goalsSK: ["Využitie dotácií"], email: "zoltan@szenc.sk" },
+      5: { distHU: "1. sz. körzet • Karikázd: #5", distSK: "Obvod č. 1 • Krúžkujte: #5", name: "Varga Katalin", profHU: "Orvos", profSK: "Lekárka", bioHU: "Egészségügyi és szociális szolgáltatások fejlesztése Szencen.", bioSK: "Rozvoj zdravotníckych a sociálnych služieb v Senci.", goalsHU: ["Idősek otthoni gondozásának támogatása"], goalsSK: ["Podpora opatrovateľskej služby"], email: "katalin@szenc.sk" },
+      6: { distHU: "2. sz. körzet • Karikázd: #6", distSK: "Obvod č. 2 • Krúžkujte: #6", name: "Horváth László", profHU: "Informatikus", profSK: "Informatik", bioHU: "Digitális városháza és átlátható lakossági tájékoztatás.", bioSK: "Digitálna radnica a transparentná informovanosť.", goalsHU: ["Online ügyintézés egyszerűsítése"], goalsSK: ["Zjednodušenie online vybavovania"], email: "laszlo@szenc.sk" },
+      7: { distHU: "2. sz. körzet • Karikázd: #7", distSK: "Obvod č. 2 • Krúžkujte: #7", name: "Molnár Ádám", profHU: "Környezetvédő", profSK: "Ekológ", bioHU: "Tiszta zöldterületek és új parkok kialakítása.", bioSK: "Ochrana prostredia a nová zeleň.", goalsHU: ["Zöldterületek növelése"], goalsSK: ["Zvýšenie podielu zelene"], email: "adam@szenc.sk" },
+      8: { distHU: "2. sz. körzet • Karikázd: #8", distSK: "Obvod č. 2 • Krúžkujte: #8", name: "Tóth Éva", profHU: "Kultúrszervező", profSK: "Kultúrna manažérka", bioHU: "A szenci magyar kulturális közösség megőrzése.", bioSK: "Zachovanie kultúrnej komunity v Senci.", goalsHU: ["Hagyományőrző rendezvények finanszírozása"], goalsSK: ["Financovanie tradičných podujatí"], email: "eva@szenc.sk" },
+      9: { distHU: "3. sz. körzet • Karikázd: #9", distSK: "Obvod č. 3 • Krúžkujte: #9", name: "Balogh István", profHU: "Sportedző", profSK: "Športový tréner", bioHU: "A szenci gyermek- és tömegsport fejlesztése.", bioSK: "Rozvoj detského a masového športu v Senci.", goalsHU: ["Sportpályák és közösségi terek felújítása"], goalsSK: ["Obnova športovísk a komunitných priestorov"], email: "istvan@szenc.sk" }
+    };
+
+    let currentLang = 'hu';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      if (lang === 'sk') {
+        document.body.classList.add('lang-mode-sk');
+        document.getElementById('btn-sk').className = "px-2 py-1 rounded bg-emerald-700 text-white transition";
+        document.getElementById('btn-hu').className = "px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition";
+      } else {
+        document.body.classList.remove('lang-mode-sk');
+        document.getElementById('btn-hu').className = "px-2 py-1 rounded bg-emerald-700 text-white transition";
+        document.getElementById('btn-sk').className = "px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition";
+      }
+	  
+	  updatePollingSearchLanguage();
+    }
+
+    function openCandidateModal(id) {
+      const data = candidates[id];
+      if (!data) return;
+
+      document.getElementById('modal-district').innerText = currentLang === 'hu' ? data.distHU : data.distSK;
+      document.getElementById('modal-name').innerText = data.name;
+      document.getElementById('modal-prof').innerText = currentLang === 'hu' ? data.profHU : data.profSK;
+      document.getElementById('modal-bio').innerText = currentLang === 'hu' ? data.bioHU : data.bioSK;
+
+      const goalsList = document.getElementById('modal-goals');
+      goalsList.innerHTML = '';
+      const goals = currentLang === 'hu' ? data.goalsHU : data.goalsSK;
+      goals.forEach(g => {
+        const li = document.createElement('li');
+        li.innerText = g;
+        goalsList.appendChild(li);
+      });
+
+      const socials = document.getElementById('modal-socials');
+      socials.innerHTML = `<a href="mailto:${data.email}" class="hover:text-emerald-600"><i class="fa-solid fa-envelope text-lg"></i> ${data.email}</a>`;
+
+      document.getElementById('candidate-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCandidateModal() {
+      document.getElementById('candidate-modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function filterStreets() {
+      const input = document.getElementById('street-search').value.toLowerCase();
+      [1, 2, 3].forEach(num => {
+        const list = document.getElementById(`streets-list-${num}`);
+        const items = list.getElementsByTagName('li');
+        for (let item of items) {
+          if (item.innerText.toLowerCase().includes(input)) {
+            item.style.display = "";
+            item.classList.add("bg-emerald-100", "font-bold");
+          } else {
+            item.classList.remove("bg-emerald-100", "font-bold");
+            if(input.length > 2) {
+              item.style.display = "none";
+            } else {
+              item.style.display = "";
+            }
+          }
+        }
+      });
+    }
+	
+	const pollingData = {
+  "farske_namestie": {
+    streetHU: "Farské námestie",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "frana_krala": {
+    streetHU: "Fraňa Kráľa",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "kratka": {
+    streetHU: "Krátka",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "moyzesova": {
+    streetHU: "Moyzesova",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "pivnicna": {
+    streetHU: "Pivničná",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "pod_vinicami": {
+    streetHU: "Pod vinicami",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "strma": {
+    streetHU: "Strmá",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "svateho_urbana": {
+    streetHU: "Svätého Urbana",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "safarikova": {
+    streetHU: "Šafáriková",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "tehelna": {
+    streetHU: "Tehelná",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "tehelna_2": {
+    streetHU: "Tehelňa",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "vinohradnicka": {
+    streetHU: "Vinohradnícka",
+    okrsokHU: "1. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 1",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+
+  "bratislavska_3_25_neparos": {
+    streetHU: "Bratislavská č. 3–25 (csak páratlan számok)",
+    okrsokHU: "2. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 2",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "mierove_namestie": {
+    streetHU: "Mierové námestie",
+    okrsokHU: "2. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 2",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+
+  "nam_1_maja": {
+    streetHU: "Nám. 1. mája",
+    okrsokHU: "3. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 3",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "robotnicka": {
+    streetHU: "Robotnícka",
+    okrsokHU: "3. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 3",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "sadova": {
+    streetHU: "Sadová",
+    okrsokHU: "3. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 3",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+  "skorcova": {
+    streetHU: "Škorcová",
+    okrsokHU: "3. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 3",
+    placeHU: "Základná škola s VJM A.M. Szencziho",
+    addressHU: "Molnár Albert tér 2., Senec"
+  },
+
+  "holleho": {
+    streetHU: "Hollého",
+    okrsokHU: "4. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 4",
+    placeHU: "Materská škola",
+    addressHU: "Kollárova utca 23., Senec"
+  },
+  "j_jesenskeho": {
+    streetHU: "J. Jesenského",
+    okrsokHU: "4. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 4",
+    placeHU: "Materská škola",
+    addressHU: "Kollárova utca 23., Senec"
+  },
+  "trnavska": {
+    streetHU: "Trnavská",
+    okrsokHU: "4. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 4",
+    placeHU: "Materská škola",
+    addressHU: "Kollárova utca 23., Senec"
+  },
+  "turecka": {
+    streetHU: "Turecká",
+    okrsokHU: "4. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 4",
+    placeHU: "Materská škola",
+    addressHU: "Kollárova utca 23., Senec"
+  },
+
+  "hurbanova": {
+    streetHU: "Hurbanova",
+    okrsokHU: "5. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 5",
+    placeHU: "Materská škola",
+    addressHU: "Kollárova utca 23., Senec"
+  },
+  "kollarova": {
+    streetHU: "Kollárova",
+    okrsokHU: "5. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 5",
+    placeHU: "Materská škola",
+    addressHU: "Kollárova utca 23., Senec"
+  },
+
+  "svaty_martin": {
+    streetHU: "m. č. Svätý Martin",
+    okrsokHU: "6. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 6",
+    placeHU: "Materská škola",
+    addressHU: "Svätý Martin 3."
+  },
+
+  "boldocka_cesta": {
+    streetHU: "Boldocká cesta",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "duhova": {
+    streetHU: "Dúhová",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "fucikova": {
+    streetHU: "Fučíkova",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "heckova": {
+    streetHU: "Hečková",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "jasna": {
+    streetHU: "Jasná",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "kvetna": {
+    streetHU: "Kvetná",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "mlynska": {
+    streetHU: "Mlynská",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "rosna": {
+    streetHU: "Rosná",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "slnecna": {
+    streetHU: "Slnečná",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "stefanikova": {
+    streetHU: "Štefánikova",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+  "vrbenskeho": {
+    streetHU: "Vrbenského",
+    okrsokHU: "7. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 7",
+    placeHU: "Zákadná škola",
+    addressHU: "Mlynská utca 50., Senec"
+  },
+
+  "nitrianska": {
+    streetHU: "Nitrianska",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+  "rybarska": {
+    streetHU: "Rybárska",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+  "snp": {
+    streetHU: "SNP",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+  "samorinska": {
+    streetHU: "Šamorínska",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+  "skolska": {
+    streetHU: "Školská",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+  "sturova": {
+    streetHU: "Štúrova",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+  "vodna": {
+    streetHU: "Vodná",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+  "zeleznicna": {
+    streetHU: "Železničná",
+    okrsokHU: "8. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 8",
+    placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
+    addressHU: "Lichnerova utca 71., Senec"
+  },
+
+  "banicova": {
+    streetHU: "Baničova",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "bratislavska_2_30_paros": {
+    streetHU: "Bratislavská č. 2–30 (páros számok)",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "bratislavska_27_75_neparos": {
+    streetHU: "Bratislavská č. 27–75 (páratlan számok)",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "emila_boleslava_lukaca": {
+    streetHU: "Emila Boleslava Lukáča",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "jana_smreka": {
+    streetHU: "Jána Smreka",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "kalinciakova": {
+    streetHU: "Kalinčiakova",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "liptovska": {
+    streetHU: "Liptovská",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "ludovita_fullu": {
+    streetHU: "Ľudovíta Fullu",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "m_urbana": {
+    streetHU: "M. Urbana",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "novomeskeho": {
+    streetHU: "Novomeského",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "pri_striebornom_jazere": {
+    streetHU: "Pri Striebornom jazere",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "strieborne_jazero": {
+    streetHU: "Strieborné jazero",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "zahradnicka": {
+    streetHU: "Záhradnícka",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "zarnovova": {
+    streetHU: "Žarnovova",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+  "hany_zelinovej": {
+    streetHU: "Hany Zelinovej",
+    okrsokHU: "9. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 9",
+    placeHU: "Materská škola",
+    addressHU: "Kysucká utca 9., Senec"
+  },
+
+  "dobsinskeho": {
+    streetHU: "Dobšinského",
+    okrsokHU: "10. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 10",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "gagarinova": {
+    streetHU: "Gagarinova",
+    okrsokHU: "10. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 10",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "janosikova": {
+    streetHU: "Jánošíkova",
+    okrsokHU: "10. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 10",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "kysucka": {
+    streetHU: "Kysucká",
+    okrsokHU: "10. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 10",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "zemplinska": {
+    streetHU: "Zemplínska",
+    okrsokHU: "10. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 10",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+
+  "inovecka": {
+    streetHU: "Inovecká",
+    okrsokHU: "11. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 11",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "karola_sisku": {
+    streetHU: "Karola Šišku",
+    okrsokHU: "11. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 11",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "oravska": {
+    streetHU: "Oravská",
+    okrsokHU: "11. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 11",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "pezinska": {
+    streetHU: "Pezinská",
+    okrsokHU: "11. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 11",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "povazska": {
+    streetHU: "Považská",
+    okrsokHU: "11. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 11",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+  "žitavska": {
+    streetHU: "Žitavská",
+    okrsokHU: "11. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 11",
+    placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
+    addressHU: "Kysucká utca 14., Senec"
+  },
+
+  "andreja_sladkovica": {
+    streetHU: "Andreja Sládkoviča",
+    okrsokHU: "12. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 12",
+    placeHU: "Iskolai gyermekklub",
+    addressHU: "Sokolská utca, 4134. hrsz., Senec"
+  },
+  "sokolska": {
+    streetHU: "Sokolská",
+    okrsokHU: "12. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 12",
+    placeHU: "Iskolai gyermekklub",
+    addressHU: "Sokolská utca, 4134. hrsz., Senec"
+  },
+  "svatoplukova": {
+    streetHU: "Svätoplukova",
+    okrsokHU: "12. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 12",
+    placeHU: "Iskolai gyermekklub",
+    addressHU: "Sokolská utca, 4134. hrsz., Senec"
+  },
+
+  "bernolakova": {
+    streetHU: "Bernolákova",
+    okrsokHU: "13. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 13",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "hviezdoslavova": {
+    streetHU: "Hviezdoslavova",
+    okrsokHU: "13. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 13",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "j_g_tajovskeho": {
+    streetHU: "J.G. Tajovského",
+    okrsokHU: "13. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 13",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "kosicka": {
+    streetHU: "Košická",
+    okrsokHU: "13. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 13",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "pribinova": {
+    streetHU: "Pribinova",
+    okrsokHU: "13. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 13",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+
+  "belu_bartoka": {
+    streetHU: "Bélu Bártóka",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "fandlyho": {
+    streetHU: "Fándlyho",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "chalupkova": {
+    streetHU: "Chalupkova",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "letna": {
+    streetHU: "Letná",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "lichnerova": {
+    streetHU: "Lichnerova",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "masiarska": {
+    streetHU: "Mäsiarska",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "priemyselna": {
+    streetHU: "Priemyselná",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "sportova": {
+    streetHU: "Športová",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+  "vajanskeho": {
+    streetHU: "Vajanského",
+    okrsokHU: "14. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 14",
+    placeHU: "J.G. Tajovský Alapiskola",
+    addressHU: "Tajovského utca 1., Senec"
+  },
+
+  "a_dubceka": {
+    streetHU: "A. Dubčeka",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "a_hlinku": {
+    streetHU: "A. Hlinku",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "bazova": {
+    streetHU: "Bazová",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "ceresnova": {
+    streetHU: "Čerešňová",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "dialnicna": {
+    streetHU: "Dialničná",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "drienkova": {
+    streetHU: "Drienková",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "g astanova": {
+    streetHU: "Gaštanová",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "horny_dvor": {
+    streetHU: "Horný dvor",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "j_csermaka": {
+    streetHU: "J. Csermáka",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "j_farkasa": {
+    streetHU: "J. Farkasa",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "j_murgasa": {
+    streetHU: "J. Murgaša",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "javorova": {
+    streetHU: "Javorová",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "marhulova": {
+    streetHU: "Marhuľová",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "mesacna": {
+    streetHU: "Mesačná",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "mor usova": {
+    streetHU: "Morušová",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "pri_stifte": {
+    streetHU: "Pri Štifte",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "sipkova": {
+    streetHU: "Šípková",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "trnkova": {
+    streetHU: "Trnková",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+  "visnova": {
+    streetHU: "Višňová",
+    okrsokHU: "15. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 15",
+    placeHU: "Seneci Idegenforgalmi Hivatal",
+    addressHU: "Május 1. tér 53/4., Senec"
+  },
+
+  "agatova": {
+    streetHU: "Agátová",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "brezova": {
+    streetHU: "Brezová",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "dlha": {
+    streetHU: "Dlhá",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "drozdia": {
+    streetHU: "Drozdia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "holubia": {
+    streetHU: "Holubia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "jarna": {
+    streetHU: "Jarná",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "jastrabia": {
+    streetHU: "Jastrabia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "jesenna": {
+    streetHU: "Jesenná",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "lastovicia": {
+    streetHU: "Lastovičia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "lipova": {
+    streetHU: "Lipová",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "lucna": {
+    streetHU: "Lúčna",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "orechova": {
+    streetHU: "Orechová",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "slavicia": {
+    streetHU: "Slávičia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "slnecne_jazera": {
+    streetHU: "Slnečné jazerá",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "sovia": {
+    streetHU: "Sovia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "skovrancia": {
+    streetHU: "Škovránčia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "ulica_pri_vcelarikoch": {
+    streetHU: "Ulica pri včelárikoch",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "vrabcia": {
+    streetHU: "Vrabčia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "vtacia": {
+    streetHU: "Vtáčia",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+  "zimna": {
+    streetHU: "Zimná",
+    okrsokHU: "16. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 16",
+    placeHU: "Városi Művelődési Központ",
+    addressHU: "Május 1. tér 2., Senec"
+  },
+
+  "borievkova": {
+    streetHU: "Borievková",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "borovicova": {
+    streetHU: "Borovicová",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "dolna": {
+    streetHU: "Dolná",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "fialkova": {
+    streetHU: "Fialková",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "horna": {
+    streetHU: "Horná",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "jedlova": {
+    streetHU: "Jedľová",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "kapria": {
+    streetHU: "Kapria",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "karasova": {
+    streetHU: "Karasová",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "lesna": {
+    streetHU: "Lesná",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "muskatova": {
+    streetHU: "Muškátová",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "okruzna": {
+    streetHU: "Okružná",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "polna": {
+    streetHU: "Poľná",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ruzova": {
+    streetHU: "Ružová",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "seredska": {
+    streetHU: "Sereďská",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "smrekova": {
+    streetHU: "Smreková",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "tulipanova": {
+    streetHU: "Tulipánová",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "turnianska": {
+    streetHU: "Turnianska",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ulica_alexandra_albrechta": {
+    streetHU: "Ulica Alexandra Albrechta",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ulica_eugena_suchona": {
+    streetHU: "Ulica Eugena Suchoňa",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ulica_jana_cikkera": {
+    streetHU: "Ulica Jána Cikkera",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ulica_jana_l_bellu": {
+    streetHU: "Ulica Jána L. Bellu",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ulica_jana_n_hummela": {
+    streetHU: "Ulica Jána N. Hummela",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ulica_pri_buresi": {
+    streetHU: "Ulica pri Búreši",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  },
+  "ulica_pri_ciernej_vode": {
+    streetHU: "Ulica pri Čiernej vode",
+    okrsokHU: "17. sz. Szavazókör",
+    okrsokSK: "Volebný okrsok č. 17",
+    placeHU: "Antona Bernoláka Gimnázium",
+    addressHU: "Lichnerova utca 69., Senec"
+  }
+    // Töltsd fel a többi utcát is a fenti mintát követve...
+  };
+
+ function searchPollingStation() {
+  const input = document.getElementById('polling-search-input').value.trim().toLowerCase();
+  const resultsContainer = document.getElementById('polling-results-container');
+  const noResult = document.getElementById('polling-no-result');
+
+  if (input.length < 2) {
+    resultsContainer.innerHTML = '';
+    noResult.classList.add('hidden');
+    return;
+  }
+
+  const searchKey = input.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  const matchingKeys = Object.keys(pollingData).filter(key => {
+    const data = pollingData[key];
+    const normalizedKey = key.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const normalizedStreetHU = (data.streetHU || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+    return normalizedKey.includes(searchKey) || normalizedStreetHU.includes(searchKey);
+  });
+
+  if (matchingKeys.length > 0) {
+    noResult.classList.add('hidden');
+
+    // DINAMIKUS IGAZÍTÁS:
+    // Ha pontosan 1 találat van, középre tesszük. Ha több, balról indítjuk a görgetést.
+    if (matchingKeys.length === 1) {
+      resultsContainer.classList.add('justify-center');
+    } else {
+      resultsContainer.classList.remove('justify-center');
+    }
+
+    resultsContainer.innerHTML = matchingKeys.map(key => {
+      const data = pollingData[key];
+      const okrsok = (typeof currentLang !== 'undefined' && currentLang === 'sk') ? data.okrsokSK : data.okrsokHU;
+
+      return `
+        <div class="flex-shrink-0 w-80 snap-center bg-emerald-50 border border-emerald-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-emerald-700 text-white rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+              <i class="fa-solid fa-check-to-slot"></i>
+            </div>
+            <div>
+              <span class="inline-block bg-emerald-800 text-white text-xs font-bold px-2.5 py-0.5 rounded-full mb-1">${okrsok}</span>
+              <h3 class="font-bold text-gray-900 text-lg">${data.streetHU}</h3>
+              <p class="text-sm font-semibold text-emerald-900 mt-2">${data.placeHU}</p>
+              <p class="text-xs text-gray-600 mt-1">${data.addressHU}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  } else {
+    resultsContainer.innerHTML = '';
+    noResult.classList.remove('hidden');
+  }
+}
+// Kifejezetten csak az utcanév kereső nyelvét frissítő függvény
+function updatePollingSearchLanguage() {
+  const input = document.getElementById('polling-search-input');
+  
+  if (input) {
+    // Csak ennek az egy inputnak módosítjuk a placeholderét
+    input.placeholder = (typeof currentLang !== 'undefined' && currentLang === 'sk') 
+      ? "Napíšte názov ulice..." 
+      : "Írd be az utcád nevét...";
+  }
+
+  // Ha már van megjelenített találat, frissítjük a kártyák szövegét is (pl. okrsokHU / okrsokSK)
+  searchPollingStation();
+}
+
+  </script>
+</body>
+</html>
