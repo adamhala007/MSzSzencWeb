@@ -159,10 +159,6 @@ function openCandidateModal(id) {
     const data = candidates[id];
     if (!data) return;
 
-    const districtNumber = Number(data.district || 1);
-    const districtBackButton = document.getElementById('district-back-btn');
-    districtBackButton.dataset.district = String(districtNumber);
-
     document.getElementById('modal-district').innerText = currentLang === 'hu' ? data.distHU : data.distSK;
     document.getElementById('modal-name').innerText = data.name;
     document.getElementById('modal-prof').innerText = currentLang === 'hu' ? data.profHU : data.profSK;
