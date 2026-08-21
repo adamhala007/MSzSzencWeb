@@ -1,3 +1,140 @@
+
+
+/* Overused Grotesk Font Family Setup */
+
+/* 300 Light */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 350 Book */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-Book.otf') format('opentype');
+    font-weight: 350;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-BookItalic.otf') format('opentype');
+    font-weight: 350;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 400 Roman / Regular */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-Roman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 500 Medium */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 600 SemiBold */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-SemiBoldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 700 Bold */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 800 ExtraBold */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-ExtraBoldItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 900 Black */
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OverusedGrotesk';
+    src: url('../assets/fonts/OverusedGrotesk-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Alapértelmezett betűtípus beállítása */
+body {
+    font-family:  'OverusedGrotesk', sans-serif;
+}
+
 .lang-sk {
     display: none;
 }
