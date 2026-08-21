@@ -1401,3 +1401,22 @@ function updateSearchLanguage() {
     // Ha már van megjelenített találat, frissítjük a kártyák szövegét is (pl. okrsokHU / okrsokSK)
     searchPollingStation();
 }
+
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (mobileMenu && menuIcon) {
+        // 1. Kapcsoljuk a 'hidden' osztályt
+        const isHidden = mobileMenu.classList.toggle('hidden');
+
+        // 2. Ikon cseréje (Hamburger <-> X)
+        if (isHidden) {
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+        } else {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-xmark');
+        }
+    }
+}

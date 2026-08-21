@@ -14,49 +14,123 @@
 <!-- Navigáció -->
 <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-40 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Logó és Cím -->
         <div class="font-bold text-lg text-emerald-800 flex items-center gap-2">
             <img src="assets/MA_Symbol_color.svg" alt="Magyar Szövetség Logo" class="w-8 h-8">
             <span id="nav-title">Magyar Szövetség</span>
             <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded-full">Szenc / Senec</span>
         </div>
 
+        <!-- Asztali Menü (xl törésponttól látható) -->
         <div class="hidden xl:flex space-x-5 text-sm font-medium text-gray-700">
-            <a href="#eredmenyek" class="hover:text-emerald-700 transition"><span
-                    class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span></a>
-            <a href="#program" class="hover:text-emerald-700 transition"><span class="lang-hu">Közös Program</span><span
-                    class="lang-sk">Spoločný program</span></a>
-            <a href="#jeloltek" class="hover:text-emerald-700 transition"><span class="lang-hu">9 Jelöltünk</span><span
-                    class="lang-sk">9 Kandidátov</span></a>
-            <a href="#korzetek" class="hover:text-emerald-700 transition"><span
-                    class="lang-hu">Körzetek & Utcák</span><span class="lang-sk">Obvody a Ulice</span></a>
-            <a href="#esemenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Események</span><span
-                    class="lang-sk">Udalosti</span></a>
-            <a href="#gyik" class="hover:text-emerald-700 transition"><span class="lang-hu">GYIK & Szavazás</span><span
-                    class="lang-sk">FAQ & Voľby</span></a>
-            <a href="#kapcsolat" class="hover:text-emerald-700 transition"><span class="lang-hu">Kapcsolat</span><span
-                    class="lang-sk">Kontakt</span></a>
+            <a href="#eredmenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span></a>
+            <a href="#program" class="hover:text-emerald-700 transition"><span class="lang-hu">Közös Program</span><span class="lang-sk">Spoločný program</span></a>
+            <a href="#jeloltek" class="hover:text-emerald-700 transition"><span class="lang-hu">9 Jelöltünk</span><span class="lang-sk">9 Kandidátov</span></a>
+            <a href="#korzetek" class="hover:text-emerald-700 transition"><span class="lang-hu">Körzetek & Utcák</span><span class="lang-sk">Obvody a Ulice</span></a>
+            <a href="#esemenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Események</span><span class="lang-sk">Udalosti</span></a>
+            <a href="#gyik" class="hover:text-emerald-700 transition"><span class="lang-hu">GYIK & Szavazás</span><span class="lang-sk">FAQ & Voľby</span></a>
+            <a href="#kapcsolat" class="hover:text-emerald-700 transition"><span class="lang-hu">Kapcsolat</span><span class="lang-sk">Kontakt</span></a>
         </div>
 
+        <!-- Jobb oldali gombok -->
         <div class="flex items-center gap-3">
             <!-- Nyelvváltó -->
             <div class="bg-gray-100 p-1 rounded-lg flex gap-1 text-xs font-bold border border-gray-200">
-                <button id="btn-hu" onclick="setLanguage('hu')"
-                        class="px-2 py-1 rounded bg-emerald-700 text-white transition">HU
-                </button>
-                <button id="btn-sk" onclick="setLanguage('sk')"
-                        class="px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition">SK
-                </button>
+                <button id="btn-hu" onclick="setLanguage('hu')" class="px-2 py-1 rounded bg-emerald-700 text-white transition">HU</button>
+                <button id="btn-sk" onclick="setLanguage('sk')" class="px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition">SK</button>
             </div>
 
-            <a href="#ujsag"
-               class="hidden sm:inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2 rounded-lg transition">
+            <!-- Újság gomb (asztali / tablet nézetben) -->
+            <a href="#ujsag" class="hidden sm:inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2 rounded-lg transition">
                 <i class="fa-solid fa-file-pdf"></i>
                 <span class="lang-hu">Újság (PDF)</span>
                 <span class="lang-sk">Noviny (PDF)</span>
             </a>
+
+            <!-- Hamburger gomb (csak xl méret alatt látható) -->
+            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menü megnyitása" class="xl:hidden text-gray-700 hover:text-emerald-700 p-1.5 rounded-lg focus:outline-none">
+                <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+            </button>
         </div>
     </div>
+
+    <!-- Mobil Menü Lenyíló Szekció (alapból rejtve) -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 px-4 pt-2 pb-5 space-y-2 shadow-lg">
+        <a href="#eredmenyek" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
+            <span class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span>
+        </a>
+        <a href="#program" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
+            <span class="lang-hu">Közös Program</span><span class="lang-sk">Spoločný program</span>
+        </a>
+        <a href="#jeloltek" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
+            <span class="lang-hu">9 Jelöltünk</span><span class="lang-sk">9 Kandidátov</span>
+        </a>
+        <a href="#korzetek" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
+            <span class="lang-hu">Körzetek & Utcák</span><span class="lang-sk">Obvody a Ulice</span>
+        </a>
+        <a href="#esemenyek" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
+            <span class="lang-hu">Események</span><span class="lang-sk">Udalosti</span>
+        </a>
+        <a href="#gyik" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
+            <span class="lang-hu">GYIK & Szavazás</span><span class="lang-sk">FAQ & Voľby</span>
+        </a>
+        <a href="#kapcsolat" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 transition">
+            <span class="lang-hu">Kapcsolat</span><span class="lang-sk">Kontakt</span>
+        </a>
+
+        <!-- Újság gomb mobilnézetben (csak kis kijelzőn jelenik meg, ahol az sm:inline-flex gomb rejtve van) -->
+        <a href="#ujsag" onclick="toggleMobileMenu()" class="inline-flex sm:hidden items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2.5 rounded-lg transition w-full mt-2">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span class="lang-hu">Újság (PDF)</span>
+            <span class="lang-sk">Noviny (PDF)</span>
+        </a>
+    </div>
 </nav>
+<!--<nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-40 border-b border-gray-100">-->
+<!--    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">-->
+<!--        <div class="font-bold text-lg text-emerald-800 flex items-center gap-2">-->
+<!--            <img src="assets/MA_Symbol_color.svg" alt="Magyar Szövetség Logo" class="w-8 h-8">-->
+<!--            <span id="nav-title">Magyar Szövetség</span>-->
+<!--            <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded-full">Szenc / Senec</span>-->
+<!--        </div>-->
+
+<!--        <div class="hidden xl:flex space-x-5 text-sm font-medium text-gray-700">-->
+<!--            <a href="#eredmenyek" class="hover:text-emerald-700 transition"><span-->
+<!--                    class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span></a>-->
+<!--            <a href="#program" class="hover:text-emerald-700 transition"><span class="lang-hu">Közös Program</span><span-->
+<!--                    class="lang-sk">Spoločný program</span></a>-->
+<!--            <a href="#jeloltek" class="hover:text-emerald-700 transition"><span class="lang-hu">9 Jelöltünk</span><span-->
+<!--                    class="lang-sk">9 Kandidátov</span></a>-->
+<!--            <a href="#korzetek" class="hover:text-emerald-700 transition"><span-->
+<!--                    class="lang-hu">Körzetek & Utcák</span><span class="lang-sk">Obvody a Ulice</span></a>-->
+<!--            <a href="#esemenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Események</span><span-->
+<!--                    class="lang-sk">Udalosti</span></a>-->
+<!--            <a href="#gyik" class="hover:text-emerald-700 transition"><span class="lang-hu">GYIK & Szavazás</span><span-->
+<!--                    class="lang-sk">FAQ & Voľby</span></a>-->
+<!--            <a href="#kapcsolat" class="hover:text-emerald-700 transition"><span class="lang-hu">Kapcsolat</span><span-->
+<!--                    class="lang-sk">Kontakt</span></a>-->
+<!--        </div>-->
+
+<!--        <div class="flex items-center gap-3">-->
+<!--            &lt;!&ndash; Nyelvváltó &ndash;&gt;-->
+<!--            <div class="bg-gray-100 p-1 rounded-lg flex gap-1 text-xs font-bold border border-gray-200">-->
+<!--                <button id="btn-hu" onclick="setLanguage('hu')"-->
+<!--                        class="px-2 py-1 rounded bg-emerald-700 text-white transition">HU-->
+<!--                </button>-->
+<!--                <button id="btn-sk" onclick="setLanguage('sk')"-->
+<!--                        class="px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition">SK-->
+<!--                </button>-->
+<!--            </div>-->
+
+<!--            <a href="#ujsag"-->
+<!--               class="hidden sm:inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2 rounded-lg transition">-->
+<!--                <i class="fa-solid fa-file-pdf"></i>-->
+<!--                <span class="lang-hu">Újság (PDF)</span>-->
+<!--                <span class="lang-sk">Noviny (PDF)</span>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
 
 <!-- Hero / Fejléc szlogennel -->
 <header class="pt-32 pb-20 bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900 text-white text-center px-4">
