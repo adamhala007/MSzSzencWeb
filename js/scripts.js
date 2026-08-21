@@ -1410,10 +1410,9 @@ function toggleMobileMenu() {
     const menuIcon = document.getElementById('menu-icon');
 
     if (mobileMenu && menuIcon) {
-        // 1. Kapcsoljuk a 'hidden' osztályt
         const isHidden = mobileMenu.classList.toggle('hidden');
 
-        // 2. Ikon cseréje (Hamburger <-> X)
+        // Ikon cseréje (Hamburger <-> Bezárás X)
         if (isHidden) {
             menuIcon.classList.remove('fa-xmark');
             menuIcon.classList.add('fa-bars');
