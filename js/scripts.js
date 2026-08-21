@@ -179,19 +179,6 @@ function openCandidateModal(id) {
     document.getElementById('candidate-modal').classList.remove('hidden');
     document.body.style.overflow = 'hidden';
 }
-
-function goToDistrictFromModal() {
-    const districtNumber = Number(document.getElementById('district-back-btn').dataset.district || 1);
-    const target = document.getElementById(`district-${districtNumber}`);
-    if (target) {
-        closeCandidateModal();
-        target.scrollIntoView({behavior: 'smooth', block: 'start'});
-    } else {
-        closeCandidateModal();
-        document.getElementById('district-1').scrollIntoView({behavior: 'smooth', block: 'start'});
-    }
-}
-
 function closeCandidateModal() {
     document.getElementById('candidate-modal').classList.add('hidden');
     document.body.style.overflow = 'auto';
