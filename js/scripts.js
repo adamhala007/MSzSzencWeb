@@ -1313,29 +1313,61 @@ function searchPollingStation() {
     if (matchingKeys.length > 0) {
         noResult.classList.add('hidden');
 
-        // DINAMIKUS IGAZÍTÁS:
-        // Ha pontosan 1 találat van, középre tesszük. Ha több, balról indítjuk a görgetést.
+        // DINAMIKUS IGAZÍTÁS
         if (matchingKeys.length === 1) {
             resultsContainer.classList.add('justify-center');
         } else {
             resultsContainer.classList.remove('justify-center');
         }
 
+        const isSk = (typeof currentLang !== 'undefined' && currentLang === 'sk');
+
+        // Címkék nyelvi beállítása
+        const labelStreet = isSk ? "Ulica:" : "Keresett utca:";
+        const labelPlace = isSk ? "Volebná miestnosť:" : "Szavazóhelyiség:";
+        const labelAddress = isSk ? "Adresa:" : "Cím:";
+
         resultsContainer.innerHTML = matchingKeys.map(key => {
             const data = pollingData[key];
-            const okrsok = (typeof currentLang !== 'undefined' && currentLang === 'sk') ? data.okrsokSK : data.okrsokHU;
+            const okrsok = isSk ? data.okrsokSK : data.okrsokHU;
 
             return `
-        <div class="flex-shrink-0 w-80 snap-center bg-emerald-50 border border-emerald-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-emerald-700 text-white rounded-xl flex items-center justify-center text-xl flex-shrink-0">
-              <i class="fa-solid fa-check-to-slot"></i>
+        <div class="flex-shrink-0 w-80 snap-center bg-white border border-emerald-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition duration-200">
+          <div>
+            <!-- Header: Utca neve és Szavazókör száma -->
+            <div class="flex items-start justify-between gap-2 mb-3 pb-3 border-b border-gray-100">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 block mb-0.5">${labelStreet}</span>
+                <h3 class="font-extrabold text-gray-900 text-lg leading-tight">${data.streetHU}</h3>
+              </div>
+              <span class="bg-emerald-700 text-white text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap shadow-sm">
+                ${okrsok}
+              </span>
             </div>
-            <div>
-              <span class="inline-block bg-emerald-800 text-white text-xs font-bold px-2.5 py-0.5 rounded-full mb-1">${okrsok}</span>
-              <h3 class="font-bold text-gray-900 text-lg">${data.streetHU}</h3>
-              <p class="text-sm font-semibold text-emerald-900 mt-2">${data.placeHU}</p>
-              <p class="text-xs text-gray-600 mt-1">${data.addressHU}</p>
+
+            <!-- Részletek: Szavazóhelyiség neve és címe -->
+            <div class="space-y-3 mt-3">
+              <!-- Szavazóhelyiség épület/név -->
+              <div class="flex items-start gap-3">
+                <div class="w-7 h-7 bg-emerald-50 text-emerald-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fa-solid fa-building-columns text-xs"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400 block">${labelPlace}</span>
+                  <p class="text-sm font-bold text-gray-800 leading-snug">${data.placeHU}</p>
+                </div>
+              </div>
+
+              <!-- Szavazóhelyiség címe -->
+              <div class="flex items-start gap-3">
+                <div class="w-7 h-7 bg-emerald-50 text-emerald-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot text-xs"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400 block">${labelAddress}</span>
+                  <p class="text-xs text-gray-600 leading-snug">${data.addressHU}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
