@@ -1,0 +1,19 @@
+.lang-sk {
+    display: none;
+}
+
+body.lang-mode-sk .lang-hu {
+    display: none !important;
+}
+
+body.lang-mode-sk .lang-sk {
+    display: block !important;
+}
+
+body.lang-mode-sk span.lang-sk, body.lang-mode-sk a.lang-sk {
+    display: inline-block !important;
+}
+
+body.lang-mode-sk div.lang-sk {
+    display: flex !important;
+}
