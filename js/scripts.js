@@ -1,120 +1,154 @@
 const candidates = {
     1: {
-        distHU: "1. sz. körzet • Karikázd: #1",
-        distSK: "Obvod č. 1 • Krúžkujte: #1",
+        distHU: "1. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 1 • Krúžkujte: #",
         district: 1,
-        name: "Minta János",
+        nameHU: "Mgr. Galambos Rudolf",
+        nameSK: "Mgr. Rudolf Galambos",
         profHU: "Mérnök, civil aktivista",
         profSK: "Inžinier, občiansky aktivista",
         bioHU: "Okleveles mérnökként fontosnak tartom Szenc infrastrukturális modernizációját.",
         bioSK: "Ako inžinier považujem za dôležitú modernizáciu infraštruktúry Senca.",
         goalsHU: ["Gyalogosátkelők biztonságossá tétele", "Játszóterek felújítása"],
         goalsSK: ["Bezpečnejšie priechody pre chodcov", "Obnova detských ihrísk"],
-        email: "janos@szenc.sk"
+        email: "janos@szenc.sk",
+        img: "GR.jpg"
     },
     2: {
-        distHU: "1. sz. körzet • Karikázd: #2",
-        distSK: "Obvod č. 1 • Krúžkujte: #2",
+        distHU: "1. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 1 • Krúžkujte: #",
         district: 1,
-        name: "Kovács Mária",
-        profHU: "Pedagógus",
-        profSK: "Pedagogička",
-        bioHU: "Pedagógusként célom a magyar nyelvű oktatás és az ifjúság támogatása.",
-        bioSK: "Ako pedagogička sa zameriavam na podporu vzdelávania v maďarskom jazyku.",
-        goalsHU: ["Magyar Materská školai férőhelyek bővítése"],
-        goalsSK: ["Rozšírenie kapacít materských škôl"],
-        email: "maria@szenc.sk"
+        nameHU: "Mgr. Halász Ádám",
+        nameSK: "Mgr. Adam Halász",
+        profHU: "Szoftverfejlesztő",
+        profSK: "Softvérový vývojár",
+        bioHU: "Hatéves korom óta Szencen élek, anyai ágon pedig valamennyi felmenőm Szencről származik. Nagyapám Tóth Endre, aki a szenci magyar gimnázium köztiszteletben álló tanára volt. Ide jártam magyar óvodába, alapiskolába és gimnáziumba. Ezt követően elvégeztem a pozsonyi Comenius Egyetem alkalmazott informatika szakát. Azóta programozóként dolgozom. Közben elvégeztem az Esterházy Akadémiát, ami egy kétéves képzés, aminek a célja, hogy közéleti utánpótlást biztosítson közösségünknek.\n" +
+            "\n" +
+            "Néhány éve kapcsolódtam be aktívabban a közéletbe, amikor beléptem a Csemadok és a Magyar Szövetség szenci alapszervezeteibe. Azóta mindkét szervezet elnökségi tagjává választottak, ezen kívül a Csemadokban én lettem az ifjúságért felelős alelnök. Hozzám kötődik az egyre népszerűbb szenci társasjáték-estek elindítása, valamint a Mathias Corvinus Collegium (MCC) előadásainak Szencre hozatala. Tudásommal próbálom elősegíteni, hogy a mai kor követelményeinek megfelelően a szenci Csemadok és Magyar Szövetség a digitális térben is láthatóbbá váljon.\n" +
+            "\n" +
+            "Önkormányzati képviselői tapasztalattal ugyan még nem rendelkezem, viszont a Környezetvédelmi és Közrendvédelmi Bizottság tagjaként egy rövid ideje már belekóstolhattam az önkormányzati munkába. Fontos célom egy magyar közösségi terem (és idővel akár egy „magyar ház”) létrehozása, amely méltó és önálló otthont biztosítana közösségi rendezvényeink számára. Emellett kiemelten fontosnak tartom oktatásunk és kulturális életünk további fejlődését, valamint a Szencen áthaladó tranzitforgalom okozta problémák kezelését – például egy elkerülőút megépítésével.\n" +
+            "\n" +
+            "Képviselővé választásom esetén semmilyen olyan javaslatot nem fogok támogatni, amely a felelőtlen beépítést szorgalmazza – legyen szó új lakótelepek építéséről, valamint a logisztikai központ további bővítéséről. Szorgalmazni fogom, hogy Szenc városa vegye fel a kapcsolatot Pozsony megyével a város és a logisztikai központ közötti kerékpárút kiépítése érdekében, ami jelentősen megkönnyítené az ott dolgozók mindennapi munkába járását.\n" +
+            "\n" +
+            "E célok megvalósításához tisztelettel kérem az Önök támogatását.",
+        bioSK: "Od svojich šiestich rokov žijem v Senci a z matkinej strany práve odtiaľto pochádzajú všetci moji predkovia. Môj starý otec Andrej Tóth bol známym stredoškolským profesorom na maďarskom gymnáziu v Senci. Tu som navštevoval materskú školu s vyučovacím jazykom maďarským, základnú školu a aj gymnázium. Vyštudoval som aplikovanú informatiku na Univerzite Komenského v Bratislave. Po skončení školy som sa zamestnal ako programátor. Počas práce som absolvoval aj Esterházy Akadémiu, dvojročný vzdelávací program, ktorého cieľom je pripravovať novú generáciu verejne aktívnych osobností pre našu komunitu.\n" +
+            "\n" +
+            "Pred niekoľkými rokmi som sa začal aktívnejšie zapájať do verejného života. Som členom miestnych organizácií Csemadoku a Maďarskej aliancie v Senci, kde som bol zvolený do predsedníctva oboch organizácií, v rámci Csemadoku zastávam funkciu podpredsedu zodpovedného pre mládež. Podarilo sa mi zorganizovať čoraz populárnejšie večerné aktivity so spoločenskými hrami v Senci, ako aj organizovanie prednášok Mathias Corvinus Collegium (MCC) v našom meste. Svojimi vedomosťami sa snažím prispieť k tomu, aby boli Csemadok a Maďarská aliancia v Senci viditeľnejšie aj v digitálnom priestore a dokázali držať krok s požiadavkami dnešnej doby.\n" +
+            "\n" +
+            "Hoci zatiaľ nemám skúsenosti s výkonom mandátu poslanca, mám možnosť nahliadnuť do fungovania samosprávy ako člen Komisie životného prostredia a verejného poriadku. Jedným z mojich dôležitých cieľov je vytvorenie maďarskej komunitnej miestnosti (a časom aj tzv. „maďarský dom“), ktorá by poskytla dôstojný a samostatný priestor pre naše spoločenské a kultúrne podujatia. Rovnako považujem za mimoriadne dôležitý ďalší rozvoj nášho školstva a kultúrneho života, ako aj riešenie problémov spôsobených tranzitnou dopravou prechádzajúcou cez Senec – napríklad vybudovaním obchvatu mesta.\n" +
+            "\n" +
+            "V prípade zvolenia za poslanca, nepodporím žiaden návrh na bezhlavú výstavbu. Či už pôjde o nové sídliská, alebo o ďalšie rozširovania logistických centier, takéto projekty môj hlas nedostanú. Budem presadzovať, aby mesto Senec nadviazalo spoluprácu s Bratislavským samosprávnym krajom s cieľom vybudovať cyklotrasu medzi mestom a logistickými centrami, čo by výrazne uľahčilo každodenné dochádzanie tamojších zamestnancov do práce.\n" +
+            "\n" +
+            "Na naplnenie týchto cieľov Vás úctivo žiadam o podporu.",
+        goalsHU: ["Magyar közösségi terem létrehozása", "Elkerülőút megépítése", "Oktatás és kultúra fejlesztése", "Új lakótelepek építésének megakadályozása", "Logisztikai központ további bővítésének megakadályozása", "Kerékpárút kiépítése a logisztikai központ és a város között"],
+        goalsSK: ["Vytvorenie maďarskej komunitnej miestnosti", "Vybudovanie obchvatu mesta", "Rozvoj školstva a kultúry", "Zamedzenie výstavby nových sídlisk", "Zamedzenie ďalšieho rozširovania logistického centra", "Vybudovanie cyklotrasy medzi logistickým centrom a mestom"],
+        email: "halaszadam.sk@gmail.com",
+        img: "HA.jpg"
     },
     3: {
-        distHU: "1. sz. körzet • Karikázd: #3",
-        distSK: "Obvod č. 1 • Krúžkujte: #3",
+        distHU: "1. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 1 • Krúžkujte: #",
         district: 1,
-        name: "Nagy Péter",
+        nameHU: "Ing. Klenovics Gábor",
+        nameSK: "Ing. Gábor Klenovics",
         profHU: "Vállalkozó",
         profSK: "Podnikateľ",
         bioHU: "A helyi vállalkozások és a fenntartható városfejlesztés támogatója.",
         bioSK: "Podporovateľ miestnych podnikateľov a rozvoja mesta.",
         goalsHU: ["Parkolási helyzet rendezése"],
         goalsSK: ["Riešenie parkovania"],
-        email: "peter@szenc.sk"
+        email: "peter@szenc.sk",
+        img: "KG.jpg"
     },
     4: {
-        distHU: "1. sz. körzet • Karikázd: #4",
-        distSK: "Obvod č. 1 • Krúžkujte: #4",
+        distHU: "1. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 1 • Krúžkujte: #",
         district: 1,
-        name: "Szabó Zoltán",
+        nameHU: "PhDr. Németh Gabriella",
+        nameSK: "PhDr. Gabriella Németh",
         profHU: "Közgazdász",
         profSK: "Ekonóm",
         bioHU: "Átlátható költségvetés és hatékony városi gazdálkodás.",
         bioSK: "Transparentný rozpočet a efektívne hospodárenie.",
         goalsHU: ["Pályázati források kihasználása"],
         goalsSK: ["Využitie dotácií"],
-        email: "zoltan@szenc.sk"
+        email: "zoltan@szenc.sk",
+        img: "NG.jpg"
     },
     5: {
-        distHU: "1. sz. körzet • Karikázd: #5",
-        distSK: "Obvod č. 1 • Krúžkujte: #5",
+        distHU: "1. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 1 • Krúžkujte: #",
         district: 1,
-        name: "Varga Katalin",
+        nameHU: "Rovensky Mária",
+        nameSK: "Mária Rovenská",
         profHU: "Orvos",
         profSK: "Lekárka",
         bioHU: "Egészségügyi és szociális szolgáltatások fejlesztése Szencen.",
         bioSK: "Rozvoj zdravotníckych a sociálnych služieb v Senci.",
         goalsHU: ["Idősek otthoni gondozásának támogatása"],
         goalsSK: ["Podpora opatrovateľskej služby"],
-        email: "katalin@szenc.sk"
+        email: "katalin@szenc.sk",
+        img: "RM.jpg",
     },
     6: {
-        distHU: "2. sz. körzet • Karikázd: #6",
-        distSK: "Obvod č. 2 • Krúžkujte: #6",
+        distHU: "2. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 2 • Krúžkujte: #",
         district: 2,
-        name: "Horváth László",
+        nameHU: "Mgr. Kolláth Imre",
+        nameSK: "Mgr. Imre Kolláth",
         profHU: "Informatikus",
         profSK: "Informatik",
         bioHU: "Digitális városháza és átlátható lakossági tájékoztatás.",
         bioSK: "Digitálna radnica a transparentná informovanosť.",
         goalsHU: ["Online ügyintézés egyszerűsítése"],
         goalsSK: ["Zjednodušenie online vybavovania"],
-        email: "laszlo@szenc.sk"
+        email: "laszlo@szenc.sk",
+        img: "KI.jpg",
     },
     7: {
-        distHU: "2. sz. körzet • Karikázd: #7",
-        distSK: "Obvod č. 2 • Krúžkujte: #7",
+        distHU: "2. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 2 • Krúžkujte: #",
         district: 2,
-        name: "Molnár Ádám",
+        nameHU: "Mészáros Melinda",
+        nameSK: "Melinda Mészáros",
         profHU: "Környezetvédő",
         profSK: "Ekológ",
         bioHU: "Tiszta zöldterületek és új parkok kialakítása.",
         bioSK: "Ochrana prostredia a nová zeleň.",
         goalsHU: ["Zöldterületek növelése"],
         goalsSK: ["Zvýšenie podielu zelene"],
-        email: "adam@szenc.sk"
+        email: "adam@szenc.sk",
+        img: "MM.jpg",
     },
     8: {
-        distHU: "2. sz. körzet • Karikázd: #8",
-        distSK: "Obvod č. 2 • Krúžkujte: #8",
+        distHU: "2. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 2 • Krúžkujte: #",
         district: 2,
-        name: "Tóth Éva",
+        nameHU: "Pohl Igor",
+        nameSK: "Igor Pohl",
         profHU: "Kultúrszervező",
         profSK: "Kultúrna manažérka",
         bioHU: "A szenci magyar kulturális közösség megőrzése.",
         bioSK: "Zachovanie kultúrnej komunity v Senci.",
         goalsHU: ["Hagyományőrző rendezvények finanszírozása"],
         goalsSK: ["Financovanie tradičných podujatí"],
-        email: "eva@szenc.sk"
+        email: "eva@szenc.sk",
+        img: "PI.jpg",
     },
     9: {
-        distHU: "3. sz. körzet • Karikázd: #9",
-        distSK: "Obvod č. 3 • Krúžkujte: #9",
+        distHU: "3. sz. körzet • Karikázd: #",
+        distSK: "Obvod č. 3 • Krúžkujte: #",
         district: 3,
-        name: "Balogh István",
+        nameHU: "Kontár Andrea",
+        nameSK: "Andrea Kontárová",
         profHU: "Sportedző",
         profSK: "Športový tréner",
         bioHU: "A szenci gyermek- és tömegsport fejlesztése.",
         bioSK: "Rozvoj detského a masového športu v Senci.",
         goalsHU: ["Sportpályák és közösségi terek felújítása"],
         goalsSK: ["Obnova športovísk a komunitných priestorov"],
-        email: "istvan@szenc.sk"
+        email: "istvan@szenc.sk",
+        img: "KA.jpg"
     }
 };
 
@@ -160,9 +194,10 @@ function openCandidateModal(id) {
     if (!data) return;
 
     document.getElementById('modal-district').innerText = currentLang === 'hu' ? data.distHU : data.distSK;
-    document.getElementById('modal-name').innerText = data.name;
+    document.getElementById('modal-name').innerText = currentLang === 'hu' ? data.nameHU : data.nameSK;
     document.getElementById('modal-prof').innerText = currentLang === 'hu' ? data.profHU : data.profSK;
     document.getElementById('modal-bio').innerText = currentLang === 'hu' ? data.bioHU : data.bioSK;
+    document.getElementById('modal-image').src = `assets/candidates/${data.img}`;
 
     const goalsList = document.getElementById('modal-goals');
     goalsList.innerHTML = '';
