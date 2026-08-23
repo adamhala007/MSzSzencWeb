@@ -1440,3 +1440,13 @@ function toggleMobileMenu() {
         }
     }
 }
+
+function openGdprModal(e) {
+    if(e) e.preventDefault();
+    document.getElementById('gdpr-modal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+function closeGdprModal() {
+    document.getElementById('gdpr-modal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
