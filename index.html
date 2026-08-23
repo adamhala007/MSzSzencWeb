@@ -123,16 +123,35 @@
             <span class="lang-hu">9 elhivatott jelölttel (az 1. körzetben 5, a 2. körzetben 3, a 3. körzetben 1 jelölttel) dolgozunk Szenc jövőjéért.</span>
             <span class="lang-sk">S 9 odhodlanými kandidátmi (5 v obvode č. 1, 3 v obvode č. 2 a 1 v obvode č. 3) pracujeme pre budúcnosť Senca.</span>
         </p>
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 max-w-3xl mx-auto">
+            <!-- Elsődleges CTA (Jelöltek) -->
             <a href="#jeloltek"
-               class="bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-50 transition">
-                <span class="lang-hu">Ismerd meg a 9 jelöltet</span>
-                <span class="lang-sk">Spoznajte 9 kandidátov</span>
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-emerald-900 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-emerald-50 transition">
+                <i class="fa-solid fa-users text-emerald-700"></i>
+                <span>
+            <span class="lang-hu">Ismerd meg a 9 jelöltet</span>
+            <span class="lang-sk">Spoznajte 9 kandidátov</span>
+        </span>
             </a>
+
+            <!-- Másodlagos CTA (Körzetek) -->
             <a href="#korzetek"
-               class="border border-white/40 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition">
-                <span class="lang-hu">Körzetem kiválasztása</span>
-                <span class="lang-sk">Ktorý je môj obvod?</span>
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/40 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition backdrop-blur-sm">
+                <i class="fa-solid fa-map-location-dot text-emerald-300"></i>
+                <span>
+            <span class="lang-hu">Körzetem kiválasztása</span>
+            <span class="lang-sk">Ktorý je môj obvod?</span>
+        </span>
+            </a>
+
+            <!-- Harmadlagos CTA (Szavazóhelyiség) -->
+            <a href="#szavazokor-kereso"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/40 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition backdrop-blur-sm">
+                <i class="fa-solid fa-check-to-slot text-emerald-300"></i>
+                <span>
+            <span class="lang-hu">Szavazóhelyiség kereső</span>
+            <span class="lang-sk">Kde mám voliť?</span>
+        </span>
             </a>
         </div>
     </div>
