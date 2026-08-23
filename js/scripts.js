@@ -1453,18 +1453,23 @@ function closeGdprModal() {
 
 const backToTopBtn = document.getElementById('back-to-top');
 
-// Görgetés figyelése: 300px után jelenik meg
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
-        backToTopBtn.classList.add('opacity-100');
-    } else {
-        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
-        backToTopBtn.classList.remove('opacity-100');
-    }
-});
+function handleScroll() {
+    // Mobilon a pageYOffset és a scrollTop a legbiztosabb érték
+    const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-// Sima görgetés az oldal tetejére
+    if (scrollPos > 250) {
+        backToTopBtn.classList.remove('hidden');
+        backToTopBtn.classList.add('flex');
+    } else {
+        backToTopBtn.classList.remove('flex');
+        backToTopBtn.classList.add('hidden');
+    }
+}
+
+// Eseményfigyelők az asztali és mobil görgetésekhez
+window.addEventListener('scroll', handleScroll, { passive: true });
+window.addEventListener('touchmove', handleScroll, { passive: true });
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
