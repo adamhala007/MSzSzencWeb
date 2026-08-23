@@ -1450,3 +1450,24 @@ function closeGdprModal() {
     document.getElementById('gdpr-modal').classList.add('hidden');
     document.body.style.overflow = 'auto';
 }
+
+const backToTopBtn = document.getElementById('back-to-top');
+
+// Görgetés figyelése: 300px után jelenik meg
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100');
+    } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.remove('opacity-100');
+    }
+});
+
+// Sima görgetés az oldal tetejére
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
