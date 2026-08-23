@@ -916,22 +916,25 @@
             </p>
             <div class="space-y-4 text-gray-300">
                 <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-emerald-400"></i>
-                    szenc@szovetseg.sk</p>
+                    <a href="mailto:szovetseg.szenc@gmail.com" class=" hover:underline">szovetseg.szenc@gmail.com</a></p>
                 <p class="flex items-center gap-3"><i class="fa-brands fa-facebook text-emerald-400"></i>
-                    facebook.com/szencimagyarszovetseg</p>
-                <p class="flex items-center gap-3"><i class="fa-brands fa-instagram text-emerald-400"></i>
-                    @szenci_magyarszovetseg</p>
+                    <a href="https://www.facebook.com/MagyarSzovetsegSzenc" target="_blank" class="hover:underline">www.facebook.com/MagyarSzovetsegSzenc</a></p>
             </div>
         </div>
 
-        <form class="bg-slate-800 p-6 rounded-xl space-y-4 shadow-lg border border-slate-700">
-            <input type="text" placeholder="Neved / Meno"
+        <form action="https://formsubmit.co/szovetseg.szenc@gmail.com" method="POST" class="bg-slate-800 p-6 rounded-xl space-y-4 shadow-lg border border-slate-700">
+            <!-- Spam és reCAPTCHA beállítások -->
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Új üzenet a szenci weboldalról!">
+
+            <input type="text" name="name" required placeholder="Neved / Meno"
                    class="w-full p-3 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-emerald-500 text-sm">
-            <input type="email" placeholder="Email"
+            <input type="email" name="email" required placeholder="Email"
                    class="w-full p-3 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-emerald-500 text-sm">
-            <textarea placeholder="Üzeneted / Správa..." rows="4"
+            <textarea name="message" required placeholder="Üzeneted / Správa..." rows="4"
                       class="w-full p-3 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
-            <button type="button"
+            <button type="submit"
                     class="w-full bg-emerald-600 hover:bg-emerald-500 font-bold py-3 rounded transition text-sm">
                 <span class="lang-hu">Üzenet küldése</span>
                 <span class="lang-sk">Odoslať správu</span>
@@ -980,8 +983,8 @@
 <!-- Lábléc -->
 <footer class="py-6 text-center text-xs text-gray-500 border-t border-slate-800 bg-slate-950">
     <p class="font-bold text-emerald-500 mb-1">#SzívügyünkSzenc &bull; #SrdcomPreSenec</p>
-    <p>© Magyar Szövetség – Szenc / Maďarská Aliancia Senec.</p>
-    <p class="mt-1 text-gray-600">Objednávateľ: Maďarská aliancia | Dodávateľ: Magyar Szövetség Szenc</p>
+    <p>© 2026 Magyar Szövetség – Szenc / Maďarská Aliancia Senec.</p>
+    <p class="mt-1 text-gray-600">Objednávateľ: Maďarská aliancia Senec | Dodávateľ: <a href="http://www.halaszadam.sk" target="_blank">Mgr. Adam Halász</a></p>
 </footer>
 
 <!-- JavaScript -->
