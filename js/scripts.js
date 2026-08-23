@@ -1478,16 +1478,15 @@ function scrollToTop() {
 }
 
 function filterDistrict(district, btn) {
-    // Gombok stílusának frissítése
+    // Összes gomb visszaállítása inaktív (sötétszürke) állapotba
     document.querySelectorAll('.district-tab').forEach(tab => {
-        tab.classList.remove('bg-emerald-800', 'text-white', 'shadow-sm', 'font-bold');
-        tab.classList.add('text-gray-700', 'font-semibold');
+        tab.className = "district-tab text-gray-700 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition";
     });
 
-    btn.classList.add('bg-emerald-800', 'text-white', 'shadow-sm', 'font-bold');
-    btn.classList.remove('text-gray-700', 'font-semibold');
+    // A kiválasztott gomb átállítása aktív (sötétzöld háttér, fehér szöveg) állapotba
+    btn.className = "district-tab bg-emerald-800 text-white font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-sm";
 
-    // Kártyák vagy körzet szekciók elrejtése/megjelenítése
+    // Kártyák szűrése
     const cards = document.querySelectorAll('[data-district]');
     cards.forEach(card => {
         if (district === 'all' || card.getAttribute('data-district') === district) {
