@@ -271,18 +271,41 @@
 
 <!-- 3. A 9 Jelöltünk (5 + 3 + 1 elosztásban) -->
 <section id="jeloltek" class="py-16 max-w-7xl mx-auto px-4">
-    <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">
-            <span class="lang-hu">A 9 Jelöltünk Választási Körzetek Szerint</span>
-            <span class="lang-sk">Naši 9 Kandidáti Podľa Volebných Obvodov</span>
+    <div class="text-center max-w-4xl mx-auto mb-10 px-4">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">
+            <span class="lang-hu">Jelöltjeink választási körzetek szerint</span>
+            <span class="lang-sk">Naši kandidáti podľa volebných obvodov</span>
         </h2>
-        <p class="text-gray-600 mt-2">
-            <span class="lang-hu">A Magyar Szövetség csapata Szencen (1. körzet: 5 jelölt | 2. körzet: 3 jelölt | 3. körzet: 1 jelölt)</span>
-            <span class="lang-sk">Tím Maďarskej Aliancie v Senci (Obvod 1: 5 kandidátov | Obvod 2: 3 kandidáti | Obvod 3: 1 kandidát)</span>
+        <p class="text-gray-600 text-sm sm:text-base mb-6">
+            <span class="lang-hu">Kattints a körzetedre a jelöltek szűréséhez:</span>
+            <span class="lang-sk">Kliknite na svoj obvod pre filtrovanie kandidátov:</span>
         </p>
+
+        <!-- Interaktív Szűrőgombok (Kapszula menü) -->
+        <div class="inline-flex flex-wrap justify-center bg-gray-100 p-1.5 rounded-2xl border border-gray-200 gap-1 shadow-inner">
+            <button onclick="filterDistrict('all', this)" class="district-tab active-tab bg-emerald-800 text-white font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-sm">
+                <span class="lang-hu">Mind a 9 jelölt</span>
+                <span class="lang-sk">Všetkých 9 kandidátov</span>
+            </button>
+
+            <button onclick="filterDistrict('1', this)" class="district-tab text-gray-700 hover:text-emerald-900 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition">
+                <span class="lang-hu">1. körzet (5)</span>
+                <span class="lang-sk">Obvod č. 1 (5)</span>
+            </button>
+
+            <button onclick="filterDistrict('2', this)" class="district-tab text-gray-700 hover:text-emerald-900 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition">
+                <span class="lang-hu">2. körzet (3)</span>
+                <span class="lang-sk">Obvod č. 2 (3)</span>
+            </button>
+
+            <button onclick="filterDistrict('3', this)" class="district-tab text-gray-700 hover:text-emerald-900 font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm transition">
+                <span class="lang-hu">3. körzet (1)</span>
+                <span class="lang-sk">Obvod č. 3 (1)</span>
+            </button>
+        </div>
     </div>
 
-    <div id="district-1" class="mb-16 scroll-mt-24">
+    <div id="district-1" class="mb-16 scroll-mt-24" data-district="1">
     <!-- Letisztult Szöveges Fejléc -->
     <div class="flex items-center gap-3 mb-6 pb-2 border-b border-gray-200">
         <div class="flex items-center gap-2 text-emerald-950 font-extrabold text-lg sm:text-xl">
@@ -502,7 +525,7 @@
     </div>
 
     <!-- 2. VÁLASZTÁSI KÖRZET (3 Jelölt) -->
-    <div id="district-2" class="mb-16 scroll-mt-24">
+    <div id="district-2" class="mb-16 scroll-mt-24" data-district="2">
         <!-- Letisztult Szöveges Fejléc -->
         <div class="flex items-center gap-3 mb-6 pb-2 border-b border-gray-200">
             <div class="flex items-center gap-2 text-emerald-950 font-extrabold text-lg sm:text-xl">
@@ -637,7 +660,7 @@
     </div>
 
     <!-- 3. VÁLASZTÁSI KÖRZET (1 Jelölt) -->
-    <div id="district-3" class="scroll-mt-24">
+    <div id="district-3" class="scroll-mt-24" data-district="3">
         <!-- Letisztult Szöveges Fejléc -->
         <div class="flex items-center gap-3 mb-6 pb-2 border-b border-gray-200">
             <div class="flex items-center gap-2 text-emerald-950 font-extrabold text-lg sm:text-xl">

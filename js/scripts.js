@@ -1476,3 +1476,24 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+function filterDistrict(district, btn) {
+    // Gombok stílusának frissítése
+    document.querySelectorAll('.district-tab').forEach(tab => {
+        tab.classList.remove('bg-emerald-800', 'text-white', 'shadow-sm', 'font-bold');
+        tab.classList.add('text-gray-700', 'font-semibold');
+    });
+
+    btn.classList.add('bg-emerald-800', 'text-white', 'shadow-sm', 'font-bold');
+    btn.classList.remove('text-gray-700', 'font-semibold');
+
+    // Kártyák vagy körzet szekciók elrejtése/megjelenítése
+    const cards = document.querySelectorAll('[data-district]');
+    cards.forEach(card => {
+        if (district === 'all' || card.getAttribute('data-district') === district) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
