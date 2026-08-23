@@ -27,12 +27,13 @@
 
 <!-- Navigáció -->
 <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-40 border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <!-- Logó és Cím -->
-        <div class="font-bold text-lg text-emerald-800 flex items-center gap-2">
-            <img src="assets/MA_Symbol_color.svg" alt="Magyar Szövetség Logo" class="w-8 h-8 drop-shadow-lg">
-            <span id="nav-title">Magyar Szövetség</span>
-            <span id="nav-title-badge-sc" class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded-full">Szenc</span>
+    <div class="max-w-7xl mx-auto px-2.5 sm:px-4 py-2.5 sm:py-3 flex justify-between items-center gap-1.5 sm:gap-3">
+
+        <!-- Logó és Cím egysorban (Kisebb méretekkel mobilon) -->
+        <div class="font-bold text-emerald-800 flex items-center gap-1.5 sm:gap-2 min-w-0">
+            <img src="assets/MA_Symbol_color.svg" alt="Magyar Szövetség Logo" class="w-6 h-6 sm:w-8 sm:h-8 drop-shadow-md flex-shrink-0">
+            <span id="nav-title" class="text-xs sm:text-base font-extrabold whitespace-nowrap">Magyar Szövetség</span>
+            <span id="nav-title-badge-sc" class="text-[10px] sm:text-xs bg-emerald-100 text-emerald-800 font-bold px-1.5 sm:px-2 py-0.5 rounded-full whitespace-nowrap">Szenc</span>
         </div>
 
         <!-- Asztali Menü (xl törésponttól látható) -->
@@ -43,16 +44,16 @@
             <a href="#korzetek" class="hover:text-emerald-700 transition"><span class="lang-hu">Körzetek & Utcák</span><span class="lang-sk">Obvody a Ulice</span></a>
             <a href="#szavazokor-kereso" class="hover:text-emerald-700 transition"><span class="lang-hu">Hol kell szavaznom?</span><span class="lang-sk">Kde mám voliť?</span></a>
             <a href="#esemenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Események</span><span class="lang-sk">Udalosti</span></a>
-            <a href="#gyik" class="hover:text-emerald-700 transition"><span class="lang-hu">GYIK</span><span class="lang-sk">FAQ </span></a>
+            <a href="#gyik" class="hover:text-emerald-700 transition"><span class="lang-hu">GYIK</span><span class="lang-sk">FAQ</span></a>
             <a href="#kapcsolat" class="hover:text-emerald-700 transition"><span class="lang-hu">Kapcsolat</span><span class="lang-sk">Kontakt</span></a>
         </div>
 
-        <!-- Jobb oldali gombok -->
-        <div class="flex items-center gap-3">
+        <!-- Jobb oldali gombok (Kompaktabb méretezés mobilon) -->
+        <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
             <!-- Nyelvváltó -->
-            <div class="bg-gray-100 p-1 rounded-lg flex gap-1 text-xs font-bold border border-gray-200">
-                <button id="btn-hu" onclick="setLanguage('hu')" class="px-2 py-1 rounded bg-emerald-700 text-white transition">HU</button>
-                <button id="btn-sk" onclick="setLanguage('sk')" class="px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition">SK</button>
+            <div class="bg-gray-100 p-0.5 sm:p-1 rounded-lg flex gap-0.5 text-[11px] sm:text-xs font-bold border border-gray-200">
+                <button id="btn-hu" onclick="setLanguage('hu')" class="px-1.5 sm:px-2 py-0.5 sm:py-1 rounded bg-emerald-700 text-white transition">HU</button>
+                <button id="btn-sk" onclick="setLanguage('sk')" class="px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-gray-600 hover:text-emerald-800 transition">SK</button>
             </div>
 
             <!-- Újság gomb (asztali / tablet nézetben) -->
@@ -62,14 +63,14 @@
                 <span class="lang-sk">Noviny (PDF)</span>
             </a>
 
-            <!-- Hamburger gomb (csak xl méret alatt látható) -->
-            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menü megnyitása" class="xl:hidden text-gray-700 hover:text-emerald-700 p-1.5 rounded-lg focus:outline-none">
-                <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+            <!-- Hamburger gomb -->
+            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menü megnyitása" class="xl:hidden text-gray-700 hover:text-emerald-700 p-1 rounded-lg focus:outline-none">
+                <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
             </button>
         </div>
     </div>
 
-    <!-- Mobil Menü Lenyíló Szekció (alapból rejtve) -->
+    <!-- Mobil Menü Lenyíló Szekció -->
     <div id="mobile-menu" class="hidden xl:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 px-4 pt-2 pb-5 space-y-2 shadow-lg">
         <a href="#eredmenyek" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
             <span class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span>
@@ -96,7 +97,7 @@
             <span class="lang-hu">Kapcsolat</span><span class="lang-sk">Kontakt</span>
         </a>
 
-        <!-- Újság gomb mobilnézetben (csak kis kijelzőn jelenik meg, ahol az sm:inline-flex gomb rejtve van) -->
+        <!-- Újság gomb mobilnézetben -->
         <a href="#ujsag" onclick="toggleMobileMenu()" class="inline-flex sm:hidden items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2.5 rounded-lg transition w-full mt-2">
             <i class="fa-solid fa-file-pdf"></i>
             <span class="lang-hu">Újság (PDF)</span>
