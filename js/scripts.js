@@ -1801,3 +1801,15 @@ function filterDistrict(district, btn) {
         }
     });
 }
+
+function openResultsModal() {
+    const modal = document.getElementById('results-modal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Megakadályozza a háttér görgetését
+}
+
+function closeResultsModal() {
+    const modal = document.getElementById('results-modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
