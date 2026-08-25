@@ -524,6 +524,18 @@ function closeCandidateModal() {
     document.body.style.overflow = 'auto';
 }
 
+function openResultsModal() {
+    const modal = document.getElementById('results-modal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Megakadályozza a háttér görgetését
+}
+
+function closeResultsModal() {
+    const modal = document.getElementById('results-modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
 function filterStreets() {
     const input = document.getElementById('street-search').value.toLowerCase();
     [1, 2, 3].forEach(num => {
@@ -1802,14 +1814,3 @@ function filterDistrict(district, btn) {
     });
 }
 
-function openResultsModal() {
-    const modal = document.getElementById('results-modal');
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; // Megakadályozza a háttér görgetését
-}
-
-function closeResultsModal() {
-    const modal = document.getElementById('results-modal');
-    modal.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-}
