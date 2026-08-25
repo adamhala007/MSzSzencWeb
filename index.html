@@ -270,8 +270,9 @@
         </div>
 
         <!-- Csak MOBILON jelenik meg (sm:hidden) -->
-        <div onclick="openResultsModal()"
-             class="sm:hidden bg-emerald-50/60 hover:bg-emerald-100/80 border-2 border-dashed border-emerald-300 p-6 rounded-xl shadow-sm flex flex-col justify-center items-center text-center cursor-pointer group transition-all duration-200">
+        <button type="button"
+                onclick="openResultsModal()"
+                class="sm:hidden w-full bg-emerald-50/60 active:bg-emerald-100 border-2 border-dashed border-emerald-300 p-6 rounded-xl shadow-sm flex flex-col justify-center items-center text-center cursor-pointer group transition-all duration-200">
             <div class="w-12 h-12 rounded-full bg-emerald-200/60 text-emerald-800 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                 <i class="fa-solid fa-layer-group text-lg"></i>
             </div>
@@ -284,11 +285,11 @@
                 <span class="lang-sk">Kliknite pre zobrazenie celého zoznamu 15 projektov.</span>
             </p>
             <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 group-hover:gap-2.5 transition-all">
-                <span class="lang-hu">Részletes lista</span>
-                <span class="lang-sk">Podrobný zoznam</span>
-                <i class="fa-solid fa-arrow-right text-xs"></i>
-            </span>
-        </div>
+        <span class="lang-hu">Részletes lista</span>
+        <span class="lang-sk">Podrobný zoznam</span>
+        <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+        </button>
     </div>
 
     <!-- Helyezd a </grid> lezáró tag MÖGÉ -->
