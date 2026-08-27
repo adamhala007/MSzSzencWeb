@@ -377,13 +377,13 @@ const candidates = {
             "Chcel by som podporovať všetky mestské rozvojové aktivity, ktoré slúžia pre verejné dobro a prinášajú jednotu. ",
         goalsHU: [
             "A közjót szolgáló és a közösségi egységet erősítő városfejlesztések támogatása",
-            "A Szent Miklós templom és a keresztény épített örökség megőrzése, ápolása",
+            "A Szent Miklós templom örökség megőrzése, ápolása",
             "A lelki értékek és a keresztény értékrend képviselete a város életében",
             "A civil és egyházi közösségi rendezvények, helyi kezdeményezések aktív segítése"
         ],
         goalsSK: [
             "Podpora rozvojových projektov mesta slúžiacich verejnému dobru a spájaniu komunity",
-            "Zachovanie a starostlivosť o dedičstvo Kostola sv. Mikuláša a kresťanské pamiatky",
+            "Zachovanie a starostlivosť o dedičstvo Kostola sv. Mikuláša",
             "Presadzovanie duchovných hodnôt a kresťanského hodnotového systému v živote mesta",
             "Aktívna pomoc pri organizovaní cirkevných a spoločenských podujatí"
         ],
