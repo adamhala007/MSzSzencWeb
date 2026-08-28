@@ -470,7 +470,6 @@ function setLanguage(lang) {
         document.getElementById('btn-hu').className = "px-2 py-1 rounded bg-emerald-700 text-white transition";
         document.getElementById('btn-sk').className = "px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition";
     }
-    var navTitle = document.getElementById("nav-title");
     var navTitleBadgeSc = document.getElementById("nav-title-badge-sc");
     var district1Streets = document.getElementById("district-1-streets-candidate")
     var district2Streets = document.getElementById("district-2-streets-candidate");
@@ -478,13 +477,11 @@ function setLanguage(lang) {
     if (lang === 'sk') {
         document.title = "Maďarská aliancia – Senec | #SrdcomPreSenec";
         navTitleBadgeSc.innerHTML = "Senec";
-        navTitle.innerHTML = "Maďarská aliancia";
         district1Streets.innerHTML = "5 kandidátov";
         district2Streets.innerHTML = "3 kandidáti";
         district3Streets.innerHTML = "1 kandidát";
     } else {
         document.title = "Magyar Szövetség – Szenc | #SzívügyünkSzenc";
-        navTitle.innerHTML = "Magyar Szövetség";
         navTitleBadgeSc.innerHTML = "Szenc";
         district1Streets.innerHTML = "5 jelölt";
         district2Streets.innerHTML = "3 jelölt";
