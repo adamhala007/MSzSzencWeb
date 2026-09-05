@@ -518,84 +518,84 @@ const pollingData = {
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "frana_krala": {
         streetHU: "Fraňa Kráľa",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "kratka": {
         streetHU: "Krátka",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "moyzesova": {
         streetHU: "Moyzesova",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "pivnicna": {
         streetHU: "Pivničná",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "pod_vinicami": {
         streetHU: "Pod vinicami",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "strma": {
         streetHU: "Strmá",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "svateho_urbana": {
         streetHU: "Svätého Urbana",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "safarikova": {
         streetHU: "Šafáriková",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "tehelna": {
         streetHU: "Tehelná",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "tehelna_2": {
         streetHU: "Tehelňa",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "vinohradnicka": {
         streetHU: "Vinohradnícka",
         okrsokHU: "1. szavazókör",
         okrsokSK: "Volebný okrsok č. 1",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
 
     "bratislavska_3_25_neparos": {
@@ -603,14 +603,14 @@ const pollingData = {
         okrsokHU: "2. szavazókör",
         okrsokSK: "Volebný okrsok č. 2",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "mierove_namestie": {
         streetHU: "Mierové námestie",
         okrsokHU: "2. szavazókör",
         okrsokSK: "Volebný okrsok č. 2",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
 
     "nam_1_maja": {
@@ -618,28 +618,28 @@ const pollingData = {
         okrsokHU: "3. szavazókör",
         okrsokSK: "Volebný okrsok č. 3",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "robotnicka": {
         streetHU: "Robotnícka",
         okrsokHU: "3. szavazókör",
         okrsokSK: "Volebný okrsok č. 3",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "sadova": {
         streetHU: "Sadová",
         okrsokHU: "3. szavazókör",
         okrsokSK: "Volebný okrsok č. 3",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
     "skorcova": {
         streetHU: "Škorcová",
         okrsokHU: "3. szavazókör",
         okrsokSK: "Volebný okrsok č. 3",
         placeHU: "Základná škola s VJM A.M. Szencziho",
-        addressHU: "Molnár Albert tér 2., Senec"
+        addressHU: "Námestie A. Molnára č. 2 Senec"
     },
 
     "holleho": {
@@ -647,28 +647,28 @@ const pollingData = {
         okrsokHU: "4. szavazókör",
         okrsokSK: "Volebný okrsok č. 4",
         placeHU: "Materská škola",
-        addressHU: "Kollárova utca 23., Senec"
+        addressHU: "Kollárova ulica č. 23, Senec"
     },
     "j_jesenskeho": {
         streetHU: "J. Jesenského",
         okrsokHU: "4. szavazókör",
         okrsokSK: "Volebný okrsok č. 4",
         placeHU: "Materská škola",
-        addressHU: "Kollárova utca 23., Senec"
+        addressHU: "Kollárova ulica č. 23, Senec"
     },
     "trnavska": {
         streetHU: "Trnavská",
         okrsokHU: "4. szavazókör",
         okrsokSK: "Volebný okrsok č. 4",
         placeHU: "Materská škola",
-        addressHU: "Kollárova utca 23., Senec"
+        addressHU: "Kollárova ulica č. 23, Senec"
     },
     "turecka": {
         streetHU: "Turecká",
         okrsokHU: "4. szavazókör",
         okrsokSK: "Volebný okrsok č. 4",
         placeHU: "Materská škola",
-        addressHU: "Kollárova utca 23., Senec"
+        addressHU: "Kollárova ulica č. 23, Senec"
     },
 
     "hurbanova": {
@@ -676,14 +676,14 @@ const pollingData = {
         okrsokHU: "5. szavazókör",
         okrsokSK: "Volebný okrsok č. 5",
         placeHU: "Materská škola",
-        addressHU: "Kollárova utca 23., Senec"
+        addressHU: "Kollárova ulica č. 23, Senec"
     },
     "kollarova": {
         streetHU: "Kollárova",
         okrsokHU: "5. szavazókör",
         okrsokSK: "Volebný okrsok č. 5",
         placeHU: "Materská škola",
-        addressHU: "Kollárova utca 23., Senec"
+        addressHU: "Kollárova ulica č. 23, Senec"
     },
 
     "svaty_martin": {
@@ -691,7 +691,7 @@ const pollingData = {
         okrsokHU: "6. szavazókör",
         okrsokSK: "Volebný okrsok č. 6",
         placeHU: "Materská škola",
-        addressHU: "Svätý Martin 3."
+        addressHU: "m.č. Svätý Martin 3."
     },
 
     "boldocka_cesta": {
@@ -699,77 +699,77 @@ const pollingData = {
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "duhova": {
         streetHU: "Dúhová",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "fucikova": {
         streetHU: "Fučíkova",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "heckova": {
         streetHU: "Hečková",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "jasna": {
         streetHU: "Jasná",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "kvetna": {
         streetHU: "Kvetná",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "mlynska": {
         streetHU: "Mlynská",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "rosna": {
         streetHU: "Rosná",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "slnecna": {
         streetHU: "Slnečná",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "stefanikova": {
         streetHU: "Štefánikova",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
     "vrbenskeho": {
         streetHU: "Vrbenského",
         okrsokHU: "7. szavazókör",
         okrsokSK: "Volebný okrsok č. 7",
         placeHU: "Zákadná škola",
-        addressHU: "Mlynská utca 50., Senec"
+        addressHU: "Mlynská ul. č. 50, Senec"
     },
 
     "nitrianska": {
@@ -777,56 +777,56 @@ const pollingData = {
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
     "rybarska": {
         streetHU: "Rybárska",
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
     "snp": {
         streetHU: "SNP",
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
     "samorinska": {
         streetHU: "Šamorínska",
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
     "skolska": {
         streetHU: "Školská",
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
     "sturova": {
         streetHU: "Štúrova",
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
     "vodna": {
         streetHU: "Vodná",
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
     "zeleznicna": {
         streetHU: "Železničná",
         okrsokHU: "8. szavazókör",
         okrsokSK: "Volebný okrsok č. 8",
         placeHU: "Spojená škola s VJM (Gymnázium maďarské)",
-        addressHU: "Lichnerova utca 71., Senec"
+        addressHU: "Lichnerova ul. 71, Senec"
     },
 
     "banicova": {
@@ -834,105 +834,105 @@ const pollingData = {
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "bratislavska_2_30_paros": {
         streetHU: "Bratislavská č. 2–30 (páros számok)",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "bratislavska_27_75_neparos": {
         streetHU: "Bratislavská č. 27–75 (páratlan számok)",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "emila_boleslava_lukaca": {
         streetHU: "Emila Boleslava Lukáča",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "jana_smreka": {
         streetHU: "Jána Smreka",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "kalinciakova": {
         streetHU: "Kalinčiakova",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "liptovska": {
         streetHU: "Liptovská",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "ludovita_fullu": {
         streetHU: "Ľudovíta Fullu",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "m_urbana": {
         streetHU: "M. Urbana",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "novomeskeho": {
         streetHU: "Novomeského",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "pri_striebornom_jazere": {
         streetHU: "Pri Striebornom jazere",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "strieborne_jazero": {
         streetHU: "Strieborné jazero",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "zahradnicka": {
         streetHU: "Záhradnícka",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "zarnovova": {
         streetHU: "Žarnovova",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
     "hany_zelinovej": {
         streetHU: "Hany Zelinovej",
         okrsokHU: "9. szavazókör",
         okrsokSK: "Volebný okrsok č. 9",
         placeHU: "Materská škola",
-        addressHU: "Kysucká utca 9., Senec"
+        addressHU: "Kysucká ul. 9, Senec"
     },
 
     "dobsinskeho": {
@@ -940,35 +940,35 @@ const pollingData = {
         okrsokHU: "10. szavazókör",
         okrsokSK: "Volebný okrsok č. 10",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "gagarinova": {
         streetHU: "Gagarinova",
         okrsokHU: "10. szavazókör",
         okrsokSK: "Volebný okrsok č. 10",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "janosikova": {
         streetHU: "Jánošíkova",
         okrsokHU: "10. szavazókör",
         okrsokSK: "Volebný okrsok č. 10",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "kysucka": {
         streetHU: "Kysucká",
         okrsokHU: "10. szavazókör",
         okrsokSK: "Volebný okrsok č. 10",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "zemplinska": {
         streetHU: "Zemplínska",
         okrsokHU: "10. szavazókör",
         okrsokSK: "Volebný okrsok č. 10",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
 
     "inovecka": {
@@ -976,42 +976,42 @@ const pollingData = {
         okrsokHU: "11. szavazókör",
         okrsokSK: "Volebný okrsok č. 11",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "karola_sisku": {
         streetHU: "Karola Šišku",
         okrsokHU: "11. szavazókör",
         okrsokSK: "Volebný okrsok č. 11",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "oravska": {
         streetHU: "Oravská",
         okrsokHU: "11. szavazókör",
         okrsokSK: "Volebný okrsok č. 11",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "pezinska": {
         streetHU: "Pezinská",
         okrsokHU: "11. szavazókör",
         okrsokSK: "Volebný okrsok č. 11",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "povazska": {
         streetHU: "Považská",
         okrsokHU: "11. szavazókör",
         okrsokSK: "Volebný okrsok č. 11",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
     "žitavska": {
         streetHU: "Žitavská",
         okrsokHU: "11. szavazókör",
         okrsokSK: "Volebný okrsok č. 11",
         placeHU: "Gépjárműipari és Vállalkozási Szakközépiskola",
-        addressHU: "Kysucká utca 14., Senec"
+        addressHU: "Kysucká ul. 14., Senec"
     },
 
     "andreja_sladkovica": {
@@ -1019,21 +1019,21 @@ const pollingData = {
         okrsokHU: "12. szavazókör",
         okrsokSK: "Volebný okrsok č. 12",
         placeHU: "Iskolai gyermekklub",
-        addressHU: "Sokolská utca, 4134. hrsz., Senec"
+        addressHU: "Sokolská ul. súp. č. 4134, Senec"
     },
     "sokolska": {
         streetHU: "Sokolská",
         okrsokHU: "12. szavazókör",
         okrsokSK: "Volebný okrsok č. 12",
         placeHU: "Iskolai gyermekklub",
-        addressHU: "Sokolská utca, 4134. hrsz., Senec"
+        addressHU: "Sokolská ul. súp. č. 4134, Senec"
     },
     "svatoplukova": {
         streetHU: "Svätoplukova",
         okrsokHU: "12. szavazókör",
         okrsokSK: "Volebný okrsok č. 12",
         placeHU: "Iskolai gyermekklub",
-        addressHU: "Sokolská utca, 4134. hrsz., Senec"
+        addressHU: "Sokolská ul. súp. č. 4134, Senec"
     },
 
     "bernolakova": {
@@ -1041,35 +1041,35 @@ const pollingData = {
         okrsokHU: "13. szavazókör",
         okrsokSK: "Volebný okrsok č. 13",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "hviezdoslavova": {
         streetHU: "Hviezdoslavova",
         okrsokHU: "13. szavazókör",
         okrsokSK: "Volebný okrsok č. 13",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "j_g_tajovskeho": {
         streetHU: "J.G. Tajovského",
         okrsokHU: "13. szavazókör",
         okrsokSK: "Volebný okrsok č. 13",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "kosicka": {
         streetHU: "Košická",
         okrsokHU: "13. szavazókör",
         okrsokSK: "Volebný okrsok č. 13",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "pribinova": {
         streetHU: "Pribinova",
         okrsokHU: "13. szavazókör",
         okrsokSK: "Volebný okrsok č. 13",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
 
     "belu_bartoka": {
@@ -1077,63 +1077,63 @@ const pollingData = {
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "fandlyho": {
         streetHU: "Fándlyho",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "chalupkova": {
         streetHU: "Chalupkova",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "letna": {
         streetHU: "Letná",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "lichnerova": {
         streetHU: "Lichnerova",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "masiarska": {
         streetHU: "Mäsiarska",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "priemyselna": {
         streetHU: "Priemyselná",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "sportova": {
         streetHU: "Športová",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
     "vajanskeho": {
         streetHU: "Vajanského",
         okrsokHU: "14. szavazókör",
         okrsokSK: "Volebný okrsok č. 14",
         placeHU: "J.G. Tajovský Alapiskola",
-        addressHU: "Tajovského utca 1., Senec"
+        addressHU: "Tajovského ul. č. 1, Senec"
     },
 
     "a_dubceka": {
@@ -1141,133 +1141,133 @@ const pollingData = {
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "a_hlinku": {
         streetHU: "A. Hlinku",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "bazova": {
         streetHU: "Bazová",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "ceresnova": {
         streetHU: "Čerešňová",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "dialnicna": {
         streetHU: "Dialničná",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "drienkova": {
         streetHU: "Drienková",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "g astanova": {
         streetHU: "Gaštanová",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "horny_dvor": {
         streetHU: "Horný dvor",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "j_csermaka": {
         streetHU: "J. Csermáka",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "j_farkasa": {
         streetHU: "J. Farkasa",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "j_murgasa": {
         streetHU: "J. Murgaša",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "javorova": {
         streetHU: "Javorová",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "marhulova": {
         streetHU: "Marhuľová",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "mesacna": {
         streetHU: "Mesačná",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "mor usova": {
         streetHU: "Morušová",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "pri_stifte": {
         streetHU: "Pri Štifte",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "sipkova": {
         streetHU: "Šípková",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "trnkova": {
         streetHU: "Trnková",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
     "visnova": {
         streetHU: "Višňová",
         okrsokHU: "15. szavazókör",
         okrsokSK: "Volebný okrsok č. 15",
         placeHU: "Seneci Idegenforgalmi Hivatal",
-        addressHU: "Május 1. tér 53/4., Senec"
+        addressHU: "Námestie 1. mája 53/4., Senec"
     },
 
     "agatova": {
@@ -1275,140 +1275,140 @@ const pollingData = {
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "brezova": {
         streetHU: "Brezová",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "dlha": {
         streetHU: "Dlhá",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "drozdia": {
         streetHU: "Drozdia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "holubia": {
         streetHU: "Holubia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "jarna": {
         streetHU: "Jarná",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "jastrabia": {
         streetHU: "Jastrabia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "jesenna": {
         streetHU: "Jesenná",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "lastovicia": {
         streetHU: "Lastovičia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "lipova": {
         streetHU: "Lipová",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "lucna": {
         streetHU: "Lúčna",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "orechova": {
         streetHU: "Orechová",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "slavicia": {
         streetHU: "Slávičia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "slnecne_jazera": {
         streetHU: "Slnečné jazerá",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "sovia": {
         streetHU: "Sovia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "skovrancia": {
         streetHU: "Škovránčia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "ulica_pri_vcelarikoch": {
         streetHU: "Ulica pri včelárikoch",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "vrabcia": {
         streetHU: "Vrabčia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "vtacia": {
         streetHU: "Vtáčia",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
     "zimna": {
         streetHU: "Zimná",
         okrsokHU: "16. szavazókör",
         okrsokSK: "Volebný okrsok č. 16",
         placeHU: "Városi Művelődési Központ",
-        addressHU: "Május 1. tér 2., Senec"
+        addressHU: "Námestie 1. mája č. 2, Senec"
     },
 
     "borievkova": {
@@ -1416,168 +1416,168 @@ const pollingData = {
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "borovicova": {
         streetHU: "Borovicová",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "dolna": {
         streetHU: "Dolná",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "fialkova": {
         streetHU: "Fialková",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "horna": {
         streetHU: "Horná",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "jedlova": {
         streetHU: "Jedľová",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "kapria": {
         streetHU: "Kapria",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "karasova": {
         streetHU: "Karasová",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "lesna": {
         streetHU: "Lesná",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "muskatova": {
         streetHU: "Muškátová",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "okruzna": {
         streetHU: "Okružná",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "polna": {
         streetHU: "Poľná",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ruzova": {
         streetHU: "Ružová",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "seredska": {
         streetHU: "Sereďská",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "smrekova": {
         streetHU: "Smreková",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "tulipanova": {
         streetHU: "Tulipánová",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "turnianska": {
         streetHU: "Turnianska",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ulica_alexandra_albrechta": {
         streetHU: "Ulica Alexandra Albrechta",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ulica_eugena_suchona": {
         streetHU: "Ulica Eugena Suchoňa",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ulica_jana_cikkera": {
         streetHU: "Ulica Jána Cikkera",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ulica_jana_l_bellu": {
         streetHU: "Ulica Jána L. Bellu",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ulica_jana_n_hummela": {
         streetHU: "Ulica Jána N. Hummela",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ulica_pri_buresi": {
         streetHU: "Ulica pri Búreši",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     },
     "ulica_pri_ciernej_vode": {
         streetHU: "Ulica pri Čiernej vode",
         okrsokHU: "17. szavazókör",
         okrsokSK: "Volebný okrsok č. 17",
         placeHU: "Antona Bernoláka Gimnázium",
-        addressHU: "Lichnerova utca 69., Senec"
+        addressHU: "Lichnerova č. 69, Senec"
     }
     // Töltsd fel a többi utcát is a fenti mintát követve...
 };
