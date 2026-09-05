@@ -406,9 +406,14 @@ const candidates = {
 
 let currentLang = 'hu';
 
-function setLanguage(lang) {
+function setLanguage(lang, updateUrl = true) {
     currentLang = lang;
-    localStorage.setItem('selectedLanguage', lang);
+
+    // Ha a felhasználó kattintott a gombra, frissítjük az URL-t ?lang=hu vagy ?lang=sk-ra (oldalújratöltés nélkül)
+    if (updateUrl) {
+        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?lang=' + lang + window.location.hash;
+        window.history.replaceState({ path: newUrl }, '', newUrl);
+    }
 
     if (lang === 'sk') {
         document.body.classList.add('lang-mode-sk');
@@ -419,25 +424,29 @@ function setLanguage(lang) {
         document.getElementById('btn-hu').className = "px-2 py-1 rounded bg-emerald-700 text-white transition";
         document.getElementById('btn-sk').className = "px-2 py-1 rounded text-gray-600 hover:text-emerald-800 transition";
     }
+
     var navTitleBadgeSc = document.getElementById("nav-title-badge-sc");
-    var district1Streets = document.getElementById("district-1-streets-candidate")
+    var district1Streets = document.getElementById("district-1-streets-candidate");
     var district2Streets = document.getElementById("district-2-streets-candidate");
     var district3Streets = document.getElementById("district-3-streets-candidate");
+
     if (lang === 'sk') {
         document.title = "Maďarská aliancia – Senec | #SrdcomPreSenec";
-        navTitleBadgeSc.innerHTML = "Senec";
-        district1Streets.innerHTML = "5 kandidátov";
-        district2Streets.innerHTML = "3 kandidáti";
-        district3Streets.innerHTML = "1 kandidát";
+        if (navTitleBadgeSc) navTitleBadgeSc.innerHTML = "Senec";
+        if (district1Streets) district1Streets.innerHTML = "5 kandidátov";
+        if (district2Streets) district2Streets.innerHTML = "3 kandidáti";
+        if (district3Streets) district3Streets.innerHTML = "1 kandidát";
     } else {
         document.title = "Magyar Szövetség – Szenc | #SzívügyünkSzenc";
-        navTitleBadgeSc.innerHTML = "Szenc";
-        district1Streets.innerHTML = "5 jelölt";
-        district2Streets.innerHTML = "3 jelölt";
-        district3Streets.innerHTML = "1 jelölt";
+        if (navTitleBadgeSc) navTitleBadgeSc.innerHTML = "Szenc";
+        if (district1Streets) district1Streets.innerHTML = "5 jelölt";
+        if (district2Streets) district2Streets.innerHTML = "3 jelölt";
+        if (district3Streets) district3Streets.innerHTML = "1 jelölt";
     }
 
-    updateSearchLanguage();
+    if (typeof updateSearchLanguage === 'function') {
+        updateSearchLanguage();
+    }
 }
 
 function openCandidateModal(id) {
@@ -1761,27 +1770,20 @@ function filterDistrict(district, btn) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Megnézzük, van-e URL paraméter (pl. ?lang=sk)
     const urlParams = new URLSearchParams(window.location.search);
     const paramLang = urlParams.get('lang');
-
-    // 2. Megnézzük, váltott-e már korábban nyelvet a látogató ezen a gépen
-    const savedLang = localStorage.getItem('selectedLanguage');
-
-    // 3. Megnézzük az aktuális domain nevet
     const hostname = window.location.hostname;
 
-    let defaultLang = 'hu'; // Alapértelmezett magyar
-
-    // Ha a szlovák domainről érkezik
+    // Alapértelmezett nyelv a domain alapján
+    let defaultLang = 'hu';
     if (hostname.includes('alianciasenec')) {
         defaultLang = 'sk';
     }
 
-    // Sorrend: 1. URL paraméter -> 2. Elmentett kézi választás -> 3. Domain alapértelmezés
-    const initialLang = paramLang || savedLang || defaultLang;
+    // Ha van ?lang= a címben, azt használja, egyébként a domain alapértelmezettjét
+    const initialLang = paramLang || defaultLang;
 
-    // Betöltjük a kiválasztott nyelvet
-    setLanguage(initialLang);
+    // Betöltéskor beállítjuk a nyelvet (az URL-t ilyenkor még nem bántjuk)
+    setLanguage(initialLang, false);
 });
 
