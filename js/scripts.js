@@ -25,16 +25,15 @@ const candidates = {
             "Rád by som pokračoval v rozrobených mestských projektoch a úspešne ich dotiahol do konca – či už ide o polikliniku, novú základnú školu, obnovu parkov, detských ihrísk a ďalšej infraštruktúry –, no chcem iniciovať aj nové zámery. Našou najväčšou aktuálnou výzvou je parkovacia politika. Jej zavedenie bolo potrebné, no poučili sme sa z doterajšej praxe, momentálne ju meníme a prispôsobujeme reálnym potrebám obyvateľov. Rovnako dôležité je pre mňa nové nastavenie podmienok na Slnečných jazerách, ktoré citlivo zohľadní požiadavky miestnych podnikateľov aj turistov.\n" +
             "\n" +
             "Na základe doterajšej poctivo odvedenej poslaneckej práce vás úctivo žiadam o dôveru v samosprávnych voľbách. Svoj mandát budem aj naďalej vykonávať svedomite, s pokorou a plným nasadením pre blaho všetkých obyvateľov mesta Senec!",
-        goalsHU: ["A szenci magyar oktatási és kulturális élet kiemelt támogatása és fejlesztése.",
-            "Az új egészségügyi központ, az alapiskola bővítése, valamint a parkok és játszóterek sikeres megvalósítása.",
-            "A városi parkolás igazítása a szenci lakosok valós igényeihez és tapasztalataihoz.", "A tavak működésének rendezése a helyi vállalkozók és a látogatók közös érdekei szerint.",
-            "A fiatal családok és az idősebb generáció megsegítése, a keresztény értékek megőrzése.", "Becsületes, alázatos és hatékony érdekvédelem a városházán."
+        goalsHU: ["A tradíciók megőrzése, a kultúrcsoportok fenntartása és a hitközösség további segítése",
+            "Az iskoláink színvonalas fenntartása, új iskola megépítése",
+            "A megkezdett nagy beruházások befejezése, új merész tervek megkezdése (jégcsarnok)"
         ],
-        goalsSK: ["Rozvoj vzdelávania a kultúrneho života v Senci, podpora a zachovávanie tradičných hodnôt.", "Úspešné dokončenie novej polikliniky, rozširovania základnej školy, obnovy parkov a detských ihrísk.",
-            "Prispôsobenie mestskej parkovacej politiky reálnym potrebám a skúsenostiam Senčanov.", "Nové nastavenie fungovania jazier, ktoré vyváži pohodlie turistov a záujmy miestnych podnikateľov.",
-            "Pomoc pre mladé rodiny, starostlivosť o seniorov a ochrana kresťanských hodnôt.", "Svedomitá, poctivá a pokorná práca v mestskom zastupiteľstve pre všetkých obyvateľov Senca."
+        goalsSK: ["Ďalší rozvoj miestnej kultúry, zachovanie tradícií, podpora kultúrnych skupín a náboženských komunít",
+            "Udržiavanie vysokého štandardu našich škôl, výstavba novej školy",
+            "Dokončenie veľkých investícií, a začatie nových odvážnych projektov (napr. hokejová hala a pod.)"
         ],
-        email: "mail@mail.sk",
+        email: "rudolf.galambos@senec.sk",
         img: "GR.jpg"
     },
     2: {
@@ -121,19 +120,9 @@ const candidates = {
             "- Obnova ďalších verejných priestranstiev;\n" +
             "- Rozšírenie cykloinfraštruktúry do ďalších mestských častí a ich postupné prepojenie s centrom mesta.\n\n" +
             "Myslím si, že pred nami stojí množstvo výziev a úloh. Súčasné vedenie mesta však má dostatok elánu, expertízy a odvahy potrebnej na pokračovanie v rozvoji. Dúfam, že vďaka vašej dôvere a spoločnými silami oddaného tímu, sa nám naďalej bude dariť naše mesto rozvíjať a zveľaďovať.",
-        goalsHU: ["Az új poliklinika sikeres befejezése és a színvonalas szakellátás biztosítása.", "Az új alapiskola megépítése és a meglévő oktatási infrastruktúra fejlesztése.",
-            "A buszpályaudvar felújítása, belvárosi mélygarázs kialakítása és a kerékpárút-hálózat bővítése.", "Új városi szociális központ kiépítése a segítségre szorulók és idősek számára.",
-            "EU-s és egyéb fejlesztési keretek hatékony bevonása, valamint a magyar közösség és a határon átnyúló kapcsolatok erősítése.", "A közterületek, parkok és műemlékek folyamatos megújítása, zöld energiás beruházások folytatása."
-        ],
-        goalsSK: [
-            "Dokončenie novej polikliniky a zabezpečenie kvalitnej lekárskej starostlivosti",
-            "Výstavba novej školy a rozvoj vzdelávacej infraštruktúry",
-            "Revitalizácia autobusovej stanice, podzemné parkovanie v centre a rozširovanie cyklotrás",
-            "Vybudovanie nového sociálneho strediska",
-            "Efektívne čerpanie eurofondov, podpora národnostných komunít a rozvoj komunitného života",
-            "Obnova verejných priestranstiev, parkov a pokračovanie v ekologických projektoch"
-        ],
-        email: "peter@szenc.sk",
+        goalsHU: ["Az új egészségügyi központ befejezése", "Az új iskola megépítése", "A buszpályaudvar és a városi közterek revitalizációja", "Szociális központ létrehozása", "A kerékpárút-hálózat bővítése"],
+        goalsSK: ["Dokončenie polikliniky", "Výstavba novej základnej školy", "Revitalizácia autobusovej stanice a verejných priestranstiev", "Vybudovanie centra pre seniorov", "Ďalšie rozširovanie cyklistickej infraštruktúry"],
+        email: "klenovicsg@senec.sk",
         img: "KG.jpg"
     },
     4: {
@@ -166,18 +155,16 @@ const candidates = {
             "\n" +
             "Na základe mojej doteraz vykonávanej práce sa uchádzam o vašu priazeň a dôveru aj v nastávajúcom volebnom období. Verím, že moju kandidatúru na poslankyňu mesta Senec podporíte, aby som Vás opäť mohla zastupovať v mestskom zastupiteľstve v Senci a presadzovať vaše potreby a očakávania.",
         goalsHU: [
-            "A városi szociális ellátórendszer és a rászorulók támogatásának erősítése",
-            "A szociálisan érzékeny városi politika képviselete és fejlesztése",
-            "A közösségi és családi értékek megőrzése, a szépkorúak és fiatal családok segítése",
-            "A sikeresen megkezdett városi fejlesztések és beruházások támogatása"
+            "Az idősebb generáció problémáinak megoldásával",
+            "A fiatal családok támogatására irányuló aktivitások biztosításával",
+            "A városban tapasztalható szociálpatológia jelenségek visszaszorítása, a biztonság növelése"
         ],
         goalsSK: [
-            "Posilnenie mestského systému sociálnych služieb a pomoci odkázaným občanom",
-            "Presadzovanie a rozvoj sociálne citlivej mestskej politiky",
-            "Zachovanie komunitných a rodinných hodnôt, podpora seniorov a mladých rodín",
-            "Podpora úspešne rozbehnutých mestských projektov a investícií"
+            "Riešenie problémov seniorov a starnúcej generácie",
+            "Podpora mladých rodín",
+            "Riešenie sociálnopatologických javov v meste, chcem vrátiť občanom mesta pocit bezpečia"
         ],
-        email: "mail@mail.sk",
+        email: "gabriella.nemeth@senec.sk",
         img: "NG.jpg"
     },
     5: {
@@ -217,18 +204,16 @@ const candidates = {
             "\n" +
             "Milujem naše mesto  Senec, ktoré je mestom, ktoré sa sústavne rozvíja. Sú ale oblasti, ktorésa dajú ešte stále vylepšovať. Preto mojou víziou, resp. predstavou je, aby naše mesto sa stalo moderným mestom, hodným 21.storočia kde všetci jeho obyvatelia, či sú to deti, mladí alebo seniori sa cítia dobre a vedia si nájsť uplatnenie. Preto sa obraciam na Vás s prosbou o vašu priazeň, aby som svojou prácou v mestskom zastupiteľstve mohla byť nápomocná pri ďalšom rozvoji nášho mesta.",
         goalsHU: [
-            "Modern, 21. századi, élhető város megteremtése minden generáció (gyermekek, fiatalok, szépkorúak) számára",
-            "A helyi magyar oktatási és nevelési intézmények, iskolatanácsok folyamatos támogatása",
-            "A közösségi és kulturális élet, valamint a civil szervezetek (Csemadok, ZPOZ) aktív segítése",
-            "Idősek otthoni gondozásának és a szociális ellátórendszernek a támogatása"
+            "A közbiztonság növelése",
+            "Elérhető egészségügyi és szociális ellátás",
+            "A város peremkerületeinek betagozódása a város életébe"
         ],
         goalsSK: [
-            "Vytvorenie moderného mesta 21. storočia pre všetky generácie (deti, mládež, seniorov)",
-            "Stála podpora miestnych maďarských vzdelávacích inštitúcií a rád škôl",
-            "Aktívna podpora komunitného a kultúrneho života a občianskych organizácií (Csemadok, ZPOZ)",
-            "Podpora opatrovateľskej služby a sociálnej starostlivosti o seniorov"
+            "Zvyšovanie bezpečnosti",
+            "Dostupná zdravotná a sociálna starostlivosť",
+            "Venovať väčšiu pozornosť periférnym častiam mesta"
         ],
-        email: "mail@mail.sk",
+        email: "",
         img: "RM.jpg",
     },
     6: {
@@ -262,18 +247,16 @@ const candidates = {
             "\n" +
             "Som presvedčený, že investícia do športu a mládeže je investíciou do budúcnosti mesta. Každé dieťa, ktoré si nájde cestu k športu, získava hodnoty a návyky, ktoré mu pomôžu uspieť v živote. Práve preto by som rád svojimi skúsenosťami a energiou prispel k tomu, aby sa Senec aj naďalej rozvíjal ako mesto, ktoré vytvára kvalitné podmienky pre mladú generáciu.",
         goalsHU: [
-            "Az iskolák, a sportegyesületek és a város közötti szorosabb együttműködés elősegítése",
-            "Minőségi és elérhető sportolási feltételek megteremtése a szabadidő- és versenysportban",
-            "Az utánpótlás-sport, a rendszeres mozgás és az egészséges életmód kiemelt támogatása",
-            "Gyermekeket, szülőket és iskolákat összekötő közösségi sportesemények és tornák szervezése"
+            "Több elérhető sportlétesítmény – az iskolai sportpályák megnyitása a lakosság számára",
+            "Kiszámítható támogatási rendszer a sportklubok és a fiatal sportolók számára – világos és átlátható támogatási szabályok kialakítása.",
+            "Az úszás és a téli sportok feltételeinek megteremtése"
         ],
         goalsSK: [
-            "Podpora užšej spolupráce medzi školami, športovými klubmi a mestom",
-            "Vytváranie kvalitných a dostupných podmienok pre rekreačný aj výkonnostný šport",
-            "Kľúčová podpora mládežníckeho športu, pravidelného pohybu a zdravého životného štýlu",
-            "Organizovanie športových podujatí a turnajov spájajúcich deti, rodičov a školy"
+            "Viac dostupných športovísk – lepšie sprístupniť školské športové areály obyvateľom",
+            "Predvídateľný systém podpory športových klubov a mladých športovcov – vytvoriť jasné a transparentné pravidlá podpory.",
+            "Vytváranie podmienok pre plávanie a zimné športy"
         ],
-        email: "mail@mail.sk",
+        email: "",
         img: "KI.jpg",
     },
     7: {
@@ -315,18 +298,16 @@ const candidates = {
             "\n" +
             "Preto by som sa chcela aktívne podieľať na živote nášho mesta, zastupovať záujmy rodín, rodičov a miestnych komunít a prispieť k tomu, aby Senec zostal príjemným, súdržným a rozvíjajúcim sa mestom pre všetkých.",
         goalsHU: [
-            "A családok, a szülők és a helyi közösségek érdekeinek aktív képviselete",
-            "Az iskolai és óvodai szülői közösségek, valamint a gyermekrendezvények támogatása",
-            "A családi életet, gyermeknevelést és oktatást segítő városi fejlesztések elősegítése",
-            "Egy összetartó, élhető és fejlődő szenci közösség építése összefogással"
+            "Parkolóházak építésének támogatása",
+            "A város tisztaságának növelése",
+            "A játszóterek korszerűsítése és ivókutak telepítése"
         ],
         goalsSK: [
-            "Aktívne zastupovanie záujmov rodín, rodičov a miestnych komunít",
-            "Podpora rodičovských združení, školských a predškolských podujatí pre deti",
-            "Presadzovanie mestskej politiky priateľskej k rodinám a kvalitnému vzdelávaniu",
-            "Budovanie súdržnej, príjemnej a rozvíjajúcej sa komunity v Senci prostredníctvom spolupráce"
+            "Podpora výstavby parkovacích domov",
+            "Väčšia čistota v meste",
+            "Modernizácia detských ihrísk a inštalácia pitných fontánok v ich blízkosti"
         ],
-        email: "mail@mail.sk",
+        email: "",
         img: "MM.jpg",
     },
     8: {
@@ -337,57 +318,25 @@ const candidates = {
         nameSK: "Igor Pohl",
         profHU: "Magánvállalkozó",
         profSK: "Živnostník",
-        bioHU: "Pohl Igornak hívnak, 59 éves vagyok.\n" +
-            "\n" +
-            "Feleségemmel Zsuzsával 3 gyermekünk  van.\n" +
-            "\n" +
-            "Pozsonyban szakközép iskolán elektrotechnikát végeztem.\n" +
-            "\n" +
-            "Jelenleg kisiparos vagyok, gázkazánok szerviszelésével foglalkozom.\n" +
-            "\n" +
-            "Hosszú évek óta aktívan szolgálom a helyi közösséget a római katolikus plébánia keretében. \n" +
-            "\n" +
-            "Nemcsak technikai feladatokat látok el, hanem lelki szolgálatot is végzek akolitusként. \n" +
-            "\n" +
-            "Ezen kívül különböző egyházi és közösségi rendezvények szervezésében is részt veszek.\n" +
-            "\n" +
-            "Az egyházi tanács tagjaként részt veszek a Szent Miklós templom körüli munkálatok javaslatában, megoldásában.\n" +
-            "\n" +
-            "Köszönöm irántam való bizalmatokat. Köszönöm, hogy megszólítottatok.\n" +
-            "\n" +
-            "A továbbiakban eddigi tevékenységemet akár a civil, vagy egyházi dolgokban szeretném talán még nagyobb lelkesedéssel folytatni. Szeretném katolikus templomunk örökségét tovább vinni és tovább adni.\n" +
-            "\n" +
-            "Támogatni, illetve kezdeményezni szeretnék minden olyan város fejlesztési tevékenységet, amely a közjót szolgálja és egységet hoz, mindamellet nem feledkezik meg a lelki értékekről sem.",
-        bioSK: "Igor Pohl, 59 rokov.\n" +
-            "\n" +
-            "S manželkou Zuzkou máme tri deti.\n" +
-            "\n" +
-            "Vyštudoval som elektrotechniku - silnoprúd.\n" +
-            "\n" +
-            "Pracujem ako živnostník, technik plynových zariadení.\n" +
-            "\n" +
-            "Dlhé roky sa aktívne zapájam do života miestnej rímskokatolíckej farnosti. Okrem toho, že zabezpečujem veci technického charakteru, vykonávam aj duchovnú službu akolytu. Organizujem tiež rôzne cirkevné a spoločenské programy. Ako člen farskej rady pomáham pri riešení projektov okolo Kostola sv. Mikuláša.\n" +
-            "\n" +
-            "Ďakujem za prejavenú dôveru, aj za nomináciu za poslanca mestského zastupiteľstva.\n" +
-            "\n" +
-            "Doterajšie moje aktivity v civilnej alebo cirkevnej oblasti by som chcel vykonávať s ešte väčším nadšením.\n" +
-            "\n" +
-            "Chcel by som naďalej presadzovať projekty s duchovnými hodnotami a dedičstvo nášho rímskokatolíckeho kostola odovzdať nastupujúcej generácii. \n" +
-            "\n" +
-            "Chcel by som podporovať všetky mestské rozvojové aktivity, ktoré slúžia pre verejné dobro a prinášajú jednotu. ",
+        bioHU: "59 éves vagyok, feleségemmel három gyermeket nevelünk. Pozsonyban elektrotechnikai szakközépiskolát végeztem, jelenleg kisiparosként gázkazánok szervizelésével foglalkozom.\n" +
+            "Hosszú évek óta aktívan részt veszek a szenci római katolikus plébánia életében. A közösségben nemcsak technikai feladatokat látok el, hanem akolitusként lelki szolgálatot is végzek. Részt veszek különböző egyházi és közösségi rendezvények szervezésében, valamint az egyházi tanács tagjaként a Szent Miklós-templom körüli munkák és projektek megoldásában is közreműködöm. Sikeresen pályáztunk a templomdomb egyre veszélyesebb állagának javítására és a várossal együttműködve sikeresen megállítottuk a domb leomlását. \n" +
+            "Fontosnak tartom, hogy városunk fejlődése során a gyakorlati szempontok mellett a közösségi és lelki értékek is megmaradjanak. Szeretném továbbra is támogatni azokat a kezdeményezéseket, amelyek a közjót szolgálják, erősítik az összetartozást és hozzájárulnak ahhoz, hogy Szenc közössége még inkább összetartó legyen.\n" +
+            "A rám bízott közösségi és egyházi feladatokat a jövőben is lelkiismeretesen szeretném végezni, és tapasztalataimmal hozzájárulni városunk fejlődéséhez. Különösen fontos számomra a Szent Miklós-templom  és a Szentháromság Kápolna örökségének megőrzése és továbbadása a következő generációknak. A becsületesség, a közjavak védelme, az egyenes beszéd és a lakosokhoz való igazságos viszonyulás számomra természetes.\n",
+        bioSK: "Mám 59 rokov a s manželkou Zuzkou máme tri deti. Vyštudoval som elektrotechniku – silnoprúd, v súčasnosti pracujem ako živnostník - technik plynových zariadení.\n" +
+            "Dlhé roky sa aktívne zapájam do života miestnej rímskokatolíckej farnosti. Okrem technických úloh vykonávam aj duchovnú službu akolytu. Podieľam sa na organizovaní cirkevných a spoločenských podujatí, ako člen farskej rady pomáham pri riešení projektov súvisiacich s Kostolom sv. Mikuláša. Boli sme úspešní pri uchádzaní sa o externé zdroje na opravu nebezpečne posúvajúceho sa kostolného kopca a v spolupráci s mestom sa nám podarilo predísť jeho zrúteniu. \n" +
+            "Za dôležité považujem, aby sa pri rozvoji nášho mesta popri praktických otázkach nezabúdalo ani na hodnoty, ktoré vytvárajú a spájajú komunitu. Chcem podporovať projekty slúžiace verejnému dobru, posilňujúce spolupatričnosť a prispievajúce k dobrému životu obyvateľov. \n" +
+            "Aj naďalej chcem svoje skúsenosti a energiu venovať civilnej aj cirkevnej oblasti. Dôležitou úlohou je pre mňa zachovanie duchovného a kultúrneho dedičstva Kostola sv. Mikuláša, kaplnky Najsätejšej trojice a ich odovzdaniu ďalšej generácii. Čestnosť, otvorenú komunikáciu,  efektívne hospodárenie a spravodlivý prístup k občanom považujem za samozrejmosť.\n",
         goalsHU: [
-            "A közjót szolgáló és a közösségi egységet erősítő városfejlesztések támogatása",
-            "A Szent Miklós templom örökség megőrzése, ápolása",
-            "A lelki értékek és a keresztény értékrend képviselete a város életében",
-            "A civil és egyházi közösségi rendezvények, helyi kezdeményezések aktív segítése"
+            "A családok támogatása és a generációk közti solidaritás növelése",
+            "Az ifjúság tartalmas időtöltésének ösztönzése, programok szervezése",
+            "Az egyházakkal, vallási csoportokkal, polgári társulásokkal való együttműködés"
         ],
         goalsSK: [
-            "Podpora rozvojových projektov mesta slúžiacich verejnému dobru a spájaniu komunity",
-            "Zachovanie a starostlivosť o dedičstvo Kostola sv. Mikuláša",
-            "Presadzovanie duchovných hodnôt a kresťanského hodnotového systému v živote mesta",
-            "Aktívna pomoc pri organizovaní cirkevných a spoločenských podujatí"
+            "Podpora rodiny a medzigeneračnej solidarity",
+            "Podpora aktivít, ktoré smerujú k zmysluplnému využitiu voľného času mládeže",
+            "Otvorená spolupráca s cirkvami, náboženskými obcami a občianskymi združeniami pri organizovaní komunitných aktivít"
         ],
-        email: "mail@mail.sk",
+        email: "",
         img: "PI.jpg",
     },
     9: {
@@ -441,18 +390,16 @@ const candidates = {
             "\n" +
             "S dôverou sa uchádzam o váš hlas. Nesľubujem zázraky zo dňa na deň — sľubujem poctivú prácu, otvorenú komunikáciu, úprimný záujem a odhodlanie stáť pri ľuďoch. Podávam vám ruku k spolupráci pre Senec, ktorý bude bezpečnejší, srdečnejší, modernejší a bližší nám všetkým. Ďakujem vám a teším sa na osobné stretnutia a rozhovory s vami.",
         goalsHU: [
-            "Fenntartható és egész éves turizmus fejlesztése a Szenci tavak kiemelt védelmével",
-            "Minőségi, biztonságos és tiszta városi környezet megteremtése minden generáció számára",
-            "A helyi vállalkozók aktív támogatása, megbecsülése és partnerségi kezelése",
-            "Modern, digitális városi szolgáltatások és átlátható, emberközeli önkormányzat"
+            "Az új lakóövezetek gyorsabb integrálása a város életébe",
+            "Minőségi infrastruktúra és biztonságos közterek",
+            "Modern digitális szolgáltatások elérhetősége"
         ],
         goalsSK: [
-            "Rozvoj udržateľného a celoročného turizmu s dôrazom na ochranu Seneckých jazier",
-            "Vytváranie kvalitnej, bezpečnej a čistej mestskej infraštruktúry pre všetky generácie",
-            "Aktívna podpora, rešpekt a férové podmienky pre lokálnych podnikateľov",
-            "Moderné, digitálne služby mesta a transparentná, ľuďom blízka samospráva"
+            "Rýchlejšíe začlenenie nových obytných zón do života nášho mesta",
+            "Kvalitná infraštruktúra a bezpečné verejné priestory",
+            "Moderné digitálne služby pre obyvateľov aj návštevníkov"
         ],
-        email: "mail@mail.sk",
+        email: "",
         img: "KA.jpg"
     }
 };
