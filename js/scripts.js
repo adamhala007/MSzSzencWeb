@@ -5,8 +5,8 @@ const candidates = {
         district: 1,
         nameHU: "Mgr. Galambos Rudolf",
         nameSK: "Mgr. Rudolf Galambos",
-        profHU: "Pedagógus, elektrotechnikus",
-        profSK: "Pedagóg, elektrotechnik",
+        profHU: "Magánvállalkozó",
+        profSK: "Živnostník",
         bioHU: "1971-ben születtem, egész életemben Szencen éltem. Itt jártam óvodába és alapiskolába, majd Pozsonyban elektrotechnikai szakon érettségiztem. 1994-ben szereztem tanári diplomát a nyitrai Konstantin Filozófus Egyetem matematika tanszékén. Azóta több szenci iskolában is oktattam matematikát és elektrotechnikát. Pedagógiai pályám mellett hosszú évek óta aktívan zenészként is tevékenykedem itthon és külföldön egyaránt, emellett elektrotechnikusként is folyamatosan dolgozom.\n" +
             "\n" +
             "Az elmúlt választási ciklusokban kapott megtisztelő bizalomnak köszönhetően alázattal képviselhettem a szenci magyarságot és városunk minden lakosát. Megválasztásom óta folyamatosan az Oktatási és Kulturális Bizottság elnökeként dolgozom, amely közösségünk számára kiemelten fontos terület. Emellett immár több mint húsz éve vagyok a Szlovákiai Magyar Szülők Szövetsége országos elnökségének tagja, ahol Pozsony megye képviseletét látom el.\n" +
@@ -44,7 +44,7 @@ const candidates = {
         nameHU: "Mgr. Halász Ádám",
         nameSK: "Mgr. Adam Halász",
         profHU: "Szoftverfejlesztő",
-        profSK: "Softvérový vývojár",
+        profSK: "Softvérový programátor",
         bioHU: "Hatéves korom óta Szencen élek, anyai ágon pedig valamennyi felmenőm Szencről származik. Nagyapám Tóth Endre, aki a szenci magyar gimnázium köztiszteletben álló tanára volt. Ide jártam magyar óvodába, alapiskolába és gimnáziumba. Ezt követően elvégeztem a pozsonyi Comenius Egyetem alkalmazott informatika szakát. Azóta programozóként dolgozom. Közben elvégeztem az Esterházy Akadémiát, ami egy kétéves képzés, aminek a célja, hogy közéleti utánpótlást biztosítson közösségünknek.\n" +
             "\n" +
             "Néhány éve kapcsolódtam be aktívabban a közéletbe, amikor beléptem a Csemadok és a Magyar Szövetség szenci alapszervezeteibe. Azóta mindkét szervezet elnökségi tagjává választottak, ezen kívül a Csemadokban én lettem az ifjúságért felelős alelnök. Hozzám kötődik az egyre népszerűbb szenci társasjáték-estek elindítása, valamint a Mathias Corvinus Collegium (MCC) előadásainak Szencre hozatala. Tudásommal próbálom elősegíteni, hogy a mai kor követelményeinek megfelelően a szenci Csemadok és Magyar Szövetség a digitális térben is láthatóbbá váljon.\n" +
@@ -74,8 +74,8 @@ const candidates = {
         district: 1,
         nameHU: "Ing. Klenovics Gábor",
         nameSK: "Ing. Gábor Klenovics",
-        profHU: "Polgármesteri megbízott, közgazdász",
-        profSK: "Splnomocnenec primátora, ekonóm",
+        profHU: "Vezető beosztású önkormányzati alkalmazott",
+        profSK: "Vedúci zamestnanec v samospráve",
         bioHU: "Klenovics Gábor vagyok, 48 éves, szenci születésű lokálpatrióta, sokéves nemzetközi és európai tapasztalattal. 22 éve élek boldog házasságban, két fiú és egy lány büszke édesapja vagyok. A szlovák mellett angolul és franciául beszélek.\n\n" +
             "Szencen jártam magyar óvodába és alapiskolába, majd a szenci magyar gimnáziumban érettségiztem 1996-ban. Fiatal koromtól kezdve nagyapám, Ásványi László példája és közösségünk iránti elhivatottsága formálta a politika és a közügyek iránti érdeklődésemet. \n\n" +
             "A pozsonyi Közgazdasági Egyetem elvégzése után (2001-ben) rövid ideig az akkor megalakult Pozsony Megyei Hivatalban dolgoztam, majd két évig a Magyar Koalíció Pártjának külügyi titkára voltam. 2004-től csaknem 16 éven keresztül az Európai Parlamentben tevékenykedtem tanácsadóként és képviselői asszisztensként. Brüsszeli éveim alatt elsősorban közlekedéspolitikával, turizmussal és kisebbségi ügyekkel foglalkoztam.\n\n" +
@@ -142,8 +142,8 @@ const candidates = {
         district: 1,
         nameHU: "PhDr. Németh Gabriella",
         nameSK: "PhDr. Gabriella Németh",
-        profHU: "Volt megyei alelnök",
-        profSK: "Bývalá podpredsedníčka kraja",
+        profHU: "Szociális munkás",
+        profSK: "Sociálna pracovníčka",
         bioHU:
             "Némethné, Bárdos Gabriella vagyok, 1957-ben születtem Szencen. Férjnél vagyok, 2 felnőtt gyermek édesanyja és négy unokám boldog nagymamája vagyok.\n" +
             "\n" +
@@ -186,8 +186,8 @@ const candidates = {
         district: 1,
         nameHU: "Rovensky Mária",
         nameSK: "Mária Rovenská",
-        profHU: "Óvodapedagógus, nevelő",
-        profSK: "Vychovávateľka, pedagóg",
+        profHU: "Nevelőnő",
+        profSK: "Vychovávateľka",
         bioHU: "Rovenský Mária vagyok, 1957-ben születtem Diószegen, de már negyven éve Szencen élek a családommal, mivel 1988-ban férjemmel Rovenský Istvánnal, aki akkor pedagógusa volt a Szenci Magyar Gimnáziumnak, úgy döntöttünk, hogy ezt a szép várost választjuk otthonunknak. Három leánygyermek anyukája és négy unoka boldog nagymamája vagyok.\n" +
             "\n" +
             "Középiskolai tanulmányaimat a Szenci Magyar Gimnáziumban kezdtem, ahol 1976-ban sikeresen leérettségiztem. \n" +
@@ -237,8 +237,8 @@ const candidates = {
         district: 2,
         nameHU: "Mgr. Kolláth Imre",
         nameSK: "Mgr. Imre Kolláth",
-        profHU: "Pedagógus, utánpótlásedző",
-        profSK: "Pedagóg, mládežnícky tréner",
+        profHU: "Alapiskolai pedagógus",
+        profSK: "Pedagóg na základnej škole",
         bioHU: "Kolláth Imre vagyok, szenci születésű, és immár 12 éve dolgozom az oktatásügyben. Három évig a Szenci Malom alapiskolán dolgoztam, pedagógiai pályafutásom további részét pedig a Szenczi Molnár Albert Magyar Tanítási Nyelvű Alapiskolában töltöttem Szencen.\n" +
             "\n" +
             "A Testnevelési és Sporttudományi főiskola alatt kezdtem el fiatal labdarúgókkal foglalkozni. Már játékos-pályafutásom alatt az volt az álmom, hogy annak befejezése után gyermekekkel dolgozhassak, és továbbadhassam nekik mindazt a tudást és tapasztalatot, amelyet edzőimtől kaptam. Edzői pályafutásomat a pozsonyi Slovan csapatánál kezdtem, később visszatértem Szencre, ahol hét éven keresztül utánpótlásedzőként tevékenykedtem.\n" +
@@ -335,8 +335,8 @@ const candidates = {
         district: 2,
         nameHU: "Pohl Igor",
         nameSK: "Igor Pohl",
-        profHU: "Gázkazán-technikus, kisiparos",
-        profSK: "Technik plynových zariadení",
+        profHU: "Magánvállalkozó",
+        profSK: "Živnostník",
         bioHU: "Pohl Igornak hívnak, 59 éves vagyok.\n" +
             "\n" +
             "Feleségemmel Zsuzsával 3 gyermekünk  van.\n" +
@@ -396,8 +396,8 @@ const candidates = {
         district: 3,
         nameHU: "Kontár Andrea",
         nameSK: "Andrea Kontárová",
-        profHU: "Vállalkozó",
-        profSK: "Podnikateľka",
+        profHU: "Magánvállalkozó és tanácsadó a turisztikai szférában",
+        profSK: "Podnikateľka a konzultantka v cestovnom ruchu",
         bioHU: "Jó napot kívánok Szenc minden lakosának!\n" +
             "\n" +
             "A nevem Kontár Andrea. Szenci lakos és helyi vállalkozó vagyok. Számomra Szenc nem csupán egy pont a térképen, és nem csak az a hely, ahol a lakcímem van. Ez az otthonom. Ez az a város, ahol találkozunk a szomszédokkal, ahol családjaink élnek, ahol vállalkozunk, dolgozunk, gyermekeinket neveljük, és ahol mindennapi életünket alakítjuk. Éppen ezért őszintén fontos számomra a város jövője.\n" +
