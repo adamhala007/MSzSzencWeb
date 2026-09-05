@@ -1,7 +1,7 @@
 const candidates = {
     1: {
-        distHU: "1. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 1 • Krúžkujte: #",
+        distHU: "1. sz. körzet • Karikázd: #11",
+        distSK: "Obvod č. 1 • Krúžkujte: #11",
         district: 1,
         nameHU: "Mgr. Galambos Rudolf",
         nameSK: "Mgr. Rudolf Galambos",
@@ -38,8 +38,8 @@ const candidates = {
         img: "GR.jpg"
     },
     2: {
-        distHU: "1. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 1 • Krúžkujte: #",
+        distHU: "1. sz. körzet • Karikázd: #12",
+        distSK: "Obvod č. 1 • Krúžkujte: #12",
         district: 1,
         nameHU: "Mgr. Halász Ádám",
         nameSK: "Mgr. Adam Halász",
@@ -69,8 +69,8 @@ const candidates = {
         img: "HA.jpg"
     },
     3: {
-        distHU: "1. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 1 • Krúžkujte: #",
+        distHU: "1. sz. körzet • Karikázd: #15",
+        distSK: "Obvod č. 1 • Krúžkujte: #15",
         district: 1,
         nameHU: "Ing. Klenovics Gábor",
         nameSK: "Ing. Gábor Klenovics",
@@ -137,8 +137,8 @@ const candidates = {
         img: "KG.jpg"
     },
     4: {
-        distHU: "1. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 1 • Krúžkujte: #",
+        distHU: "1. sz. körzet • Karikázd: #20",
+        distSK: "Obvod č. 1 • Krúžkujte: #20",
         district: 1,
         nameHU: "PhDr. Németh Gabriella",
         nameSK: "PhDr. Gabriella Németh",
@@ -181,8 +181,8 @@ const candidates = {
         img: "NG.jpg"
     },
     5: {
-        distHU: "1. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 1 • Krúžkujte: #",
+        distHU: "1. sz. körzet • Karikázd: #25",
+        distSK: "Obvod č. 1 • Krúžkujte: #25",
         district: 1,
         nameHU: "Rovensky Mária",
         nameSK: "Mária Rovenská",
@@ -232,8 +232,8 @@ const candidates = {
         img: "RM.jpg",
     },
     6: {
-        distHU: "2. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 2 • Krúžkujte: #",
+        distHU: "2. sz. körzet • Karikázd: #9",
+        distSK: "Obvod č. 2 • Krúžkujte: #9",
         district: 2,
         nameHU: "Mgr. Kolláth Imre",
         nameSK: "Mgr. Imre Kolláth",
@@ -277,8 +277,8 @@ const candidates = {
         img: "KI.jpg",
     },
     7: {
-        distHU: "2. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 2 • Krúžkujte: #",
+        distHU: "2. sz. körzet • Karikázd: #13",
+        distSK: "Obvod č. 2 • Krúžkujte: #13",
         district: 2,
         nameHU: "Mészáros Melinda",
         nameSK: "Melinda Mészáros",
@@ -330,8 +330,8 @@ const candidates = {
         img: "MM.jpg",
     },
     8: {
-        distHU: "2. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 2 • Krúžkujte: #",
+        distHU: "2. sz. körzet • Karikázd: #19",
+        distSK: "Obvod č. 2 • Krúžkujte: #19",
         district: 2,
         nameHU: "Pohl Igor",
         nameSK: "Igor Pohl",
@@ -391,8 +391,8 @@ const candidates = {
         img: "PI.jpg",
     },
     9: {
-        distHU: "3. sz. körzet • Karikázd: #",
-        distSK: "Obvod č. 3 • Krúžkujte: #",
+        distHU: "3. sz. körzet • Karikázd: #6",
+        distSK: "Obvod č. 3 • Krúžkujte: #6",
         district: 3,
         nameHU: "Kontár Andrea",
         nameSK: "Andrea Kontárová",
