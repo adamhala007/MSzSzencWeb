@@ -408,6 +408,8 @@ let currentLang = 'hu';
 
 function setLanguage(lang) {
     currentLang = lang;
+    localStorage.setItem('selectedLanguage', lang);
+
     if (lang === 'sk') {
         document.body.classList.add('lang-mode-sk');
         document.getElementById('btn-sk').className = "px-2 py-1 rounded bg-emerald-700 text-white transition";
@@ -1757,4 +1759,29 @@ function filterDistrict(district, btn) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Megnézzük, van-e URL paraméter (pl. ?lang=sk)
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramLang = urlParams.get('lang');
+
+    // 2. Megnézzük, váltott-e már korábban nyelvet a látogató ezen a gépen
+    const savedLang = localStorage.getItem('selectedLanguage');
+
+    // 3. Megnézzük az aktuális domain nevet
+    const hostname = window.location.hostname;
+
+    let defaultLang = 'hu'; // Alapértelmezett magyar
+
+    // Ha a szlovák domainről érkezik
+    if (hostname.includes('alianciasenec')) {
+        defaultLang = 'sk';
+    }
+
+    // Sorrend: 1. URL paraméter -> 2. Elmentett kézi választás -> 3. Domain alapértelmezés
+    const initialLang = paramLang || savedLang || defaultLang;
+
+    // Betöltjük a kiválasztott nyelvet
+    setLanguage(initialLang);
+});
 
