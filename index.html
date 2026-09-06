@@ -86,11 +86,16 @@
             </div>
 
             <!-- Újság gomb (asztali / tablet nézetben) -->
-            <a href="#ujsag" class="hidden sm:inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2 rounded-lg transition">
+<!--            <a href="#ujsag" class="hidden sm:inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2 rounded-lg transition">-->
+<!--                <i class="fa-solid fa-file-pdf"></i>-->
+<!--                <span class="lang-hu">Újság (PDF)</span>-->
+<!--                <span class="lang-sk">Noviny (PDF)</span>-->
+<!--            </a>-->
+            <div class="hidden sm:inline-flex items-center gap-2 bg-gray-200 text-gray-400 text-xs font-bold px-3 py-2 rounded-lg cursor-not-allowed select-none">
                 <i class="fa-solid fa-file-pdf"></i>
-                <span class="lang-hu">Újság (PDF)</span>
-                <span class="lang-sk">Noviny (PDF)</span>
-            </a>
+                <span class="lang-hu">Újság (Hamarosan)</span>
+                <span class="lang-sk">Noviny (Čoskoro)</span>
+            </div>
 
             <!-- Hamburger gomb -->
             <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menü megnyitása" class="xl:hidden text-gray-700 hover:text-emerald-700 p-1 rounded-lg focus:outline-none">
@@ -127,11 +132,16 @@
         </a>
 
         <!-- Újság gomb mobilnézetben -->
-        <a href="#ujsag" onclick="toggleMobileMenu()" class="inline-flex sm:hidden items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2.5 rounded-lg transition w-full mt-2">
+<!--        <a href="#ujsag" onclick="toggleMobileMenu()" class="inline-flex sm:hidden items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2.5 rounded-lg transition w-full mt-2">-->
+<!--            <i class="fa-solid fa-file-pdf"></i>-->
+<!--            <span class="lang-hu">Újság (PDF)</span>-->
+<!--            <span class="lang-sk">Noviny (PDF)</span>-->
+<!--        </a>-->
+        <div class="inline-flex sm:hidden items-center justify-center gap-2 bg-gray-200 text-gray-400 text-xs font-bold px-3 py-2.5 rounded-lg w-full mt-2 cursor-not-allowed select-none">
             <i class="fa-solid fa-file-pdf"></i>
-            <span class="lang-hu">Újság (PDF)</span>
-            <span class="lang-sk">Noviny (PDF)</span>
-        </a>
+            <span class="lang-hu">Újság (Hamarosan)</span>
+            <span class="lang-sk">Noviny (Čoskoro)</span>
+        </div>
     </div>
 </nav>
 
@@ -1264,12 +1274,17 @@
                 <span class="lang-sk">Stiahnite si PDF verziu našich novín s podrobnými informáciami o 9 kandidátoch a programe pre obvody.</span>
             </p>
         </div>
-        <a href="#"
-           class="bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-emerald-50 transition whitespace-nowrap flex items-center gap-2">
-            <i class="fa-solid fa-file-pdf text-red-600"></i>
-            <span class="lang-hu">Újság Letöltése (PDF)</span>
-            <span class="lang-sk">Stiahnuť noviny (PDF)</span>
-        </a>
+<!--        <a href="#"-->
+<!--           class="bg-white text-emerald-900 font-bold px-6 py-3 rounded-lg shadow hover:bg-emerald-50 transition whitespace-nowrap flex items-center gap-2">-->
+<!--            <i class="fa-solid fa-file-pdf text-red-600"></i>-->
+<!--            <span class="lang-hu">Újság Letöltése (PDF)</span>-->
+<!--            <span class="lang-sk">Stiahnuť noviny (PDF)</span>-->
+<!--        </a>-->
+        <div class="bg-gray-100 text-gray-400 font-bold px-6 py-3 rounded-lg border border-gray-200 cursor-not-allowed whitespace-nowrap flex items-center gap-2 select-none">
+            <i class="fa-solid fa-file-pdf text-gray-400"></i>
+            <span class="lang-hu">Újság letöltése (Hamarosan)</span>
+            <span class="lang-sk">Stiahnuť noviny (Čoskoro)</span>
+        </div>
     </div>
 </section>
 
