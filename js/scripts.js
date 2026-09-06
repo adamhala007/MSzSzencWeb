@@ -155,14 +155,14 @@ const candidates = {
             "\n" +
             "Na základe mojej doteraz vykonávanej práce sa uchádzam o vašu priazeň a dôveru aj v nastávajúcom volebnom období. Verím, že moju kandidatúru na poslankyňu mesta Senec podporíte, aby som Vás opäť mohla zastupovať v mestskom zastupiteľstve v Senci a presadzovať vaše potreby a očakávania.",
         goalsHU: [
-            "Az idősebb generáció problémáinak megoldásával",
-            "A fiatal családok támogatására irányuló aktivitások biztosításával",
-            "A városban tapasztalható szociálpatológia jelenségek visszaszorítása, a biztonság növelése"
+            "Az idősebb generáció problémáinak megoldása",
+            "A fiatal családok támogatására irányuló aktivitások támogatása",
+            "A városban tapasztalható szociálpatológia jelenségek visszaszorítása és a biztonság növelése"
         ],
         goalsSK: [
             "Riešenie problémov seniorov a starnúcej generácie",
             "Podpora mladých rodín",
-            "Riešenie sociálnopatologických javov v meste, chcem vrátiť občanom mesta pocit bezpečia"
+            "Riešenie sociálnopatologických javov v meste, chcem vrátiť občanom mesta pocit bezpečia"
         ],
         email: "gabriella.nemeth@senec.sk",
         img: "NG.jpg"
@@ -391,8 +391,8 @@ const candidates = {
             "S dôverou sa uchádzam o váš hlas. Nesľubujem zázraky zo dňa na deň — sľubujem poctivú prácu, otvorenú komunikáciu, úprimný záujem a odhodlanie stáť pri ľuďoch. Podávam vám ruku k spolupráci pre Senec, ktorý bude bezpečnejší, srdečnejší, modernejší a bližší nám všetkým. Ďakujem vám a teším sa na osobné stretnutia a rozhovory s vami.",
         goalsHU: [
             "Az új lakóövezetek gyorsabb integrálása a város életébe",
-            "Minőségi infrastruktúra és biztonságos közterek",
-            "Modern digitális szolgáltatások elérhetősége"
+            "Minőségi infrastruktúra fejlesztése és a közterek biztonságának növelése",
+            "Modern digitális szolgáltatások elérhetőségének javítása"
         ],
         goalsSK: [
             "Rýchlejšíe začlenenie nových obytných zón do života nášho mesta",
