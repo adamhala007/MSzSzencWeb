@@ -122,7 +122,7 @@ const candidates = {
             "Myslím si, že pred nami stojí množstvo výziev a úloh. Súčasné vedenie mesta však má dostatok elánu, expertízy a odvahy potrebnej na pokračovanie v rozvoji. Dúfam, že vďaka vašej dôvere a spoločnými silami oddaného tímu, sa nám naďalej bude dariť naše mesto rozvíjať a zveľaďovať.",
         goalsHU: ["Az új egészségügyi központ befejezése", "Az új iskola megépítése", "A buszpályaudvar és a városi közterek revitalizációja", "Szociális központ létrehozása", "A kerékpárút-hálózat bővítése"],
         goalsSK: ["Dokončenie polikliniky", "Výstavba novej základnej školy", "Revitalizácia autobusovej stanice a verejných priestranstiev", "Vybudovanie centra pre seniorov", "Ďalšie rozširovanie cyklistickej infraštruktúry"],
-        email: "klenovicsg@senec.sk",
+        email: "gabor.klenovics@gmail.com",
         img: "KG.jpg"
     },
     4: {
