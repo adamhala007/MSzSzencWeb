@@ -408,6 +408,7 @@ let currentLang = 'hu';
 
 function setLanguage(lang, updateUrl = true) {
     currentLang = lang;
+    document.documentElement.lang = lang;
 
     // Ha a felhasználó kattintott a gombra, frissítjük az URL-t ?lang=hu vagy ?lang=sk-ra (oldalújratöltés nélkül)
     if (updateUrl) {
