@@ -210,7 +210,7 @@ const candidates = {
         ],
         goalsSK: [
             "Zvyšovanie bezpečnosti",
-            "Dostupná zdravotná a sociálna starostlivosť",
+            "Podpora dostupnej zdravotnej a sociálnej starostlivosti",
             "Venovať väčšiu pozornosť periférnym častiam mesta"
         ],
         email: "",
