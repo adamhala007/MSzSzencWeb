@@ -164,7 +164,7 @@ const candidates = {
             "Podpora mladých rodín",
             "Riešenie sociálnopatologických javov v meste, chcem vrátiť občanom mesta pocit bezpečia"
         ],
-        email: "gabriella.nemeth@senec.sk",
+        email: "b.nemeth.g@gmail.com",
         img: "NG.jpg"
     },
     5: {
@@ -213,7 +213,7 @@ const candidates = {
             "Podpora dostupnej zdravotnej a sociálnej starostlivosti",
             "Venovať väčšiu pozornosť periférnym častiam mesta"
         ],
-        email: "",
+        email: "maria.rovenska@gmail.com",
         img: "RM.jpg",
     },
     6: {
