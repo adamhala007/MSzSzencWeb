@@ -205,7 +205,7 @@ const candidates = {
             "Milujem naše mesto  Senec, ktoré je mestom, ktoré sa sústavne rozvíja. Sú ale oblasti, ktorésa dajú ešte stále vylepšovať. Preto mojou víziou, resp. predstavou je, aby naše mesto sa stalo moderným mestom, hodným 21.storočia kde všetci jeho obyvatelia, či sú to deti, mladí alebo seniori sa cítia dobre a vedia si nájsť uplatnenie. Preto sa obraciam na Vás s prosbou o vašu priazeň, aby som svojou prácou v mestskom zastupiteľstve mohla byť nápomocná pri ďalšom rozvoji nášho mesta.",
         goalsHU: [
             "A közbiztonság növelése",
-            "Elérhető egészségügyi és szociális ellátás",
+            "Elérhető egészségügyi és szociális ellátás elősegítése",
             "A város peremkerületeinek betagozódása a város életébe"
         ],
         goalsSK: [
