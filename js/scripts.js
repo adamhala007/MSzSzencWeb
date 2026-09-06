@@ -429,6 +429,7 @@ function setLanguage(lang, updateUrl = true) {
     var district1Streets = document.getElementById("district-1-streets-candidate");
     var district2Streets = document.getElementById("district-2-streets-candidate");
     var district3Streets = document.getElementById("district-3-streets-candidate");
+    var metaDesc = document.getElementById("meta-description");
 
     if (lang === 'sk') {
         document.title = "Maďarská aliancia – Senec | #SrdcomPreSenec";
