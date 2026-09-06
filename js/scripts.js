@@ -432,12 +432,18 @@ function setLanguage(lang, updateUrl = true) {
 
     if (lang === 'sk') {
         document.title = "Maďarská aliancia – Senec | #SrdcomPreSenec";
+        if (metaDesc) {
+            metaDesc.setAttribute("content", "Mestská organizácia Maďarskej aliancie v Senci a kandidáti pre komunálne voľby 2026. Náš spoločný program a výsledky.");
+        }
         if (navTitleBadgeSc) navTitleBadgeSc.innerHTML = "Senec";
         if (district1Streets) district1Streets.innerHTML = "5 kandidátov";
         if (district2Streets) district2Streets.innerHTML = "3 kandidáti";
         if (district3Streets) district3Streets.innerHTML = "1 kandidát";
     } else {
         document.title = "Magyar Szövetség – Szenc | #SzívügyünkSzenc";
+        if (metaDesc) {
+            metaDesc.setAttribute("content", "A Magyar Szövetség szenci szervezete és képviselőjelöltjei a 2026-os önkormányzati választásokon. Programunk és eredményeink.");
+        }
         if (navTitleBadgeSc) navTitleBadgeSc.innerHTML = "Szenc";
         if (district1Streets) district1Streets.innerHTML = "5 jelölt";
         if (district2Streets) district2Streets.innerHTML = "3 jelölt";
