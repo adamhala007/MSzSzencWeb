@@ -327,7 +327,7 @@ const candidates = {
             "Za dôležité považujem, aby sa pri rozvoji nášho mesta popri praktických otázkach nezabúdalo ani na hodnoty, ktoré vytvárajú a spájajú komunitu. Chcem podporovať projekty slúžiace verejnému dobru, posilňujúce spolupatričnosť a prispievajúce k dobrému životu obyvateľov. \n" +
             "Aj naďalej chcem svoje skúsenosti a energiu venovať civilnej aj cirkevnej oblasti. Dôležitou úlohou je pre mňa zachovanie duchovného a kultúrneho dedičstva Kostola sv. Mikuláša, kaplnky Najsätejšej trojice a ich odovzdaniu ďalšej generácii. Čestnosť, otvorenú komunikáciu,  efektívne hospodárenie a spravodlivý prístup k občanom považujem za samozrejmosť.\n",
         goalsHU: [
-            "A családok támogatása és a generációk közti solidaritás növelése",
+            "A családok támogatása és a generációk közti szolidaritás növelése",
             "Az ifjúság tartalmas időtöltésének ösztönzése, programok szervezése",
             "Az egyházakkal, vallási csoportokkal, polgári társulásokkal való együttműködés"
         ],
