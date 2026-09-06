@@ -336,7 +336,7 @@ const candidates = {
             "Podpora aktivít, ktoré smerujú k zmysluplnému využitiu voľného času mládeže",
             "Otvorená spolupráca s cirkvami, náboženskými obcami a občianskymi združeniami pri organizovaní komunitných aktivít"
         ],
-        email: "",
+        email: "postamm@yahoo.com",
         img: "PI.jpg",
     },
     9: {
