@@ -33,7 +33,7 @@ const candidates = {
             "Udržiavanie vysokého štandardu našich škôl, výstavba novej školy",
             "Dokončenie veľkých investícií, a začatie nových odvážnych projektov (napr. hokejová hala a pod.)"
         ],
-        email: "rudolf.galambos@senec.sk",
+        email: "galambosrudolf1@gmail.com",
         img: "GR.jpg"
     },
     2: {
