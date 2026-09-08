@@ -399,7 +399,7 @@ const candidates = {
             "Kvalitná infraštruktúra a bezpečné verejné priestory",
             "Moderné digitálne služby pre obyvateľov aj návštevníkov"
         ],
-        email: "",
+        email: "andreakontar2026@gmail.com",
         img: "KA.jpg"
     }
 };
