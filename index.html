@@ -1131,33 +1131,44 @@
             </p>
 
             <p class="text-xs text-gray-500 mt-3">
-    <span class="lang-hu">
-        Az adatok Szenc Város 2026. június 29-i hivatalos hirdetményéből származnak.
-        <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C224e26070213240.pdf" target="_blank"
-           rel="noopener noreferrer"
-           class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
-            Hivatalos hirdetmény (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-        </a>
-    </span>
+                <span class="lang-hu">
+                    Az adatok Szenc Város 2026. június 29-i hivatalos hirdetményéből származnak.
+                    <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C224e26070213240.pdf" target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
+                        Hivatalos hirdetmény (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </span>
                 <span class="lang-sk">
-        Údaje pochádzajú z oficiálneho oznámenia Mesta Senec zo dňa 29. júna 2026.
-        <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C224e26070213240.pdf" target="_blank"
-           rel="noopener noreferrer"
-           class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
-            Oficiálne oznámenie (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-        </a>
-    </span>
+                    Údaje pochádzajú z oficiálneho oznámenia Mesta Senec zo dňa 29. júna 2026.
+                    <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C224e26070213240.pdf" target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
+                        Oficiálne oznámenie (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </span>
             </p>
         </div>
 
-        <!-- Keresőmező -->
-        <div class="max-w-md mx-auto mb-10">
-            <div class="relative">
-                <input type="text" id="street-search" onkeyup="filterStreets()"
-                       placeholder="Írd be az utcád nevét... / Napíšte názov ulice..."
-                       class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-emerald-600 shadow-sm text-sm">
-                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-gray-400"></i>
+        <!-- Kiemelt, letisztult keresősáv mobil oldaltávolsággal -->
+        <div class="max-w-xl mx-auto px-4 mb-10">
+            <div class="relative shadow-md rounded-2xl">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-emerald-600">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </div>
+                <input
+                        type="text"
+                        id="street-search"
+                        oninput="filterStreets()"
+                        onkeyup="filterStreets()"
+                        placeholder="Írd be az utcád nevét... / Napíšte názov ulice..."
+                        class="w-full pl-12 pr-4 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-gray-900 bg-white rounded-2xl border-2 border-emerald-600/40 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-600/20 focus:outline-none transition shadow-sm placeholder:font-normal placeholder:text-gray-400"
+                >
             </div>
+            <p class="text-center text-xs text-gray-400 mt-2.5">
+                <span class="lang-hu"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> A szűrés gépelés közben azonnal történik</span>
+                <span class="lang-sk"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> Filtrovanie prebieha okamžite počas písania</span>
+            </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -1287,16 +1298,24 @@
 
         </div>
 
-        <!-- Kereső Mező -->
-        <div class="relative max-w-lg mx-auto mb-6">
-            <input
-                    type="text"
-                    id="polling-search-input"
-                    oninput="searchPollingStation()"
-                    placeholder="Írd be az utcád nevét..."
-                    class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent shadow-sm text-sm"
-            >
-            <i class="fa-solid fa-magnifying-glass absolute left-4 top-4 text-gray-400"></i>
+        <!-- Kiemelt, letisztult keresősáv mobil oldaltávolsággal -->
+        <div class="max-w-xl mx-auto px-4 mb-8">
+            <div class="relative shadow-md rounded-2xl">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-emerald-600">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </div>
+                <input
+                        type="text"
+                        id="polling-search-input"
+                        oninput="searchPollingStation()"
+                        placeholder="Írd be az utcád nevét... / Zadajte názov ulice..."
+                        class="w-full pl-12 pr-4 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-gray-900 bg-white rounded-2xl border-2 border-emerald-600/40 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-600/20 focus:outline-none transition shadow-sm placeholder:font-normal placeholder:text-gray-400"
+                >
+            </div>
+            <p class="text-center text-xs text-gray-400 mt-2.5">
+                <span class="lang-hu"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> A találatok gépelés közben azonnal megjelennek</span>
+                <span class="lang-sk"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> Výsledky sa zobrazujú okamžite počas písania</span>
+            </p>
         </div>
 
         <!-- Eredmények Vízszintes Kárruszel Konténere -->
