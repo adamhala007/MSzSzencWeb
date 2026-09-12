@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>OG Image Generator - Magyar Szövetség / Maďarská aliancia Szenc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['OverusedGrotesk', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            50: '#F2F5EF',
+                            100: '#E1EAD8',
+                            200: '#BFCFB5',
+                            300: '#A0C08D',
+                            400: '#7EAC53',
+                            500: '#508922',
+                            600: '#538434',
+                            700: '#3C6B28',
+                            800: '#305E23',
+                            900: '#224419',
+                            950: '#14290E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/overused-grotesk');
+    </style>
+</head>
+<body class="bg-slate-900 min-h-screen flex items-center justify-center p-4">
+
+<!-- 1200x630 pixel méretű Facebook OG kártya -->
+<div id="og-card" class="w-[1200px] h-[630px] bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-950 text-white p-10 flex flex-col justify-between items-center text-center shadow-2xl relative overflow-hidden font-sans border-4 border-emerald-700/50 shrink-0">
+
+    <!-- Háttér díszítő effektek -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Felső jelvény / Dátum (Kétnyelvű) -->
+    <div class="bg-emerald-950/80 border border-emerald-300/30 px-6 py-2 rounded-full text-emerald-100 font-bold text-xs tracking-widest uppercase shadow-inner z-10 flex items-center gap-2">
+        <span>ÖNKORMÁNYZATI VÁLASZTÁSOK</span>
+        <span class="text-emerald-400">&bull;</span>
+        <span>KOMUNÁLNE VOĽBY</span>
+        <span class="text-emerald-400">&bull;</span>
+        <span class="text-white font-extrabold">24.10.2026</span>
+    </div>
+
+    <!-- Főcím & Szlogen (Kétnyelvű) -->
+    <div class="space-y-1.5 max-w-5xl z-10">
+        <h1 class="text-4xl font-black text-white tracking-tight drop-shadow-lg leading-tight">
+            Magyar Szövetség <span class="text-emerald-300 font-light mx-1">&bull;</span> Maďarská aliancia
+        </h1>
+        <p class="text-2xl font-bold text-emerald-100/90 tracking-wide">
+            Szenc <span class="text-emerald-400 font-normal">&bull;</span> Senec
+        </p>
+        <p class="text-2xl font-black text-emerald-300 tracking-wide pt-2">
+            #SzívügyünkSzenc &bull; #SrdcomPreSenec
+        </p>
+    </div>
+
+    <!-- Kiemelt funkció kártyák (Egysoros, Kétnyelvű) -->
+    <div class="flex items-center justify-center gap-3.5 w-full max-w-5xl z-10">
+        <div class="bg-emerald-50 text-emerald-900 font-black text-base px-5 py-3.5 rounded-2xl shadow-xl flex items-center gap-2 border border-white/40 whitespace-nowrap">
+            <span class="text-lg">👥</span> 9 Jelölt / 9 Kandidátov
+        </div>
+        <div class="bg-emerald-950/60 text-white font-bold text-base px-5 py-3.5 rounded-2xl border border-emerald-200/30 backdrop-blur-md flex items-center gap-2 whitespace-nowrap">
+            <span class="text-lg">📍</span> Szavazóhelyiség / Volebná miestnosť
+        </div>
+        <div class="bg-emerald-950/60 text-white font-bold text-base px-5 py-3.5 rounded-2xl border border-emerald-200/30 backdrop-blur-md flex items-center gap-2 whitespace-nowrap">
+            <span class="text-lg">📋</span> Közös program / Spoločný program
+        </div>
+    </div>
+
+    <!-- Lábléc / Domainek -->
+    <div class="text-emerald-200/90 text-lg font-bold tracking-wider pt-3 border-t border-emerald-700/60 w-full max-w-2xl flex justify-center gap-6 z-10">
+        <span>szovetsegszenc.sk</span>
+        <span class="text-emerald-400">&bull;</span>
+        <span>alianciasenec.sk</span>
+    </div>
+
+</div>
+
+</body>
+</html>
