@@ -36,50 +36,57 @@
 </head>
 <body class="bg-slate-900 min-h-screen flex items-center justify-center p-4">
 
-<!-- 1200x630 pixel méretű Facebook OG kártya -->
-<div id="og-card" class="w-[1200px] h-[630px] bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-950 text-white p-10 flex flex-col justify-between items-center text-center shadow-2xl relative overflow-hidden font-sans border-4 border-emerald-700/50 shrink-0">
+<!-- 1200x630 OG Kártya - Mobilon és Weben is tökéletesen olvasható elrendezés -->
+<div id="og-card" class="w-[1200px] h-[630px] bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-950 text-white px-16 py-10 flex flex-col justify-between items-center text-center shadow-2xl relative overflow-hidden font-sans border-4 border-emerald-700/50 shrink-0">
 
     <!-- Háttér díszítő effektek -->
     <div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none"></div>
 
-    <!-- Felső jelvény / Dátum (Kétnyelvű) -->
-    <div class="bg-emerald-950/80 border border-emerald-300/30 px-6 py-2 rounded-full text-emerald-100 font-bold text-xs tracking-widest uppercase shadow-inner z-10 flex items-center gap-2">
+    <!-- Felső jelvény / Dátum -->
+    <div class="bg-emerald-950/90 border border-emerald-300/40 px-8 py-2 rounded-full text-emerald-100 font-extrabold text-sm tracking-widest uppercase shadow-inner z-10 flex items-center gap-3">
         <span>ÖNKORMÁNYZATI VÁLASZTÁSOK</span>
         <span class="text-emerald-400">&bull;</span>
         <span>KOMUNÁLNE VOĽBY</span>
         <span class="text-emerald-400">&bull;</span>
-        <span class="text-white font-extrabold">24.10.2026</span>
+        <span class="text-white font-black text-base">24.10.2026</span>
     </div>
 
-    <!-- Főcím & Szlogen (Kétnyelvű) -->
-    <div class="space-y-1.5 max-w-5xl z-10">
-        <h1 class="text-4xl font-black text-white tracking-tight drop-shadow-lg leading-tight">
+    <!-- Főcím & Szlogen (NAGY BETŰKMÉRET) -->
+    <div class="space-y-2 max-w-4xl z-10">
+        <h1 class="text-5xl font-black text-white tracking-tight drop-shadow-xl leading-none">
             Magyar Szövetség <span class="text-emerald-300 font-light mx-1">&bull;</span> Maďarská aliancia
         </h1>
-        <p class="text-2xl font-bold text-emerald-100/90 tracking-wide">
-            Szenc <span class="text-emerald-400 font-normal">&bull;</span> Senec
+        <p class="text-3xl font-black text-emerald-100/90 tracking-wide pt-1">
+            SZENC <span class="text-emerald-400 font-normal">&bull;</span> SENEC
         </p>
-        <p class="text-2xl font-black text-emerald-300 tracking-wide pt-2">
+        <p class="text-3xl font-black text-emerald-300 tracking-wide pt-1">
             #SzívügyünkSzenc &bull; #SrdcomPreSenec
         </p>
     </div>
 
-    <!-- Kiemelt funkció kártyák (Egysoros, Kétnyelvű) -->
-    <div class="flex items-center justify-center gap-3.5 w-full max-w-5xl z-10">
-        <div class="bg-emerald-50 text-emerald-900 font-black text-base px-5 py-3.5 rounded-2xl shadow-xl flex items-center gap-2 border border-white/40 whitespace-nowrap">
-            <span class="text-lg">👥</span> 9 Jelölt / 9 Kandidátov
+    <!-- Funkciók (2 soros elrendezés -> Nagy betűk + Biztonságos margó) -->
+    <div class="flex flex-col gap-3 w-full max-w-4xl z-10 items-center">
+
+        <!-- 1. Sor: Fő funkció kiemelve (Fehér alapon, óriási szöveg) -->
+        <div class="bg-emerald-50 text-emerald-950 font-black text-xl px-12 py-3 rounded-2xl shadow-2xl flex items-center justify-center gap-3 border-2 border-white/80 w-auto whitespace-nowrap">
+            <span class="text-2xl">📍</span> Szavazóhelyiség-kereső / Vyhľadávač volebnej miestnosti
         </div>
-        <div class="bg-emerald-950/60 text-white font-bold text-base px-5 py-3.5 rounded-2xl border border-emerald-200/30 backdrop-blur-md flex items-center gap-2 whitespace-nowrap">
-            <span class="text-lg">📍</span> Szavazóhelyiség / Volebná miestnosť
+
+        <!-- 2. Sor: Jelöltek + Program egymás mellett -->
+        <div class="flex items-center justify-center gap-4 w-full">
+            <div class="bg-emerald-950/80 text-white font-black text-lg px-6 py-2.5 rounded-xl border-2 border-emerald-200/40 backdrop-blur-md flex items-center gap-2.5 whitespace-nowrap">
+                <span class="text-xl">👥</span> 9 Jelölt / 9 Kandidátov
+            </div>
+            <div class="bg-emerald-950/80 text-white font-black text-lg px-6 py-2.5 rounded-xl border-2 border-emerald-200/40 backdrop-blur-md flex items-center gap-2.5 whitespace-nowrap">
+                <span class="text-xl">📋</span> Közös program / Spoločný program
+            </div>
         </div>
-        <div class="bg-emerald-950/60 text-white font-bold text-base px-5 py-3.5 rounded-2xl border border-emerald-200/30 backdrop-blur-md flex items-center gap-2 whitespace-nowrap">
-            <span class="text-lg">📋</span> Közös program / Spoločný program
-        </div>
+
     </div>
 
-    <!-- Lábléc / Domainek -->
-    <div class="text-emerald-200/90 text-lg font-bold tracking-wider pt-3 border-t border-emerald-700/60 w-full max-w-2xl flex justify-center gap-6 z-10">
+    <!-- Lábléc / Domainek (Óriási betűkkel) -->
+    <div class="text-emerald-100 text-4xl font-black tracking-wider pt-2 border-t-2 border-emerald-700/60 w-full max-w-2xl flex justify-center gap-8 z-10">
         <span>szovetsegszenc.sk</span>
         <span class="text-emerald-400">&bull;</span>
         <span>alianciasenec.sk</span>
