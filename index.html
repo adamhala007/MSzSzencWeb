@@ -24,6 +24,16 @@
     <link rel="alternate" hreflang="x-default" href="https://szovetsegszenc.sk/"/>
     <link rel="apple-touch-icon" href="assets/MA_Symbol_color.svg">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Past event visual treatment */
+        .event-past {
+            opacity: 0.65;
+            filter: grayscale(100%);
+        }
+        .event-past .text-gray-900 { color: #6B7280 !important; }
+        .event-past .text-emerald-700 { color: #6B7280 !important; }
+        .event-past .text-gray-500 { color: #9CA3AF !important; }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -1365,7 +1375,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
 
             <!-- Szept. 18. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-18">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Szept. 18. &bull; Péntek</span>
                     <span class="lang-sk">18. sept. &bull; Piatok</span>
@@ -1377,7 +1387,7 @@
             </div>
 
             <!-- Szept. 19. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-19">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Szept. 19. &bull; Szombat &bull; 16:00</span>
                     <span class="lang-sk">19. sept. &bull; Sobota &bull; 16:00</span>
@@ -1391,7 +1401,7 @@
             </div>
 
             <!-- Szept. 24. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-24">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Szept. 24. &bull; Csütörtök &bull; 18:30</span>
                     <span class="lang-sk">24. sept. &bull; Štvrtok &bull; 18:30</span>
@@ -1404,7 +1414,7 @@
             </div>
 
             <!-- Szept. 26. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-26">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Szept. 26. &bull; Szombat</span>
                     <span class="lang-sk">26. sept. &bull; Sobota</span>
@@ -1416,7 +1426,7 @@
             </div>
 
             <!-- Szept. 28. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-28">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Szept. 28. &bull; Hétfő &bull; 18:00</span>
                     <span class="lang-sk">28. sept. &bull; Pondelok &bull; 18:00</span>
@@ -1429,7 +1439,7 @@
             </div>
 
             <!-- Okt. 2. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-10-02">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Okt. 2. &bull; Péntek &bull; 18:00</span>
                     <span class="lang-sk">2. okt. &bull; Piatok &bull; 18:00</span>
@@ -1441,7 +1451,7 @@
             </div>
 
             <!-- Okt. 3. - KIEMELT: ALMANAP -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100">
+            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-03">
                 <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
                     <span class="lang-hu">Okt. 3. &bull; Szombat</span>
                     <span class="lang-sk">3. okt. &bull; Sobota</span>
@@ -1455,7 +1465,7 @@
             </div>
 
             <!-- Okt. 3. - ZARÁNDOKLAT -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-10-03">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Okt. 3. &bull; Szombat</span>
                     <span class="lang-sk">3. okt. &bull; Sobota</span>
@@ -1467,7 +1477,7 @@
             </div>
 
             <!-- Okt. 10. - KIEMELT: GULYÁSFŐZÉS -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100">
+            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-10">
                 <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
                     <span class="lang-hu">Okt. 10. &bull; Szombat &bull; 9:00–13:00</span>
                     <span class="lang-sk">10. okt. &bull; Sobota &bull; 9:00–13:00</span>
@@ -1481,7 +1491,7 @@
             </div>
 
             <!-- Okt. 17. - KIEMELT: DISZNÓTOROS -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100">
+            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-17">
                 <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
                     <span class="lang-hu">Okt. 17. &bull; Szombat &bull; 10:00–13:00</span>
                     <span class="lang-sk">17. okt. &bull; Sobota &bull; 10:00–13:00</span>
@@ -1495,7 +1505,7 @@
             </div>
 
             <!-- Okt. 18. - KIEMELT: BEMUTATKOZÁS -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100">
+            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-18">
                 <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
                     <span class="lang-hu">Okt. 18. &bull; Vasárnap &bull; 15:00</span>
                     <span class="lang-sk">18. okt. &bull; Nedeľa &bull; 15:00</span>
@@ -1509,7 +1519,7 @@
             </div>
 
             <!-- Okt. 22. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-10-22">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Okt. 22. &bull; Csütörtök &bull; 18:30</span>
                     <span class="lang-sk">22. okt. &bull; Štvrtok &bull; 18:30</span>
@@ -1522,7 +1532,7 @@
             </div>
 
             <!-- Okt. 23. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-10-23">
                 <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
                     <span class="lang-hu">Okt. 23. &bull; Péntek</span>
                     <span class="lang-sk">23. okt. &bull; Piatok</span>
@@ -1534,7 +1544,7 @@
             </div>
 
             <!-- Okt. 24. - VÁLASZTÁS NAPJA (A fennmaradó 2/3 helyen, KIVILÁGOSÍTVA) -->
-            <div class="bg-emerald-100 p-5 rounded-xl shadow-lg border border-emerald-600 lg:col-span-2 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="bg-emerald-100 p-5 rounded-xl shadow-lg border border-emerald-600 lg:col-span-2 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left relative" data-date="2026-10-24">
                 <div>
                     <div class="text-xs font-extrabold text-emerald-800 uppercase tracking-widest mb-1">
                         <span class="lang-hu">A Választás Napja &bull; 7:00 – 20:00</span>
@@ -2248,6 +2258,48 @@
 </footer>
 
 <!-- JavaScript -->
+<script>
+// Mark past events. If a tile lacks data-date, attempt to parse the visible date text (HU/SK abbreviations like Szept., Okt., 18. sept.)
+(function(){
+  try{
+    const monthMap = {
+      'szept': 9, 'szept.':9, 'sept':9, 'sept.':9,
+      'okt':10, 'okt.':10, 'okt.':10, 'okt.':10, 'október':10, 'október.':10
+    };
+
+    const tiles = document.querySelectorAll('.grid [class*="rounded-xl"]');
+    const now = new Date(); now.setHours(0,0,0,0);
+
+    tiles.forEach(t => {
+      let ds = t.getAttribute('data-date');
+
+      if(!ds){
+        // try to find the small date line inside the tile
+        const dateEl = t.querySelector('.text-xs, .text-xs.font-bold, .uppercase');
+        const text = dateEl ? dateEl.innerText.replace(/\u00A0/g,' ').replace(/&bull;|•/g,' ') : '';
+        if(text){
+          const lower = text.toLowerCase();
+          // find day number
+          const dayMatch = lower.match(/(\d{1,2})\b/);
+          const monthToken = Object.keys(monthMap).find(m => lower.includes(m));
+          if(dayMatch && monthToken){
+            const day = String(dayMatch[1]).padStart(2,'0');
+            const month = String(monthMap[monthToken]).padStart(2,'0');
+            // assume year 2026 (site is campaign for 2026)
+            ds = `2026-${month}-${day}`;
+            t.setAttribute('data-date', ds);
+          }
+        }
+      }
+
+      if(ds){
+        const ev = new Date(ds + 'T23:59:59'); ev.setHours(0,0,0,0);
+        if(ev < now) t.classList.add('event-past');
+      }
+    });
+  }catch(e){ console.error('Event past marker error', e); }
+})();
+</script>
 
 </body>
 </html>
