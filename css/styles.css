@@ -155,3 +155,77 @@ body.lang-mode-sk a.lang-sk {
 body.lang-mode-sk div.lang-sk {
     display: block !important;
 }
+
+.result-table {
+    border-collapse: collapse;
+    font-size: 0.78rem;
+}
+
+.result-table th,
+.result-table td {
+    padding: 0.7rem 0.65rem;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+}
+
+.result-table thead th {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #166534;
+    background: rgba(16, 185, 129, 0.06);
+    border-bottom: 1px solid #bbf7d0;
+}
+
+.result-table tbody tr:nth-child(odd) {
+    background: rgba(255,255,255,0.35);
+}
+
+.result-table tbody tr:hover {
+    background: rgba(16, 185, 129, 0.06);
+}
+
+.result-table tbody tr.msz-candidate {
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.12), rgba(255, 255, 255, 0.95));
+    box-shadow: inset 4px 0 0 #0f766e;
+}
+
+.result-table tbody tr.msz-candidate td {
+    border-bottom-color: rgba(16, 185, 129, 0.22);
+}
+
+.msz-candidate-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.msz-candidate-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.8rem;
+    height: 1.5rem;
+    padding: 0 0.4rem;
+    border-radius: 999px;
+    background: #ecfdf5;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #047857;
+    font-size: 0.6rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .result-table {
+        font-size: 0.72rem;
+    }
+
+    .result-table th,
+    .result-table td {
+        padding: 0.6rem 0.45rem;
+    }
+}

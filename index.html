@@ -95,20 +95,14 @@
 
         <!-- Asztali Menü (xl törésponttól látható) -->
         <div class="hidden xl:flex space-x-5 text-sm font-medium text-gray-700">
+            <a href="#volby-2026" class="hover:text-emerald-700 transition"><span
+                    class="lang-hu">Választási eredmények</span><span class="lang-sk">Volebné výsledky</span></a>
             <a href="#eredmenyek" class="hover:text-emerald-700 transition"><span
                     class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span></a>
             <a href="#program" class="hover:text-emerald-700 transition"><span class="lang-hu">Közös program</span><span
                     class="lang-sk">Spoločný program</span></a>
             <a href="#jeloltek" class="hover:text-emerald-700 transition"><span class="lang-hu">9 jelöltünk</span><span
                     class="lang-sk">9 kandidátov</span></a>
-            <a href="#korzetek" class="hover:text-emerald-700 transition"><span
-                    class="lang-hu">Körzetek & utcák</span><span class="lang-sk">Obvody a ulice</span></a>
-            <a href="#szavazokor-kereso" class="hover:text-emerald-700 transition"><span class="lang-hu">Hol kell szavaznom?</span><span
-                    class="lang-sk">Kde mám voliť?</span></a>
-            <a href="#esemenyek" class="hover:text-emerald-700 transition"><span class="lang-hu">Események</span><span
-                    class="lang-sk">Udalosti</span></a>
-            <a href="#gyik" class="hover:text-emerald-700 transition"><span class="lang-hu">GYIK</span><span
-                    class="lang-sk">FAQ</span></a>
             <a href="#kapcsolat" class="hover:text-emerald-700 transition"><span class="lang-hu">Kapcsolat</span><span
                     class="lang-sk">Kontakt</span></a>
         </div>
@@ -151,37 +145,25 @@
     <!-- Mobil Menü Lenyíló Szekció -->
     <div id="mobile-menu"
          class="hidden xl:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 px-4 pt-2 pb-5 space-y-2 shadow-lg">
+        <a href="#volby-2026" onclick="toggleMobileMenu()"
+           class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
+           <span class="lang-hu">Választási eredmények</span><span class="lang-sk">Volebné výsledky</span>
+        </a>
         <a href="#eredmenyek" onclick="toggleMobileMenu()"
            class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
-            <span class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span>
+           <span class="lang-hu">Eredményeink</span><span class="lang-sk">Naše výsledky</span>
         </a>
         <a href="#program" onclick="toggleMobileMenu()"
            class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
-            <span class="lang-hu">Közös Program</span><span class="lang-sk">Spoločný program</span>
+           <span class="lang-hu">Közös Program</span><span class="lang-sk">Spoločný program</span>
         </a>
         <a href="#jeloltek" onclick="toggleMobileMenu()"
            class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
             <span class="lang-hu">9 Jelöltünk</span><span class="lang-sk">9 Kandidátov</span>
         </a>
-        <a href="#korzetek" onclick="toggleMobileMenu()"
-           class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
-            <span class="lang-hu">Körzetek és utcák</span><span class="lang-sk">Obvody a ulice</span>
-        </a>
-        <a href="#szavazokor-kereso" onclick="toggleMobileMenu()"
-           class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
-            <span class="lang-hu">Hol kell szavaznom?</span><span class="lang-sk">Kde mám voliť?</span>
-        </a>
-        <a href="#esemenyek" onclick="toggleMobileMenu()"
-           class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
-            <span class="lang-hu">Események</span><span class="lang-sk">Udalosti</span>
-        </a>
-        <a href="#gyik" onclick="toggleMobileMenu()"
-           class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 border-b border-gray-50 transition">
-            <span class="lang-hu">GYIK & Szavazás</span><span class="lang-sk">FAQ & Voľby</span>
-        </a>
         <a href="#kapcsolat" onclick="toggleMobileMenu()"
            class="block py-2 text-sm font-medium text-gray-700 hover:text-emerald-700 transition">
-            <span class="lang-hu">Kapcsolat</span><span class="lang-sk">Kontakt</span>
+           <span class="lang-hu">Kapcsolat</span><span class="lang-sk">Kontakt</span>
         </a>
 
         <!-- Újság gomb mobilnézetben -->
@@ -198,58 +180,426 @@
 <!-- Hero / Fejléc szlogennel -->
 <!-- Háttér átmenet frissítve a kampányfotó stílusára -->
 <header class="pt-28 pb-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-500 via-emerald-800 to-emerald-950 text-white text-center px-4">
-    <div class="max-w-4xl mx-auto">
-        <div class="inline-block bg-emerald-800/80 border border-emerald-500/30 text-emerald-200 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-4">
-            <span class="lang-hu">Önkormányzati Választások - 2026.10.24.</span>
-            <span class="lang-sk">Komunálne Voľby - 24.10.2026</span>
+    <div class="max-w-5xl mx-auto">
+        <div class="inline-flex items-center gap-3 bg-white/10 border border-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 shadow-lg shadow-emerald-950/20">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-300 animate-pulse"></span>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.28em] text-emerald-50/90">
+                <span class="lang-hu">Köszönjük a ránk leadott szavazatokat</span>
+                <span class="lang-sk">Ďakujeme za vaše hlasy</span>
+            </span>
         </div>
-        <h1 class="text-3xl md:text-5xl font-extrabold mb-3 leading-tight">
-            <span class="lang-hu"> Magyar Szövetség Szenc</span>
-            <span class="lang-sk">Maďarská aliancia Senec</span>
-        </h1>
-        <p class="text-xl font-bold text-emerald-400 mb-6">
+
+        <p class="text-4xl sm:text-5xl md:text-6xl font-black leading-tight text-emerald-50 tracking-[-0.05em] mb-6">
+            <span class="lang-hu">Magyar Szövetség - Szenc</span>
+            <span class="lang-sk">Maďarská aliancia - Senec</span>
+        </p>
+
+        <p class="text-lg sm:text-xl md:text-2xl font-bold text-emerald-300 tracking-tight">
             <span class="lang-hu">#SzívügyünkSzenc #RánkSzámíthat</span>
             <span class="lang-sk">#SrdcomPreSenec #SpoľahliváVoľba</span>
         </p>
-        <p class="text-base md:text-lg text-emerald-100 max-w-2xl mx-auto mb-8">
-            <span class="lang-hu">9 elhivatott jelölttel (az 1. körzetben 5, a 2. körzetben 3, a 3. körzetben 1 jelölttel) dolgozunk Szenc jövőjéért.</span>
-            <span class="lang-sk">S 9 odhodlanými kandidátmi (5 v obvode č. 1, 3 v obvode č. 2 a 1 v obvode č. 3) pracujeme pre budúcnosť Senca.</span>
-        </p>
-        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 max-w-3xl mx-auto">
-            <!-- Elsődleges CTA (Jelöltek) -->
-            <a href="#jeloltek"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-emerald-900 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-emerald-50 transition">
-                <i class="fa-solid fa-users text-emerald-700"></i>
-                <span>
-            <span class="lang-hu">Ismerd meg a 9 jelöltet</span>
-            <span class="lang-sk">Spoznajte 9 kandidátov</span>
-        </span>
-            </a>
-
-            <!-- Másodlagos CTA (Körzetek) -->
-            <a href="#korzetek"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/40 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition backdrop-blur-sm">
-                <i class="fa-solid fa-map-location-dot text-emerald-300"></i>
-                <span>
-            <span class="lang-hu">Körzetem kiválasztása</span>
-            <span class="lang-sk">Ktorý je môj obvod?</span>
-        </span>
-            </a>
-
-            <!-- Harmadlagos CTA (Szavazóhelyiség) -->
-            <a href="#szavazokor-kereso"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/40 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition backdrop-blur-sm">
-                <i class="fa-solid fa-check-to-slot text-emerald-300"></i>
-                <span>
-            <span class="lang-hu">Szavazóhelyiség kereső</span>
-            <span class="lang-sk">Kde mám voliť?</span>
-        </span>
-            </a>
-        </div>
     </div>
 </header>
 
-<!-- 1. Eredményeink -->
+
+<!-- Választási eredmények 2026 -->
+<section id="volby-2026" class="py-20 bg-gradient-to-b from-white via-emerald-50 to-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+            <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 font-bold px-4 py-2 rounded-full text-xs uppercase tracking-[0.2em] mb-4">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span class="lang-hu">Városiadat-összefoglaló</span>
+                <span class="lang-sk">Prehľad výsledkov obcí</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900">
+                <span class="lang-hu">2026-os választási eredmények</span>
+                <span class="lang-sk">Volebné výsledky 2026</span>
+            </h2>
+            <p class="mt-4 text-sm text-gray-500">
+                <span class="lang-hu">A 1., 2. és 3. körzet összesített adatai, valamint a teljes összefoglalóanyag a Duray Rezső által készített összesítés alapján készült.</span>
+                <span class="lang-sk">Zhrnutie údajov pre 1., 2. a 3. volebný obvod, ako aj celkový prehľad, je založené na súhrne pripravenom Duray Rezső.</span>
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5 mb-12">
+            <div class="rounded-2xl border border-emerald-100 bg-white p-5 shadow-sm">
+                <div class="text-xs uppercase tracking-[0.2em] text-emerald-700 mb-2">
+                    <span class="lang-hu">1. körzet</span>
+                    <span class="lang-sk">1. obvod</span>
+                </div>
+                <div class="text-3xl font-black text-gray-900">9</div>
+                <p class="text-sm text-gray-600 mt-2">
+                    <span class="lang-hu">megválasztott képviselő</span>
+                    <span class="lang-sk">zvolených poslancov</span>
+                </p>
+            </div>
+            <div class="rounded-2xl border border-emerald-100 bg-white p-5 shadow-sm">
+                <div class="text-xs uppercase tracking-[0.2em] text-emerald-700 mb-2">
+                    <span class="lang-hu">2. körzet</span>
+                    <span class="lang-sk">2. obvod</span>
+                </div>
+                <div class="text-3xl font-black text-gray-900">8</div>
+                <p class="text-sm text-gray-600 mt-2">
+                    <span class="lang-hu">megválasztott képviselő</span>
+                    <span class="lang-sk">zvolených poslancov</span>
+                </p>
+            </div>
+            <div class="rounded-2xl border border-emerald-100 bg-white p-5 shadow-sm">
+                <div class="text-xs uppercase tracking-[0.2em] text-emerald-700 mb-2">
+                    <span class="lang-hu">3. körzet</span>
+                    <span class="lang-sk">3. obvod</span>
+                </div>
+                <div class="text-3xl font-black text-gray-900">4</div>
+                <p class="text-sm text-gray-600 mt-2">
+                    <span class="lang-hu">megválasztott képviselő</span>
+                    <span class="lang-sk">zvolených poslancov</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="space-y-10">
+            <!-- Körzet 1 -->
+            <div class="rounded-3xl border border-emerald-100 bg-white shadow-sm overflow-hidden">
+                <div class="bg-emerald-900 px-6 py-5 text-white">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                        <div>
+                            <div class="text-xs uppercase tracking-[0.2em] text-emerald-200">
+                                <span class="lang-hu">Választási körzet 1</span>
+                                <span class="lang-sk">Volebný obvod č. 1</span>
+                            </div>
+                            <h3 class="text-2xl font-black mt-1">2026</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                            <span class="bg-white/10 px-3 py-1.5 rounded-full">9 <span class="lang-hu">képviselő</span><span class="lang-sk">poslancov</span></span>
+                            <span class="bg-white/10 px-3 py-1.5 rounded-full">2022 vs 2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 md:p-7">
+                    <div class="grid xl:grid-cols-2 gap-6">
+                        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-4">
+                            <h4 class="font-black text-gray-900 mb-4">
+                                <span class="lang-hu">Megválasztott képviselők</span>
+                                <span class="lang-sk">Zvolení poslanci</span>
+                            </h4>
+                            <div class="overflow-x-auto">
+                                <table class="result-table w-full text-left">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Név</th>
+                                        <th>2022</th>
+                                        <th>2026</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr><td>1</td><td>Ľuboslav Farkaš</td><td>0</td><td>863</td></tr>
+                                    <tr><td>2</td><td>Ľuboš Várady</td><td>561</td><td>752</td></tr>
+                                    <tr><td>3</td><td>Mikuláš Bertok</td><td>0</td><td>724</td></tr>
+                                    <tr><td>4</td><td>Róbert Podolský</td><td>596</td><td>707</td></tr>
+                                    <tr><td>5</td><td>Martin Nádaský</td><td>0</td><td>695</td></tr>
+                                    <tr><td>6</td><td>David Tengeri</td><td>461</td><td>668</td></tr>
+                                    <tr class="msz-candidate"><td>7</td><td><span class="msz-candidate-name"> Gabriella Németh</span></td><td>545</td><td>651</td></tr>
+                                    <tr><td>8</td><td>Martina Bollová</td><td>433</td><td>630</td></tr>
+                                    <tr><td>9</td><td>Robert Matejka</td><td>0</td><td>610</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-4">
+                            <h4 class="font-black text-gray-900 mb-4">
+                                <span class="lang-hu">Helyettesek / nem megválasztottak</span>
+                                <span class="lang-sk">Náhradníci / nevolení</span>
+                            </h4>
+                            <div class="overflow-x-auto">
+                                <table class="result-table w-full text-left">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Név</th>
+                                        <th>2022</th>
+                                        <th>2026</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="msz-candidate"><td>10</td><td><span class="msz-candidate-name"> Rudolf Galambos</span></td><td>522</td><td>582</td></tr>
+                                    <tr><td>11</td><td>Nikola Čerkesová</td><td>0</td><td>562</td></tr>
+                                    <tr><td>12</td><td>Martin Gabriel</td><td>0</td><td>562</td></tr>
+                                    <tr class="msz-candidate"><td>13</td><td><span class="msz-candidate-name"> Gábor Klenovics</span></td><td>0</td><td>539</td></tr>
+                                    <tr><td>14</td><td>Pavol Tóth</td><td>0</td><td>519</td></tr>
+                                    <tr><td>15</td><td>Lukáš Matlák</td><td>343</td><td>505</td></tr>
+                                    <tr><td>16</td><td>Pavol Hrnčiar</td><td>0</td><td>455</td></tr>
+                                    <tr><td>17</td><td>Branislav Petrovič</td><td>0</td><td>385</td></tr>
+                                    <tr><td>18</td><td>Martina Farkašová</td><td>0</td><td>370</td></tr>
+                                    <tr><td>19</td><td>Gabriela Rebrošová</td><td>0</td><td>359</td></tr>
+                                    <tr class="msz-candidate"><td>20</td><td><span class="msz-candidate-name"> Adam Halász</span></td><td>0</td><td>346</td></tr>
+                                    <tr class="msz-candidate"><td>21</td><td><span class="msz-candidate-name"> Mária Rovenská</span></td><td>0</td><td>320</td></tr>
+                                    <tr><td>22</td><td>Zuzana Gabrišová Košecová</td><td>383</td><td>307</td></tr>
+                                    <tr><td>23</td><td>Jozef Koiš</td><td>0</td><td>300</td></tr>
+                                    <tr><td>24</td><td>Eva Cibuľová</td><td>0</td><td>254</td></tr>
+                                    <tr><td>25</td><td>Ivan Noskovič</td><td>0</td><td>246</td></tr>
+                                    <tr><td>26</td><td>Mária Beladičová</td><td>0</td><td>210</td></tr>
+                                    <tr><td>27</td><td>Simona Holzmannová</td><td>150</td><td>179</td></tr>
+                                    <tr><td>28</td><td>Petra Bertová Polovková</td><td>112</td><td>170</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Körzet 2 -->
+            <div class="rounded-3xl border border-emerald-100 bg-white shadow-sm overflow-hidden">
+                <div class="bg-emerald-700 px-6 py-5 text-white">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                        <div>
+                            <div class="text-xs uppercase tracking-[0.2em] text-emerald-100">
+                                <span class="lang-hu">Választási körzet 2</span>
+                                <span class="lang-sk">Volebný obvod č. 2</span>
+                            </div>
+                            <h3 class="text-2xl font-black mt-1">2026</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                            <span class="bg-white/10 px-3 py-1.5 rounded-full">8 <span class="lang-hu">képviselő</span><span class="lang-sk">poslancov</span></span>
+                            <span class="bg-white/10 px-3 py-1.5 rounded-full">2022 vs 2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 md:p-7">
+                    <div class="grid xl:grid-cols-2 gap-6">
+                        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-4">
+                            <h4 class="font-black text-gray-900 mb-4">
+                                <span class="lang-hu">Megválasztott képviselők</span>
+                                <span class="lang-sk">Zvolení poslanci</span>
+                            </h4>
+                            <div class="overflow-x-auto">
+                                <table class="result-table w-full text-left">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Név</th>
+                                        <th>2022</th>
+                                        <th>2026</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr><td>1</td><td>Juraj Gubáni</td><td>942</td><td>1062</td></tr>
+                                    <tr><td>2</td><td>Iveta Barková</td><td>824</td><td>862</td></tr>
+                                    <tr><td>3</td><td>Rudolf Bittner</td><td>844</td><td>832</td></tr>
+                                    <tr><td>4</td><td>Tomáš Mókoš</td><td>592</td><td>745</td></tr>
+                                    <tr><td>5</td><td>Adam Salama</td><td>0</td><td>729</td></tr>
+                                    <tr><td>6</td><td>Richard Pauer</td><td>586</td><td>701</td></tr>
+                                    <tr><td>7</td><td>Andrea Palcová</td><td>0</td><td>694</td></tr>
+                                    <tr><td>8</td><td>Peter Balogh</td><td>0</td><td>629</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-4">
+                            <h4 class="font-black text-gray-900 mb-4">
+                                <span class="lang-hu">Helyettesek / nem megválasztottak</span>
+                                <span class="lang-sk">Náhradníci / nevolení</span>
+                            </h4>
+                            <div class="overflow-x-auto">
+                                <table class="result-table w-full text-left">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Név</th>
+                                        <th>2022</th>
+                                        <th>2026</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr><td>9</td><td>Marcel Mikulec</td><td>0</td><td>600</td></tr>
+                                    <tr><td>10</td><td>Peter Príbelský</td><td>583</td><td>574</td></tr>
+                                    <tr><td>11</td><td>Monika Macháčková</td><td>561</td><td>557</td></tr>
+                                    <tr><td>12</td><td>Ľubica Altmanová</td><td>0</td><td>489</td></tr>
+                                    <tr><td>13</td><td>Juraj Nádaský</td><td>0</td><td>486</td></tr>
+                                    <tr><td>14</td><td>Peter Sedala</td><td>433</td><td>474</td></tr>
+                                    <tr><td>15</td><td>Erik Štvrtecký</td><td>0</td><td>460</td></tr>
+                                    <tr class="msz-candidate"><td>16</td><td><span class="msz-candidate-name"> Igor Pohl</span></td><td>0</td><td>458</td></tr>
+                                    <tr><td>17</td><td>Daniel Drinka</td><td>0</td><td>438</td></tr>
+                                    <tr><td>18</td><td>Tomáš Tengeri</td><td>0</td><td>434</td></tr>
+                                    <tr><td>19</td><td>Martin Matúš</td><td>0</td><td>432</td></tr>
+                                    <tr class="msz-candidate"><td>20</td><td><span class="msz-candidate-name"> Imrich Kolláth</span></td><td>0</td><td>405</td></tr>
+                                    <tr><td>21</td><td>Peter Glončák</td><td>0</td><td>362</td></tr>
+                                    <tr><td>22</td><td>Štefan Vincze</td><td>286</td><td>334</td></tr>
+                                    <tr class="msz-candidate"><td>23</td><td><span class="msz-candidate-name"> Melinda Mészáros</span></td><td>0</td><td>292</td></tr>
+                                    <tr><td>24</td><td>Lucia Markus</td><td>0</td><td>238</td></tr>
+                                    <tr><td>25</td><td>Ľubomír Kapoun</td><td>0</td><td>175</td></tr>
+                                    <tr><td>26</td><td>Ján Rohár</td><td>196</td><td>132</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Körzet 3 -->
+            <div class="rounded-3xl border border-emerald-100 bg-white shadow-sm overflow-hidden">
+                <div class="bg-emerald-950 px-6 py-5 text-white">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                        <div>
+                            <div class="text-xs uppercase tracking-[0.2em] text-emerald-200">
+                                <span class="lang-hu">Választási körzet 3</span>
+                                <span class="lang-sk">Volebný obvod č. 3</span>
+                            </div>
+                            <h3 class="text-2xl font-black mt-1">2026 </h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                            <span class="bg-white/10 px-3 py-1.5 rounded-full">4 <span class="lang-hu">képviselő</span><span class="lang-sk">poslancov</span></span>
+                            <span class="bg-white/10 px-3 py-1.5 rounded-full">2022 vs 2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 md:p-7 space-y-6">
+                    <div class="grid xl:grid-cols-2 gap-6">
+                        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-4">
+                            <h4 class="font-black text-gray-900 mb-4">
+                                <span class="lang-hu">Megválasztott képviselők</span>
+                                <span class="lang-sk">Zvolení poslanci</span>
+                            </h4>
+                            <div class="overflow-x-auto">
+                                <table class="result-table w-full text-left">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Név</th>
+                                        <th>2022</th>
+                                        <th>2026</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr><td>1</td><td>Ján Pullman</td><td>443</td><td>620</td></tr>
+                                    <tr><td>2</td><td>Peter Kmeť</td><td>586</td><td>561</td></tr>
+                                    <tr><td>3</td><td>Mária Hudáková</td><td>550</td><td>509</td></tr>
+                                    <tr><td>4</td><td>Andrea Šlosárová</td><td>382</td><td>505</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl border border-gray-200 bg-gray-50 p-4">
+                            <h4 class="font-black text-gray-900 mb-4">
+                                <span class="lang-hu">Helyettesek / nem megválasztottak</span>
+                                <span class="lang-sk">Náhradníci / nevolení</span>
+                            </h4>
+                            <div class="overflow-x-auto">
+                                <table class="result-table w-full text-left">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Név</th>
+                                        <th>2022</th>
+                                        <th>2026</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr><td>5</td><td>Rastislav Daniš</td><td>0</td><td>467</td></tr>
+                                    <tr><td>6</td><td>Radoslav Štefančík</td><td>0</td><td>426</td></tr>
+                                    <tr><td>7</td><td>Zdenka Felšöciová</td><td>0</td><td>338</td></tr>
+                                    <tr><td>8</td><td>Dušan Kozic</td><td>237</td><td>238</td></tr>
+                                    <tr class="msz-candidate"><td>9</td><td><span class="msz-candidate-name"> Andrea Kontárová</span></td><td>0</td><td>133</td></tr>
+                                    <tr><td>10</td><td>Ján Tamáš</td><td>0</td><td>100</td></tr>
+                                    <tr><td>11</td><td>Fratišek Kollár</td><td>0</td><td>82</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 rounded-3xl border border-emerald-100 bg-white shadow-sm overflow-hidden">
+            <div class="bg-emerald-900 px-6 py-5 text-white">
+                <div class="flex items-center justify-between gap-3">
+                    <div>
+                        <div class="text-xs uppercase tracking-[0.2em] text-emerald-200">
+                            <span class="lang-hu">Választási adatok</span>
+                            <span class="lang-sk">Volebné údaje</span>
+                        </div>
+                        <h3 class="text-2xl font-black mt-1">
+                            <span class="lang-hu">Összes megválasztott · Polgármesterjelöltek · Szavazási adatok</span>
+                            <span class="lang-sk">Spolu zvolení · Kandidáti na primátora · Štatistiky volieb</span>
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 md:p-7">
+                <div class="grid xl:grid-cols-3 gap-5">
+                    <div class="rounded-2xl bg-emerald-50 border border-emerald-100 p-5">
+                        <div class="text-xs uppercase tracking-[0.2em] text-emerald-700 mb-2">
+                            <span class="lang-hu">Polgármesterjelöltek</span>
+                            <span class="lang-sk">Kandidáti na primátora</span>
+                        </div>
+                        <table class="result-table w-full text-left">
+                            <thead>
+                            <tr><th>Név</th><th>2022</th><th>2026</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>Dušan Badinský</td><td>1578</td><td>790</td></tr>
+                            <tr><td>Ľuboslav Farkaš</td><td>0</td><td>2166</td></tr>
+                            <tr><td>Pavol Kvál</td><td>1847</td><td>3426</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="rounded-2xl bg-emerald-50 border border-emerald-100 p-5">
+                        <div class="text-xs uppercase tracking-[0.2em] text-emerald-700 mb-2">
+                            <span class="lang-hu">Összes megválasztott</span>
+                            <span class="lang-sk">Spolu zvolení</span>
+                        </div>
+                        <table class="result-table w-full text-left">
+                            <thead>
+                            <tr><th>Frakció</th><th>2022</th><th>2026</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>Nezávislý kandidát</td><td>5</td><td>4</td></tr>
+                            <tr><td>Klub 90301</td><td>5</td><td>6</td></tr>
+                            <tr><td>Progresívne Slovensko</td><td>4</td><td>—</td></tr>
+                            <tr><td>SaS, PS, MF, OKS, DS-ODS</td><td>—</td><td>9</td></tr>
+                            <tr><td>Magyar Szövetség</td><td>3</td><td>1</td></tr>
+                            <tr><td>Starostovia a nezávislí</td><td>3</td><td>1</td></tr>
+                            <tr><td>KDH</td><td>1</td><td>0</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="rounded-2xl bg-emerald-50 border border-emerald-100 p-5">
+                        <div class="text-xs uppercase tracking-[0.2em] text-emerald-700 mb-2">
+                            <span class="lang-hu">Szavazási adatok</span>
+                            <span class="lang-sk">Štatistiky volieb</span>
+                        </div>
+                        <table class="result-table w-full text-left">
+                            <thead>
+                            <tr><th>Mutató</th><th>2022</th><th>2026</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>Férfi</td><td>13</td><td>15</td></tr>
+                            <tr><td>Nő</td><td>8</td><td>6</td></tr>
+                            <tr><td>Beírt szavazók</td><td>15714</td><td>16901</td></tr>
+                            <tr><td>Szavazópolgár</td><td>5756</td><td>6568</td></tr>
+                            <tr><td>Részvétel</td><td>36.62%</td><td>38.86%</td></tr>
+                            <tr><td>Országos részvétel</td><td>46.19%</td><td>48.48%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. Eredményeink -->
 <section id="eredmenyek" class="py-16 max-w-7xl mx-auto px-4">
     <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-gray-900">
@@ -1140,417 +1490,7 @@
     </div>
 </section>
 
-<!-- 4. KÖRZEETEK ÉS UTCÁK ÚTMUTATÓJA -->
-<section id="korzetek" class="py-16 bg-slate-100 border-y border-gray-200">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold text-gray-900">
-                <span class="lang-hu">Választási körzetek és utcák jegyzéke</span>
-                <span class="lang-sk">Volebné obvody a zoznam ulíc</span>
-            </h2>
-            <p class="text-gray-600 mt-2">
-                <span class="lang-hu">Keresd meg az utcádat a szenci városi választókörzetek hivatalos jegyzékében!</span>
-                <span class="lang-sk">Nájdite svoju ulicu v oficiálnom zozname volebných obvodov mesta Senec!</span>
-            </p>
 
-            <p class="text-xs text-gray-500 mt-3">
-                <span class="lang-hu">
-                    Az adatok Szenc Város 2026. június 29-i hivatalos hirdetményéből származnak.
-                    <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C224e26070213240.pdf" target="_blank"
-                       rel="noopener noreferrer"
-                       class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
-                        Hivatalos hirdetmény (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
-                </span>
-                <span class="lang-sk">
-                    Údaje pochádzajú z oficiálneho oznámenia Mesta Senec zo dňa 29. júna 2026.
-                    <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C224e26070213240.pdf" target="_blank"
-                       rel="noopener noreferrer"
-                       class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
-                        Oficiálne oznámenie (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
-                </span>
-            </p>
-        </div>
-
-        <!-- Kiemelt, letisztult keresősáv mobil oldaltávolsággal -->
-        <div class="max-w-xl mx-auto px-4 mb-10">
-            <div class="relative shadow-md rounded-2xl">
-                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-emerald-600">
-                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
-                </div>
-                <input
-                        type="text"
-                        id="street-search"
-                        oninput="filterStreets()"
-                        onkeyup="filterStreets()"
-                        placeholder="Írd be az utcád nevét... / Napíšte názov ulice..."
-                        class="w-full pl-12 pr-4 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-gray-900 bg-white rounded-2xl border-2 border-emerald-600/40 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-600/20 focus:outline-none transition shadow-sm placeholder:font-normal placeholder:text-gray-400"
-                >
-            </div>
-            <p class="text-center text-xs text-gray-400 mt-2.5">
-                <span class="lang-hu"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> A szűrés gépelés közben azonnal történik</span>
-                <span class="lang-sk"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> Filtrovanie prebieha okamžite počas písania</span>
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-
-            <!-- 1. Körzet Utcái -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-                <div class="flex items-center justify-between mb-4 border-b pb-3">
-                    <h3 class="font-bold text-lg text-emerald-800">
-                        <span class="lang-hu">1. körzet</span><span class="lang-sk">Obvod č. 1</span>
-                    </h3>
-                    <a href="#district-1" id="district-1-streets-candidate"
-                       class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">5 Jelölt</a>
-                </div>
-                <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Idetartozó utcák:</span><span
-                        class="lang-sk">Príslušné ulice:</span></p>
-                <ul id="streets-list-1" class="text-xs text-gray-700 space-y-1.5 max-h-60 overflow-y-auto pr-2">
-                    <li>Boldocká cesta, Bratislavská (3-25 nepárne)</li>
-                    <li>Dúhová, Farské námestie, Fraňa Kráľa</li>
-                    <li>Fučíkova, Hečková, Hollého, Hurbanova</li>
-                    <li>J. Jesenského, Jasná, Kollárova, Krátka</li>
-                    <li>Kvetná, Mierové námestie, Mlynská</li>
-                    <li>Moyzesova, Námestie 1. mája, Nitrianska</li>
-                    <li>Pivničná, Pod vinicami, Robotnícka</li>
-                    <li>Rosná, Rybárska, Sadová, Slnečná</li>
-                    <li>SNP, Strmá, Svätého Urbana, Svätý Martin</li>
-                    <li>Šafáriková, Šamorínska, Školská, Škorcová</li>
-                    <li>Štefánikova, Štúrova, Tehelná, Tehelňa</li>
-                    <li>Trnavská, Turecká, Vinohradnícka, Vodná</li>
-                    <li>Vrbenského, Železničná</li>
-                </ul>
-            </div>
-
-            <!-- 2. Körzet Utcái -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-                <div id="district-2-streets" class="flex items-center justify-between mb-4 border-b pb-3">
-                    <h3 class="font-bold text-lg text-emerald-800">
-                        <span class="lang-hu">2. körzet</span><span class="lang-sk">Obvod č. 2</span>
-                    </h3>
-                    <a href="#district-2" id="district-2-streets-candidate"
-                       class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">3 Jelölt</a>
-                </div>
-                <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Idetartozó utcák:</span><span
-                        class="lang-sk">Príslušné ulice:</span></p>
-                <ul id="streets-list-2" class="text-xs text-gray-700 space-y-1.5 max-h-60 overflow-y-auto pr-2">
-                    <li>A. Sládkoviča, Baničova, Bélu Bartóka</li>
-                    <li>Bernolákova, Bratislavská (2-30 párne; 27-75 nepárne)</li>
-                    <li>Dobšinského, E. B. Lukáča, Fándlyho</li>
-                    <li>Gagarinova, Hany Zelinovej, Hviezdoslavova</li>
-                    <li>Chalupkova, Inovecká, J. G. Tajovského</li>
-                    <li>Jána Smreka, Jánošíkova, Kalinčiakova</li>
-                    <li>Karola Šišku, Košická, Kysucká, Letná</li>
-                    <li>Lichnerova, Liptovská, Ľudovíta Fullu</li>
-                    <li>M. Urbana, Mäsiarska, Novomeského</li>
-                    <li>Oravská, Pezinská, Považská, Pribinova</li>
-                    <li>Pri Striebornom Jazere, Priemyselná</li>
-                    <li>Sokolská, Strieborné jazero, Svätoplukova</li>
-                    <li>Športová, Vajanského, Záhradnícka</li>
-                    <li>Zemplínska, Žarnovova, Žitavská</li>
-                </ul>
-            </div>
-
-            <!-- 3. Körzet Utcái -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-                <div id="district-3-streets" class="flex items-center justify-between mb-4 border-b pb-3">
-                    <h3 class="font-bold text-lg text-emerald-800">
-                        <span class="lang-hu">3. körzet</span><span class="lang-sk">Obvod č. 3</span>
-                    </h3>
-                    <a href="#district-3" id="district-3-streets-candidate"
-                       class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">1 Jelölt</a>
-                </div>
-                <p class="text-xs text-gray-500 mb-3"><span class="lang-hu">Idetartozó utcák:</span><span
-                        class="lang-sk">Príslušné ulice:</span></p>
-                <ul id="streets-list-3" class="text-xs text-gray-700 space-y-1.5 max-h-60 overflow-y-auto pr-2">
-                    <li>A. Dubčeka, A. Hlinku, Agátová, Bazová</li>
-                    <li>Borievková, Borovicová, Brezová, Čerešňová</li>
-                    <li>Diaľničná, Dlhá, Dolná, Drienková, Drozdia</li>
-                    <li>Fialková, Gaštanová, Holubia, Horná, Horný dvor</li>
-                    <li>J. Csermáka, J. Farkasa, J. Murgaša, Jarná</li>
-                    <li>Jastrabia, Javorová, Jedľová, Jesenná, Kapria</li>
-                    <li>Karasová, Lastovičia, Lesná, Lipová, Lučna, Marhuľová</li>
-                    <li>Mesačná, Morušová, Muškátová, Okružná, Orechová</li>
-                    <li>Poľná, Pri Štifte, Ružová, Sereďská</li>
-                    <li>Slávičia, Slnečné jazerá, Smreková, Sovia</li>
-                    <li>Šípková, Škovránčia, Trnková, Tulipánová, Turnianska</li>
-                    <li>Ulica Alexandra Albrechta, Ulica Jána N. Hummela</li>
-                    <li>Ulica pri Búroši, Ulica Jána L. Bellu, Ulica Jána Cikkera</li>
-                    <li>Ulica pri Čiernej vode, Ulica Eugena Suchoňa</li>
-                    <li>Ulica pri včelárikoch, Višňová, Vrabčia, Vtáčia, Zimná</li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Szavazóhelyiség Kereső Szekció -->
-<section id="szavazokor-kereso" class="py-16 bg-white border-b border-gray-200">
-    <div class="max-w-4xl mx-auto px-4">
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900">
-                <span class="lang-hu">Hol kell szavaznom? – Szavazóhelyiség kereső</span>
-                <span class="lang-sk">Kde mám voliť? – Vyhľadávač volebnej miestnosti</span>
-            </h2>
-            <p class="text-gray-600 mt-2 text-sm">
-                <span class="lang-hu">Írd be az utcád nevét, és a rendszer megmutatja a kijelölt szavazókörödet és szavazóhelyiségedet.</span>
-                <span class="lang-sk">Zadajte názov vašej ulice a systém vám zobrazí príslušný volebný okrsok a miestnosť.</span>
-            </p>
-
-            <p class="text-xs text-gray-500 mt-3">
-    <span class="lang-hu">
-        Az adatok Szenc város polgármesterének hivatalos határozatából származnak a szavazókörök és szavazóhelyiségek kijelöléséről.
-        <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C250i260708161700.pdf" target="_blank"
-           rel="noopener noreferrer"
-           class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
-            Hivatalos határozat (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-        </a>
-    </span>
-                <span class="lang-sk">
-        Údaje pochádzajú z oficiálneho rozhodnutia primátora mesta Senec o vytvorení volebných okrskov a určení volebných miestností.
-        <a href="https://www.senec.sk/wp-content/uploads/2026/07/SKM_C250i260708161700.pdf" target="_blank"
-           rel="noopener noreferrer"
-           class="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold">
-            Oficiálne rozhodnutie (PDF) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-        </a>
-    </span>
-            </p>
-
-        </div>
-
-        <!-- Kiemelt, letisztult keresősáv mobil oldaltávolsággal -->
-        <div class="max-w-xl mx-auto px-4 mb-8">
-            <div class="relative shadow-md rounded-2xl">
-                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-emerald-600">
-                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
-                </div>
-                <input
-                        type="text"
-                        id="polling-search-input"
-                        oninput="searchPollingStation()"
-                        placeholder="Írd be az utcád nevét... / Zadajte názov ulice..."
-                        class="w-full pl-12 pr-4 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-gray-900 bg-white rounded-2xl border-2 border-emerald-600/40 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-600/20 focus:outline-none transition shadow-sm placeholder:font-normal placeholder:text-gray-400"
-                >
-            </div>
-            <p class="text-center text-xs text-gray-400 mt-2.5">
-                <span class="lang-hu"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> A találatok gépelés közben azonnal megjelennek</span>
-                <span class="lang-sk"><i class="fa-solid fa-bolt text-amber-500 mr-1"></i> Výsledky sa zobrazujú okamžite počas písania</span>
-            </p>
-        </div>
-
-        <!-- Eredmények Vízszintes Kárruszel Konténere -->
-        <div
-                id="polling-results-container"
-                class="flex overflow-x-auto snap-x snap-mandatory gap-4 py-4 px-2 max-w-2xl mx-auto scrollbar-thin"
-        ></div>
-
-        <!-- Nincs találat üzenet -->
-        <div id="polling-no-result" class="hidden text-center text-gray-500 text-sm mt-4">
-            <span class="lang-hu">Nincs találat erre az utcára. Kérjük, ellenőrizd a helyesírást!</span>
-            <span class="lang-sk">Pre túto ulicu nebol nájdený žiadny výsledok. Skontrolujte pravopis!</span>
-        </div>
-    </div>
-</section>
-
-<!-- 5. Kampányesemények és Fórumok -->
-<section id="esemenyek" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4">
-
-        <!-- Fejléc -->
-        <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold text-gray-900">
-                <span class="lang-hu">Rendezvények, ahol találkozhat velünk</span>
-                <span class="lang-sk">Akcie, kde sa s nami môžete stretnúť</span>
-            </h2>
-            <p class="text-gray-600 mt-2">
-                <span class="lang-hu">Találkozzunk személyesen Szencen!</span>
-                <span class="lang-sk">Stretnime sa osobne v Senci!</span>
-            </p>
-        </div>
-
-        <!-- 14 Esemény Rácsszerkezet -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
-
-            <!-- Szept. 18. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-18">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Szept. 18. &bull; Péntek</span>
-                    <span class="lang-sk">18. sept. &bull; Piatok</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base">
-                    <span class="lang-hu">Farkas Jenő est</span>
-                    <span class="lang-sk">Spomienka na J. Farkasa</span>
-                </h3>
-            </div>
-
-            <!-- Szept. 19. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-19">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Szept. 19. &bull; Szombat &bull; 16:00</span>
-                    <span class="lang-sk">19. sept. &bull; Sobota &bull; 16:00</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base mb-1">
-                    <span class="lang-hu">Játékest</span>
-                    <span class="lang-sk">Večer spoločenských hier</span>
-                </h3>
-                <p class="text-xs text-gray-500"><i class="fa-solid fa-location-dot mr-1"></i>Szakközépiskola / Stredná
-                    odborná škola</p>
-            </div>
-
-            <!-- Szept. 24. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-24">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Szept. 24. &bull; Csütörtök &bull; 18:30</span>
-                    <span class="lang-sk">24. sept. &bull; Štvrtok &bull; 18:30</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base mb-1">
-                    <span class="lang-hu">Csemadok Nótaest</span>
-                    <span class="lang-sk">Maďarské ľudovky</span>
-                </h3>
-                <p class="text-xs text-gray-500"><i class="fa-solid fa-location-dot mr-1"></i>Nostalgia</p>
-            </div>
-
-            <!-- Szept. 26. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-26">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Szept. 26. &bull; Szombat</span>
-                    <span class="lang-sk">26. sept. &bull; Sobota</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base mb-1">
-                    <span class="lang-hu">Báger körüli futás</span>
-                    <span class="lang-sk">Beh okolo Slnečných jazier</span>
-                </h3>
-            </div>
-
-            <!-- Szept. 28. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-09-28">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Szept. 28. &bull; Hétfő &bull; 18:00</span>
-                    <span class="lang-sk">28. sept. &bull; Pondelok &bull; 18:00</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base mb-1">
-                    <span class="lang-hu">„Félrelépni szabad” – Magyar film</span>
-                    <span class="lang-sk">Filmové predstavenie v HU jazyku</span>
-                </h3>
-                <p class="text-xs text-gray-500"><i class="fa-solid fa-location-dot mr-1"></i>Mozi / Kino</p>
-            </div>
-
-            <!-- Okt. 2. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-10-02">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Okt. 2. &bull; Péntek &bull; 18:00</span>
-                    <span class="lang-sk">2. okt. &bull; Piatok &bull; 18:00</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base">
-                    <span class="lang-hu">Szenci Molnár Albert szobrának megkoszorúzása</span>
-                    <span class="lang-sk">Spomienková slávnosť pri soche A.M. Szencziho</span>
-                </h3>
-            </div>
-
-            <!-- Okt. 3. - KIEMELT: ALMANAP -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-03">
-                <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
-                    <span class="lang-hu">Okt. 3. &bull; Szombat</span>
-                    <span class="lang-sk">3. okt. &bull; Sobota</span>
-                </div>
-                <h3 class="font-bold text-emerald-950 text-base mb-1">
-                    <span class="lang-hu">Almanap – Szövetség sátor</span>
-                    <span class="lang-sk">Jablkové hodovanie – Stánok aliancie</span>
-                </h3>
-                <p class="text-xs text-gray-600"><span class="lang-hu">Kötetlen beszélgetés a jelöltekkel.</span><span
-                        class="lang-sk">Neformálna diskusia s kandidátmi.</span></p>
-            </div>
-
-            <!-- Okt. 3. - ZARÁNDOKLAT -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-10-03">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Okt. 3. &bull; Szombat</span>
-                    <span class="lang-sk">3. okt. &bull; Sobota</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base">
-                    <span class="lang-hu">Máriavölgyi gyalogos zarándoklat</span>
-                    <span class="lang-sk">Pešia púť do Marianky</span>
-                </h3>
-            </div>
-
-            <!-- Okt. 10. - KIEMELT: GULYÁSFŐZÉS -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-10">
-                <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
-                    <span class="lang-hu">Okt. 10. &bull; Szombat &bull; 10:00–13:00</span>
-                    <span class="lang-sk">10. okt. &bull; Sobota &bull; 10:00–13:00</span>
-                </div>
-                <h3 class="font-bold text-emerald-950 text-base mb-1">
-                    <span class="lang-hu">Gulyásfőzés a Magyar Szövetséggel</span>
-                    <span class="lang-sk">Volebný guláš Maďarskej aliancie</span>
-                </h3>
-                <p class="text-xs text-gray-600"><i class="fa-solid fa-location-dot mr-1"></i>Kultúrház előtti tér / Námestie pred MsKS</p>
-            </div>
-
-            <!-- Okt. 17. - KIEMELT: DISZNÓTOROS -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-17">
-                <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
-                    <span class="lang-hu">Okt. 17. &bull; Szombat &bull; 10:00–13:00</span>
-                    <span class="lang-sk">17. okt. &bull; Sobota &bull; 10:00–13:00</span>
-                </div>
-                <h3 class="font-bold text-emerald-950 text-base mb-1">
-                    <span class="lang-hu">Disznótoros a 90301.sk és a Magyar Szövetség jelöltjeivel</span>
-                    <span class="lang-sk">Tradičná zabíjačka s tímom 90301.sk a kandidátmi Maďarskej aliancie</span>
-                </h3>
-                <p class="text-xs text-gray-600"><i class="fa-solid fa-location-dot mr-1"></i>Kultúrház előtti tér /
-                    Námestie pred MSKS</p>
-            </div>
-
-            <!-- Okt. 18. - KIEMELT: BEMUTATKOZÁS -->
-            <div class="bg-emerald-50/50 p-5 rounded-xl shadow-sm border-l-4 border-l-emerald-600 border border-emerald-100 relative" data-date="2026-10-18">
-                <div class="text-xs font-bold text-emerald-800 uppercase mb-1">
-                    <span class="lang-hu">Okt. 18. &bull; Vasárnap &bull; 15:00</span>
-                    <span class="lang-sk">18. okt. &bull; Nedeľa &bull; 15:00</span>
-                </div>
-                <h3 class="font-bold text-emerald-950 text-base mb-1">
-                    <span class="lang-hu">Képviselőjelöltek bemutatkozása és kultúrműsor</span>
-                    <span class="lang-sk">Predstavenie kandidátov spojené s kultúrnym programom</span>
-                </h3>
-                <p class="text-xs text-gray-600"><i class="fa-solid fa-location-dot mr-1"></i>Labirintus / Labyrint
-                    (MSKS)</p>
-            </div>
-
-            <!-- Okt. 22. -->
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200 relative" data-date="2026-10-22">
-                <div class="text-xs font-bold text-emerald-700 uppercase mb-1">
-                    <span class="lang-hu">Okt. 22. &bull; Csütörtök &bull; 18:30</span>
-                    <span class="lang-sk">22. okt. &bull; Štvrtok &bull; 18:30</span>
-                </div>
-                <h3 class="font-bold text-gray-900 text-base mb-1">
-                    <span class="lang-hu">Csemadok Nótaest</span>
-                    <span class="lang-sk">Maďarské ľudovky</span>
-                </h3>
-                <p class="text-xs text-gray-500"><i class="fa-solid fa-location-dot mr-1"></i>Nostalgia</p>
-            </div>
-
-            <!-- Okt. 24. - VÁLASZTÁS NAPJA (teljes sorban, KIVILÁGOSÍTVA) -->
-            <div class="bg-emerald-100 p-5 rounded-xl shadow-lg border border-emerald-600 lg:col-span-3 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left relative" data-date="2026-10-24">
-                <div>
-                    <div class="text-xs font-extrabold text-emerald-800 uppercase tracking-widest mb-1">
-                        <span class="lang-hu">A Választás Napja &bull; 7:00 – 20:00</span>
-                        <span class="lang-sk">Deň Volieb &bull; 7:00 – 20:00</span>
-                    </div>
-                    <h3 class="font-bold text-gray-900">
-                        <span class="lang-hu">Okt. 24. – ÖNKORMÁNYZATI ÉS MEGYEI VÁLASZTÁSOK 2026</span>
-                        <span class="lang-sk">24. okt. – KOMUNÁLNE VOĽBY A ŽUPNÉ VOĽBY (DO VÚC) 2026</span>
-                    </h3>
-                </div>
-                <div class="text-xs text-emerald-800 font-bold whitespace-nowrap px-3 py-1.5">
-                    <span class="lang-hu">#SzívügyünkSzenc &bull; Ránk számíthat!</span>
-                    <span class="lang-sk">#SrdcomPreSenec &bull; Spoľahlivá voľba!</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <!-- 6. Részletes kampányújság letöltése -->
 <section id="ujsag" class="py-12 bg-gradient-to-r from-emerald-800 to-teal-800 text-white">
@@ -1574,143 +1514,6 @@
     </div>
 </section>
 
-<!-- 7. GYIK & Szavazás -->
-<section id="gyik" class="py-16 max-w-4xl mx-auto px-4">
-    <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">
-            <span class="lang-hu">Gyakran Ismételt Kérdések és szavazás</span>
-            <span class="lang-sk">Často Kladené Otázky a Voľby</span>
-        </h2>
-        <p class="text-gray-600 mt-2">
-            <span class="lang-hu">Minden praktikus tudnivaló a választás menetéről</span>
-            <span class="lang-sk">Praktické informácie o priebehu volieb</span>
-        </p>
-    </div>
-
-    <div class="space-y-4">
-
-        <!-- 1. Időpont és okmányok -->
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-            <div class="font-bold text-gray-900 text-base sm:text-lg mb-2">
-                <i class="fa-solid fa-circle-question text-emerald-600 mr-2"></i>
-                <span class="lang-hu">Mikor és hol zajlik a szavazás, és mit kapok a szavazóhelyiségben?</span>
-                <span class="lang-sk">Kedy a kde prebieha hlasovanie a čo dostanem vo volebnej miestnosti?</span>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                <span class="lang-hu">A szavazás <strong>2026. október 24-én (szombaton) 7:00-tól 20:00-ig</strong> tart. A személyazonosság igazolása után (kizárólag személyi igazolvánnyal) <strong>4 szavazólapot</strong> és <strong>2 borítékot</strong> (egy fehéret és egy kéket) kapsz kézhez.</span>
-                <span class="lang-sk">Hlasovanie prebieha v sobotu <strong>24. októbra od 7:00 do 20:00</strong>. Po overení totožnosti (výlučne občianskym preukazom) dostanete spolu <strong>4 hlasovacie lístky</strong> a <strong>2 obálky</strong> (bielu a modrú).</span>
-            </p>
-        </div>
-
-        <!-- 2. Karikázás -->
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-            <div class="font-bold text-gray-900 text-base sm:text-lg mb-2">
-                <i class="fa-solid fa-circle-question text-emerald-600 mr-2"></i>
-                <span class="lang-hu">Hány jelöltet karikázhatok a szavazólapokon?</span>
-                <span class="lang-sk">Koľko kandidátov môžem krúžkovať?</span>
-            </div>
-            <ul class="text-sm text-gray-600 space-y-2 mt-2">
-                <li class="flex items-start gap-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-gray-400 mt-1.5 flex-shrink-0"></span>
-                    <span>
-            <span class="lang-hu">
-                <span class="font-bold text-gray-900">Városi választás (fehér lapok):</span> Polgármester: <span
-                    class="font-bold">1</span>. Képviselők: körzettől függően (<span
-                    class="font-bold">1. körzet: max. 9</span>, <span class="font-bold">2. körzet: max. 8</span>, <span
-                    class="font-bold">3. körzet: max. 4 jelölt</span>). Ezek a <span
-                    class="font-bold">fehér borítékba</span> mennek.
-            </span>
-            <span class="lang-sk">
-                <span class="font-bold text-gray-900">Mestské voľby (biele lístky):</span> Primátor: <span
-                    class="font-bold">1</span>. Mestskí poslanci: podľa obvodu (<span
-                    class="font-bold">1. obvod: max. 9</span>, <span class="font-bold">2. obvod: max. 8</span>, <span
-                    class="font-bold">3. obvod: max. 4</span>). Tieto lístky patria do <span class="font-bold">bielej obálky</span>.
-            </span>
-        </span>
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-blue-600 mt-1.5 flex-shrink-0"></span>
-                    <span>
-            <span class="lang-hu">
-                <span class="font-bold text-gray-900">Megyei választás (kék sávos lapok):</span> Megyeelnök: <span
-                    class="font-bold">1</span>. Megyei képviselők: Szencen <span class="font-bold">max. 2 jelölt</span>. Ezek a <span
-                    class="font-bold">kék borítékba</span> mennek.
-            </span>
-            <span class="lang-sk">
-                <span class="font-bold text-gray-900">Krajské voľby (lístky s modrým pruhom):</span> Župan: <span
-                    class="font-bold">1</span>. Krajskí poslanci: v Senci <span
-                    class="font-bold">max. 2 kandidáti</span>. Tieto lístky patria do <span class="font-bold">modrej obálky</span>.
-            </span>
-        </span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- 3. Borítékok, Urnák & Érvénytelenség -->
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-            <div class="font-bold text-gray-900 text-base sm:text-lg mb-2">
-                <i class="fa-solid fa-triangle-exclamation text-amber-500 mr-2"></i>
-                <span class="lang-hu">Melyik boríték hova való és mitől érvénytelen a szavazat?</span>
-                <span class="lang-sk">Kam patria obálky a kedy je hlas neplatný?</span>
-            </div>
-
-            <!-- Boríték bedobás -->
-            <p class="text-sm text-gray-700 font-medium mb-3">
-                <span class="lang-hu">⚪ A <strong>fehér borítékot a fehér urnába</strong>, 🔵 a <strong>kék borítékot a kék urnába</strong> kell dobni.</span>
-                <span class="lang-sk">⚪ <strong>Bielu obálku do bielej schránky</strong>, 🔵 <strong>modrú obálku do modrej schránky</strong>.</span>
-            </p>
-
-            <!-- Érvénytelenség -->
-            <div class="bg-red-50 p-3.5 rounded-lg border border-red-100 text-xs sm:text-sm text-red-800">
-                <p class="font-bold mb-1">
-                    <span class="lang-hu">⚠️ Érvénytelen a szavazat, ha:</span>
-                    <span class="lang-sk">⚠️ Hlas je neplatný, ak:</span>
-                </p>
-                <ul class="list-disc list-inside space-y-0.5 text-red-700">
-                    <li>
-                        <span class="lang-hu">Nem karikáztál senkit, vagy a megengedettnél többet karikáztál.</span>
-                        <span class="lang-sk">Nezakrúžkujete nikoho, alebo zakrúžkujete viac ako je povolené.</span>
-                    </li>
-                    <li>
-                        <span class="lang-hu">Nem karikázást használtál (pl. x-elés, pipálás).</span>
-                        <span class="lang-sk">Kandidátov neoznačíte krúžkovaním (napr. x-nutie, zaškrtnutie).</span>
-                    </li>
-                    <li>
-                        <span class="lang-hu">A szavazólapot rossz borítékba, vagy a borítékot rossz urnába dobtad.</span>
-                        <span class="lang-sk">Lístok vložíte do zlej obálky alebo obálku do zlej schránky.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 4. Mozgóurna -->
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-            <div class="font-bold text-gray-900 text-base sm:text-lg mb-2">
-                <i class="fa-solid fa-circle-question text-emerald-600 mr-2"></i>
-                <span class="lang-hu">Hogyan igényelhető mozgóurna?</span>
-                <span class="lang-sk">Ako požiadať o prenosnú volebnú schránku?</span>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                <span class="lang-hu">Egészségügyi okokból mozgóurna kérhető: a választás előtt a Városi Hivatalban, a választás napján pedig a helyi szavazóköri bizottságnál. A mozgóurna csak a saját szavazókörzetén belül mehet ki.</span>
-                <span class="lang-sk">Zo zdravotných dôvodov je možné požiadať o prenosnú schránku: pred voľbami na Mestskom úrade, v deň volieb priamo u okrskovej volebnej komisie. Prenosná schránka môže prísť len v rámci daného okrsku.</span>
-            </p>
-        </div>
-
-        <!-- 5. Okmányok & Elrontott lap -->
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-            <div class="font-bold text-gray-900 text-base sm:text-lg mb-2">
-                <i class="fa-solid fa-circle-question text-emerald-600 mr-2"></i>
-                <span class="lang-hu">Mit vigyek magammal és mi van, ha elrontom a karikázást?</span>
-                <span class="lang-sk">Čo si vziať so sebou a čo ak sa pomýlim?</span>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                <span class="lang-hu">Mindenképpen vidd magaddal a <strong>személyi igazolványodat</strong>! Ha elrontod a karikázást, jelezd a bizottságnak: a rontott lapot a gyűjtődobozba dobva díjmentesen kapni fogsz egy újat.</span>
-                <span class="lang-sk">Nezabudnite na <strong>občiansky preukaz</strong>! Ak sa pomýlite, nahláste to komisii: nesprávny lístok vhodíte do určenej schránky a komisia vám bezplatne vydá nový.</span>
-            </p>
-        </div>
-
-    </div>
-</section>
 
 <!-- 8. Vedd fel velünk a kapcsolatot! -->
 <section id="kapcsolat" class="py-16 bg-slate-900 text-white">

@@ -500,9 +500,18 @@ function closeResultsModal() {
 }
 
 function filterStreets() {
-    const input = document.getElementById('street-search').value.toLowerCase();
+    const streetSearch = document.getElementById('street-search');
+    if (!streetSearch) {
+        return;
+    }
+
+    const input = streetSearch.value.toLowerCase();
     [1, 2, 3].forEach(num => {
         const list = document.getElementById(`streets-list-${num}`);
+        if (!list) {
+            return;
+        }
+
         const items = list.getElementsByTagName('li');
         for (let item of items) {
             if (item.innerText.toLowerCase().includes(input)) {
@@ -1591,9 +1600,15 @@ const pollingData = {
 };
 
 function searchPollingStation() {
-    const input = document.getElementById('polling-search-input').value.trim().toLowerCase();
+    const inputEl = document.getElementById('polling-search-input');
     const resultsContainer = document.getElementById('polling-results-container');
     const noResult = document.getElementById('polling-no-result');
+
+    if (!inputEl || !resultsContainer || !noResult) {
+        return;
+    }
+
+    const input = inputEl.value.trim().toLowerCase();
 
     if (input.length < 2) {
         resultsContainer.innerHTML = '';
@@ -1683,18 +1698,9 @@ function searchPollingStation() {
 // Kifejezetten csak az utcanév kereső nyelvét frissítő függvény
 function updateSearchLanguage() {
     const inputPSI = document.getElementById('polling-search-input');
-    const inputStS = document.getElementById('street-search');
 
     if (inputPSI) {
-        // Csak ennek az egy inputnak módosítjuk a placeholderét
         inputPSI.placeholder = (typeof currentLang !== 'undefined' && currentLang === 'sk')
-            ? "Napíšte názov ulice..."
-            : "Írd be az utcád nevét...";
-    }
-
-    if (inputStS) {
-        // Csak ennek az egy inputnak módosítjuk a placeholderét
-        inputStS.placeholder = (typeof currentLang !== 'undefined' && currentLang === 'sk')
             ? "Napíšte názov ulice..."
             : "Írd be az utcád nevét...";
     }
